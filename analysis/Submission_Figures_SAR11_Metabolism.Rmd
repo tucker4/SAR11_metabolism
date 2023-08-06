@@ -1,0 +1,1345 @@
+---
+title: "Submission_Figures_SAR11_Metabolism"
+author: "Sarah Tucker"
+date: "8/1/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+###Figure 1b,c
+
+```{r}
+
+Enviro <- read.csv("all_nut_data_KByT_HOT_v5.csv", row.names = 1)
+Enviro2 =Enviro[-1]
+
+
+iris_new <- Enviro2 %>% mutate_each_(list(~scale(.) %>% as.vector),
+                                  vars = c("PRO.mL","SYN.mL", "PEUK.mL", "HBACT.mL", "chla.ug.per.L",  "Silicate", "pH", "SW.Temperature.at.site", "Salinity"))
+
+df=iris_new
+
+
+tunek <- fpc::kmeansruns(iris_new ,krange = 1:10,criterion = "ch",scaledata=TRUE, iter.max = 100, runs=100) 
+tunek$cluster 
+p=unlist(tunek)
+write.csv(as.data.frame(p) ,"idkgfdgd.csv")
+tunek$bestk
+?kmeansruns()
+fviz_nbclust(df, kmeans, method = "wss")
+p=fviz_nbclust(df, kmeans, method = "wss")
+p1 <- fviz_cluster(p, geom = "point", data = df) + ggtitle("k = 2")
+
+
+Enviro <- read.csv("MetadatawithKmeans.csv", row.names = 1)
+
+
+Enviro=Enviro%>%dplyr::select("SampleID", "Metagenome", "kmeansruns_cat", "kmeansruns","Project","PRO.mL","SYN.mL", "PEUK.mL", "HBACT.mL", "chla.ug.per.L",  "Silicate", "pH", "SW.Temperature.at.site", "Salinity")
+#%>%subset(Metagenome!="None")
+
+iris_new <- Enviro %>% mutate_each_(list(~scale(.) %>% as.vector),
+                                  vars = c("PRO.mL","SYN.mL", "PEUK.mL", "HBACT.mL", "chla.ug.per.L",  "Silicate", "pH", "SW.Temperature.at.site", "Salinity"))
+
+
+test=iris_new[,6:14]
+
+mtcars.pca <- prcomp(iris_new[,6:14], center = TRUE,scale. = TRUE)
+
+summary(mtcars.pca)
+str(mtcars.pca)
+#install_github("vqv/ggbiplot")
+
+library(ggbiplot)
+
+ggbiplot(mtcars.pca)
+
+Metagenome_type <- factor(iris_new$Metagenome, levels=c("None","KByT", "Aloha"))
+iris_new$Metagenome=factor(iris_new$Metagenome, levels=c("None", "KByT", "Aloha"))
+
+iris_new$Project=factor(iris_new$Project, levels=c("Aloha", "KByT"))
+
+
+colorskmeans=c("Offshore"="#4F0CBA",
+"Coastal"="#77BA0C")
+
+
+svg("newFCM_PCA_Average_kmeans_scaled_help.svg", width=10, height=7)
+
+ggbiplot(mtcars.pca, color=as.factor(iris_new$kmeansruns))+
+  ggtitle("")+geom_point(aes(color=as.factor(iris_new$kmeansruns),shape=as.factor(iris_new$Project)), size = 3)+ scale_shape_manual(name="Project",values=c(2,1))+ scale_color_manual(name="Clustering", values= c("#4F0CBA","#77BA0C"))+
+  theme(legend.position = "bottom")+theme(axis.text=element_text(size=12), legend.text=element_text(size=12), axis.title=element_text(size=12,face="bold"), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(),panel.border = element_rect(color = "black",
+                                    fill = NA,size = 1)) +theme(legend.position = "bottom") +theme(legend.position = "bottom") +xlim(c(-2,4))
+dev.off()
+ggsave("PCA_Average_kmeans_scaled_v2.svg", width=10, height=7)
+
+
+```
+
+
+##Figure 1c
+```{r}
+Enviro <- read.csv("MetadatawithKmeans.csv", row.names = 1)
+
+dd=Enviro%>%subset(Metagenome!="None")%>%subset(Metagenome_ID!="KFE395NB")
+
+
+####this one 2 clusters
+dd$Metagenome_ID<- factor(dd$Metagenome_ID, level=c("KSE054HP",
+"KSE055AR",
+"KSE063NB",
+"KMA157AR",
+"KMA159R8",
+"KOC293R8",
+"KOC299NB",
+"KFE387AR",
+"KSE058SB",
+"KMA156HP",
+"KMA158CB",
+"KMA160SB",
+"KOC290HP",
+"KOC291AR",
+"KSE056CB",
+"KSE057R8",
+"KFE386HP",
+"KFE389R8",
+"KFE395NB",
+"KSE062NR",
+"KMA165NB",
+"KMA161R2",
+"KMA164NR",
+"KOC297NT",
+"KOC321ST",
+"KSE059R2",
+"KMA163NT",
+"KMA162ST",
+"KFE393NT",
+"KFE416ST",
+"KSE060ST",
+"KSE061NT",
+"HOT_224_25M",
+"HOT_225_25M",
+"HOT_226_25M",
+"HOT_227_25M",
+"HOT_229_25M",
+"HOT_231_25M",
+"HOT_232_25M",
+"HOT_233_25M",
+"HOT_234_25M",
+"HOT_236_25M",
+"HOT_237_25M",
+"HOT_238_25M"))
+
+
+
+colorskmeans=c("Offshore"="#4F0CBA",
+"Coastal"="#77BA0C")
+
+PRO<- ggplot(data=dd, aes(x=as.factor(Metagenome_ID), y=PRO.mL, color=kmeansruns_cat, shape=Project))+geom_point(size=2) 
+PRO=PRO + theme(legend.title = element_blank()) + ylab("") +xlab("") + theme(axis.text=element_text(size=6),axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), axis.title=element_text(size=6,face="bold"), legend.text=element_text(size=6), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(),panel.border = element_rect(color = "black",fill = NA,size = 1),legend.position="none") + scale_color_manual(values=colorskmeans)  +scale_shape_manual(values=c(2,1))
+
+PRO
+
+dd$PRO.mL=as.numeric(dd$PRO.mL)
+```
+
+
+```{r}
+
+freqs3=read.csv("SAR11depthaloha_relative_read_recruit_SCG_detection_acc.csv",row.name=1)
+
+#freqs3=read.csv("SCG_normalized_all_depths_v2.csv", row.name=1)
+
+freqs3=freqs3%>%dplyr::select(c("KSE054HP",
+"KSE055AR",
+"KSE062NR",
+"KSE063NB",
+"KMA157AR",
+"KMA159R8",
+"KMA165NB",
+"KOC293R8",
+"KOC299NB",
+"KFE387AR",
+"KSE058SB",
+"KMA156HP",
+"KMA158CB",
+"KMA160SB",
+"KOC290HP",
+"KOC291AR",
+"KSE056CB",
+"KSE057R8",
+"KSE059R2",
+"KMA161R2",
+"KMA162ST",
+"KMA163NT",
+"KMA164NR",
+"KOC297NT",
+"KOC321ST",
+"KFE386HP",
+"KFE389R8",
+"KFE393NT",
+"KFE416ST",
+"KSE060ST",
+"KSE061NT",
+"HOT_224_25M",
+"HOT_225_25M",
+"HOT_226_25M",
+"HOT_227_25M",
+"HOT_229_25M",
+"HOT_231_25M",
+"HOT_232_25M",
+"HOT_233_25M",
+"HOT_234_25M",
+"HOT_236_25M",
+"HOT_237_25M",
+"HOT_238_25M"))
+
+
+
+freqs4<- freqs3 %>%
+  rownames_to_column() %>%
+  gather(colname, value, -rowname)
+head(freqs4)
+samp.with.rownames3=freqs4
+sample_order <- factor(samp.with.rownames3$rowname,level=c("Ia3III",
+"Ia3II","Ia4rs39","Ia41483","Ia4II","Ia3V","Ia3VI"))
+
+
+
+
+####this one 2 clusters
+level_order <- factor(samp.with.rownames3$colname, level=c("KSE054HP",
+"KSE055AR",
+"KSE063NB",
+"KMA157AR",
+"KMA159R8",
+"KOC293R8",
+"KOC299NB",
+"KFE387AR",
+"KSE058SB",
+"KMA156HP",
+"KMA158CB",
+"KMA160SB",
+"KOC290HP",
+"KOC291AR",
+"KSE056CB",
+"KSE057R8",
+"KFE386HP",
+"KFE389R8",
+"KFE395NB",
+"KSE062NR",
+"KMA165NB",
+"KMA161R2",
+"KMA164NR",
+"KOC297NT",
+"KOC321ST",
+"KSE059R2",
+"KMA163NT",
+"KMA162ST",
+"KFE393NT",
+"KFE416ST",
+"KSE060ST",
+"KSE061NT",
+"HOT_224_25M",
+"HOT_225_25M",
+"HOT_226_25M",
+"HOT_227_25M",
+"HOT_229_25M",
+"HOT_231_25M",
+"HOT_232_25M",
+"HOT_233_25M",
+"HOT_234_25M",
+"HOT_236_25M",
+"HOT_237_25M",
+"HOT_238_25M"))
+
+
+
+
+samp.with.rownames3[samp.with.rownames3 == 0] <- NA
+samp.with.rownames3[samp.with.rownames3<1]<- NA
+
+write.csv(samp.with.rownames3, "read_recruitment_proportion_sar11_Ia.csv")
+
+geom.text.size = 2
+recruit=ggplot(samp.with.rownames3, aes(x = sample_order, y = level_order, fill = value)) +
+    geom_tile(aes(fill = value)) + 
+  theme(axis.title=element_text(size=6,face="bold"), legend.text=element_text(size=6), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(),panel.border = element_rect(color = "black",fill = NA,size = 1), legend.position="none", axis.text.x=element_blank()) + 
+  scale_fill_gradient2(low = "yellow", high="#8b0000", mid = "red", midpoint = 40,na.value = "white")  + scale_x_discrete(name="") + scale_y_discrete(name="Metagenome", position = "right") + labs(fill = "Summed\npercent\nrecruitment") +  theme(legend.position = "bottom") +# minimal theme
+ theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+hjust = -0.05, size=5)) + theme(legend.title = element_blank()) + theme(axis.text=element_text(size=6),axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), axis.title=element_text(size=6,face="bold"), legend.text=element_text(size=6), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(),panel.border = element_rect(color = "black",fill = NA,size = 1),legend.position="bottom")+ coord_flip()
+
+recruit
+
+pp <- list(PRO, recruit)
+
+
+library(ggpubr)
+svg("enviro_read_recruit_FMC_Cor_gg_2.svg", height=6, width=6)
+ggarrange(plotlist = pp, labels = c('A', 'B'), nrow = 2,align='v',heights = c(1,2))
+dev.off()
+
+
+```
+
+
+
+###Figure 2a
+Analyses for figure can be found under Table 1 code 
+
+Figure Making (2a,b)
+```{r}
+
+# Create Data
+data <- data.frame(
+  group=LETTERS[1:5],
+  value=c(13,7,9,21,2)
+)
+
+data=read.csv("average_genome_comp.csv")
+
+ggplot(data, aes(x="", y=value, fill=group)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0)
+
+data=read.csv("average_genome_comp.csv")
+# Compute the position of labels
+df2 <- data %>% 
+  arrange(desc(group)) %>%
+  mutate(prop = value / sum(data$value) *100) %>%
+  mutate(ypos = cumsum(prop)- 0.5*prop )
+
+
+
+ggplot(df2, aes(x="", y=prop, fill=group)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme_void() + 
+  theme(legend.position="none") +
+  
+  geom_text(aes(y = ypos, label = yprop), color = "white", size=6) +
+  scale_fill_brewer(palette="Set1")
+
+library(ggrepel)
+# Basic piechart
+ggplot(df2, aes(x="", y=prop, fill=group)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme(legend.position="none") +
+  scale_fill_manual(values = average_genome_comp_colors) + geom_label_repel(data = df2,
+                   aes(y = ypos, label = paste0(yprop, "%")),
+                   size = 5, nudge_x = 1, show.legend = FALSE) +
+  guides(fill = guide_legend(title = "")) +
+  theme_void() 
+ 
+ggsave("genome_composition.svg")
+
+ggplot(df3, aes(x="", y=prop, fill=group)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme(legend.position="none") +
+  scale_fill_manual(values = total_pangenome_colors) + geom_label_repel(data = df2,
+                   aes(y = ypos, label = paste0(yprop, "%")),
+                   size = 5, nudge_x = 1, show.legend = FALSE) +
+  guides(fill = guide_legend(title = "")) +
+  theme_void() 
+ 
+ 
+average_genome_comp_colors=c("Core Ia"="#d9534f",
+"Sublineage specific"="#f0ad4e", "Multi-lineage specific"="#5cb85c",
+ "Accessory"="#0275d8")
+
+df3$group
+
+total_pangenome_colors=c("Core Ia"="#d9534f",
+"Sublineage specific"="#f0ad4e", "Multi-lineage specific"="#5cb85c",
+ "Intermediate"="#5bc0de", "Singleton"="#0275d8")
+
+
+data1=read.csv("total_pangenome.csv")
+# Compute the position of labels
+df3 <- data1 %>% 
+  arrange(desc(group)) %>%
+  mutate(prop = value / sum(data1$value) *100) %>%
+  mutate(ypos = cumsum(prop)- 0.5*prop )
+
+ggplot(df3, aes(x="", y=prop, fill=group)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme(legend.position="none") +
+  scale_fill_manual(values = total_pangenome_colors) + geom_label_repel(data = df3,
+                   aes(y = ypos, label = paste0(yprop, "%")),
+                   size = 5, nudge_x = 1, show.legend = FALSE) +
+  guides(fill = guide_legend(title = "")) +
+  theme_void() 
+ 
+ggsave("total_pangenome.svg")
+
+
+
+
+
+data1=read.csv("total_pangenome.csv")
+# Compute the position of labels
+df3 <- data1 %>% 
+  mutate(prop = value / sum(data1$value) *100) %>%
+  mutate(ypos = cumsum(prop)- 0.5*prop )
+
+
+
+df3$group <- factor(df3$group, levels = c("Core Ia",
+"Sublineage specific", "Multi-lineage specific",
+"Intermediate","Singleton"))
+
+ggplot(df3, aes(x="", y=prop, fill=group)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme(legend.position="none") +
+  scale_fill_brewer(palette = "Set1") + geom_label_repel(data = df3,
+                   aes(y = ypos, label = paste0(yprop, "%")),
+                   size = 5, nudge_x = 1, show.legend = FALSE) +
+  guides(fill = guide_legend(title = "Group")) +
+  theme_void() 
+ 
+
+
+
+ggplot(df2, aes("", prop, fill = group)) +
+    geom_bar(width = 1, size = 1, color = "white", stat = "identity") +
+    coord_polar("y") +
+    geom_text(aes(label = paste0(yprop, "%")), 
+              position = position_stack(vjust = 0.4)) +
+    labs(x = NULL, y = NULL, fill = NULL, 
+         title = "market share") +
+    guides(fill = guide_legend(reverse = TRUE)) +
+    scale_fill_manual(values = c("#ffd700", "#bcbcbc", "#ffa500", "#254290", "pink")) +
+    theme_void() +
+    theme(axis.line = element_blank(),
+          axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          plot.title = element_text(hjust = 0.5, color = "#666666"))
+
+
+```
+
+
+
+###Figure 2c
+
+
+```{r}
+rm(list=ls())
+try=read.delim("just-Ia-revised-v2-Aloha_KByT-depth-PAN_gene_clusters_summary copy.txt")
+
+##select everything that is not Core to SAR11 Ia
+df=subset(try, bin_name=="")
+library(tidyverse)
+df=df%>%select(gene_cluster_id, genome_name)
+df$presence=1
+
+
+library(reshape2)
+
+
+test=reshape2::dcast(df, gene_cluster_id~genome_name,
+                   value.var='presence')
+
+test[is.na(test)]=0
+sum=rowSums(test[,-1])
+summary(sum)
+samp2 <- test[,-1]
+rownames(samp2) <- test[,1]
+
+samp2[samp2>0]=1
+sum=rowSums(samp2)
+summary(sum)
+
+write.csv(samp2, "Distribution_accessory_genes_PA_aug2023.csv")
+
+library(dendextend) 
+#https://bioinformatics.stackexchange.com/questions/923/how-to-convert-a-phylogeny-to-a-dendrogram-in-r
+#https://www.datanovia.com/en/lessons/comparing-cluster-dendrograms-in-r/
+
+#BiocManager::install("ggtree")
+
+#BiocManager::install("treeio")
+
+library(dendextend)
+library(treeio)
+library(ape)
+library(ggplot2)
+library(ggtree)
+
+
+coastal_off_tree <- read.newick(file="gtotree_output_coastal_off_all_Ia_v3.newick")
+
+# Create two dendrograms
+dend1 <- chronos(coastal_off_tree)
+is.ultrametric(dend1)
+is.binary.tree(dend1) 
+t2<-multi2di(dend1)
+
+is.ultrametric(t2)
+is.binary.tree(t2) 
+
+t3=as.dendrogram(t2)
+
+###note this part is for Figure S4
+
+library(pvclust)
+#install.packages("pvclust")
+samp2=read.csv("Distribution_accessory_genes_PA.csv", row.names=1)
+test3=samp2
+test4 <- pvclust(test3, method.hclust="average", method.dist="euclidean",nboot=1000)
+?pvclust()
+plot(test4)
+save(list="test4", file="pvclust_fit_2.rdata")
+
+svg("bootstrap.svg", height=8, width=11.5)
+plot(test4)
+pvrect(test4, alpha=0.80)
+dev.off()
+
+
+
+samp2=read.csv("Distribution_accessory_genes_PA.csv", row.names=1)
+
+samp3=t(samp2)
+
+hc <- hclust(dist(samp3), "ave")
+plot(hc)
+
+
+hc <- as.dendrogram(hc)
+
+dend2 <- samp3 %>%
+  dist() %>%
+  hclust("ave") %>%
+  as.dendrogram()
+
+
+write.csv(labels(t3, "label"), "phylo.csv")
+
+
+pdf("pan_ia_v2.pdf", width=12)
+plot(dend2)
+dev.off()
+dend2 %>% set("labels_cex", 1) %>% plot()
+
+is.ultrametric(hc)
+is.binary.tree(hc) 
+
+
+dend_list <- dendlist(dend2,t3)
+
+ 
+
+dend_list <- dendlist(dend2,t3) %>%
+  set("labels_cex", 0.7) %>% 
+  untangle(method = "step1side") %>% 
+  tanglegram(
+    highlight_distinct_edges = FALSE, 
+    highlight_branches_lwd = FALSE, # Turn-off dashed lines
+    common_subtrees_color_lines = FALSE, # Turn-off line colors
+    common_subtrees_color_branches = FALSE, 
+    margin_inner = 5.5# Color common branches 
+    )
+
+dend_list
+
+
+ dev.copy(svg, 'Untangle7.svg', width = 3, height = 8)
+dev.off()
+
+```
+
+
+
+
+###Figure 3
+
+```{r}
+
+########
+
+genotype <- read.csv("Carbons_Nutrients_Oct16.csv", row.names=1)
+
+unique(genotype$Metabolism)
+
+pattern_df = data.frame( "Metabolism" = genotype$Metabolism,"Ecological_pattern"=genotype$Ecological_pattern)
+rownames(pattern_df) = rownames(genotype)
+
+#pattern_df$Evolutionary_pattern <- factor(pattern_df$Evolutionary_pattern, levels = c("monophyletic", "none", "paraphyletic", "polyphyletic"))
+pattern_df$Ecological_pattern <- factor(pattern_df$Ecological_pattern, levels = c("none", "coastal", "offshore"))
+pattern_df$Metabolism <- factor(pattern_df$Metabolism, levels = c("Nitrogen","Phosphorus", "Oxidative","Carbon", "Metals","Osmotic"))
+
+
+#my_colour = list(
+  #  Metabolism=c("Carbon" = '#e6194b' , "Nitrogen"='#3cb44b', "Oxidative"='#ffe119', "Osmotic"='#4363d8', "Phosphorus"='#f58231', "Sulfur"='#911eb4', "Metals"='#46f0f0'),
+  #      Ecological_pattern = c("none" = "#c8c4b7ff", "coastal" = "#f032e6", #"offshore"="#000075")
+#)
+
+my_colour = list(
+    Metabolism=c("Carbon" = '#e6194b' , "Nitrogen"='#3cb44b', "Oxidative"='#ffe119', "Osmotic"='#4363d8', "Phosphorus"='#f58231', "Metals"='#46f0f0'),
+        Ecological_pattern = c("none" = "#c8c4b7ff", "coastal" = "#f032e6", "offshore"="#000075")
+)
+
+
+svg("carbon_heatmap_ordered_eco_distribution_v4.svg", height=11, width=8.5)
+ComplexHeatmap::pheatmap(genotype[,1:10], cluster_cols = F, cluster_row = F, annotation_row = pattern_df, gaps_col=c(4,7), color = c("white", "#d7d7d7","#7a7a7a" ,"black"),cellwidth=20,cellheight=10,
+         breaks = c(0,0.01, 0.15, 0.99, 1), annotation_colors = my_colour, fontsize_row=9, column_names_side = c("top"),
+                         angle_col = c("90"), border_color=TRUE)
+dev.off()
+
+```
+
+
+###Figure 4
+##### This is made on Biorender
+
+###Table 1
+```{r}
+#install.packages("pagoo")
+library("pagoo")
+library("tidyverse")
+library(reshape2)
+library(tidyverse)
+
+#https://cran.r-project.org/web/packages/pagoo/vignettes/Input.html
+
+try=read.delim("just-Ia-revised-v2-Aloha_KByT-depth-PAN_gene_clusters_summary copy.txt")
+
+ugh=read.delim("sublineages_Ia.txt")
+count_sublineage=ugh%>%group_by(sublineage)%>%tally()
+count_sublineage
+
+try1=left_join(try, ugh, "genome_name")
+unique(try1$sublineage)
+
+unique(try1$bin_name)
+
+###start calculating the sublineage pangenomes
+try3=subset(try1, sublineage=="Ia.3.VI")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia3VI_stats=as.data.frame(p$summary_stats)
+Ia3VI_stats=Ia3VI_stats%>%dplyr::rename("Ia3VI"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia3VI_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+try4=try1
+Core_Specific_Clusters=left_join(try4, Core2, by="gene_cluster_id")
+
+
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.3.V")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia3V_stats=as.data.frame(p$summary_stats)
+Ia3V_stats=Ia3V_stats%>%dplyr::rename("Ia3V"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia3V_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.3.IV")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia3IV_stats=as.data.frame(p$summary_stats)
+Ia3IV_stats=Ia3IV_stats%>%dplyr::rename("Ia3IV"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia3IV_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.3.I")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia3I_stats=as.data.frame(p$summary_stats)
+Ia3I_stats=Ia3I_stats%>%dplyr::rename("Ia3I"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia3I_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.3.II")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia3II_stats=as.data.frame(p$summary_stats)
+Ia3II_stats=Ia3II_stats%>%dplyr::rename("Ia3II"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia3II_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.3.III")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia3III_stats=as.data.frame(p$summary_stats)
+Ia3III_stats=Ia3III_stats%>%dplyr::rename("Ia3III"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia3III_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.I")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia1_stats=as.data.frame(p$summary_stats)
+Ia1_stats=Ia1_stats%>%dplyr::rename("Ia1"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia1_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.4.II")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+unique(try3$genome_name)
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia4II_stats=as.data.frame(p$summary_stats)
+Ia4II_stats=Ia4II_stats%>%dplyr::rename("Ia4II"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia4II_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+###start calculating the sublineage pangenomes
+unique(try1$sublineage)
+try3=subset(try1, sublineage=="Ia.4.rs39")
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia4rs39_stats=as.data.frame(p$summary_stats)
+Ia4rs39_stats=Ia4rs39_stats%>%dplyr::rename("Ia4rs39"="Number")
+
+
+###grab all the gene clusters that are core to the sublineage of interest
+Core=as.data.frame(p$core_clusters)
+Core$Ia4rs39_Core=1
+Core2=Core%>%dplyr::rename("gene_cluster_id"="cluster")
+names(Core2)
+# add these clusters to the larger data set of the entire pangenome (try1 from above)
+Core_Specific_Clusters=left_join(Core_Specific_Clusters, Core2, by="gene_cluster_id")
+
+
+##########ia total
+
+
+###start calculating the sublineage pangenomes
+try3=try1
+try2=try3%>%dplyr::select(gene_callers_id, genome_name,gene_cluster_id)
+try2=try3%>%rename_all(recode,"genome_name"="org", "gene_callers_id"="gene", "gene_cluster_id"="cluster")
+
+p <- pagoo(data = try2)
+p$core_level <- 100
+p$summary_stats
+
+
+Ia_stats=as.data.frame(p$summary_stats)
+Ia_stats=Ia_stats%>%dplyr::rename("Ia"="Number")
+
+
+######3
+pangenome_Summary=cbind(Ia_stats,Ia4rs39_stats, Ia4II_stats, Ia1_stats,Ia3III_stats,Ia3II_stats,Ia3I_stats,Ia3IV_stats,Ia3V_stats, Ia3VI_stats)
+
+write.csv(pangenome_Summary, "pangenome_summary_v2.csv")
+
+
+
+#########
+Core_Specific_Clusters
+write.csv(Core_Specific_Clusters, "test_aug_core_sublineage_specific.csv")
+
+```
+
+```{r}
+
+
+genes_sublineage_specific_v2=subset(test_Core_Specific_Clusters, total=="1")
+genes_sublineage_specific_v3=as.numeric(genes_sublineage_specific_v2[,27:35])
+genes_sublineage_specific_v3=as.numeric(genes_sublineage_specific_v3)
+colSums(genes_sublineage_specific_v3)
+print(sapply(genes_sublineage_specific_v3,class))
+
+write.csv(genes_sublineage_specific_v2, "genes_sublineage_specific_vAug2023.csv")
+
+
+```
+
+
+###Table 2: made through pangenome
+
+#Figure S1. Detection of all SAR11 Ia genomes in metagenomic samples. 
+```{r}
+
+####i just want to look at all genomes 
+
+
+read.recruit=read.csv("detectIon_KbyT_Aloha_10152022.csv")
+read.recruitv3=read.recruit%>%unite("Merged", bins:Sublineages)
+#write.csv(read.recruitv3, "read.recruitv3_all_genomes.csv")
+
+halp3=as.data.frame(read.recruitv3)
+
+halp3.with.rownames <- data.frame(halp3[,-1], row.names=halp3[,1])
+
+
+
+halp4<- halp3.with.rownames %>%
+  rownames_to_column() %>%
+  gather(colname, value, -rowname)
+head(halp4)
+
+summary(halp4$value)
+
+
+
+####this one 2 clusters
+halp4_level_order <- factor(halp4$colname, level=c("KSE054HP",
+"KSE055AR",
+"KSE063NB",
+"KMA157AR",
+"KMA159R8",
+"KOC293R8",
+"KOC299NB",
+"KFE387AR",
+"KSE058SB",
+"KMA156HP",
+"KMA158CB",
+"KMA160SB",
+"KOC290HP",
+"KOC291AR",
+"KSE056CB",
+"KSE057R8",
+"KFE386HP",
+"KFE389R8",
+"KFE395NB",
+"KSE062NR",
+"KMA165NB",
+"KMA161R2",
+"KMA164NR",
+"KOC297NT",
+"KOC321ST",
+"KSE059R2",
+"KMA163NT",
+"KMA162ST",
+"KFE393NT",
+"KFE416ST",
+"KSE060ST",
+"KSE061NT",
+"HOT_224_25M",
+"HOT_225_25M",
+"HOT_226_25M",
+"HOT_227_25M",
+"HOT_229_25M",
+"HOT_231_25M",
+"HOT_232_25M",
+"HOT_233_25M",
+"HOT_234_25M",
+"HOT_236_25M",
+"HOT_237_25M",
+"HOT_238_25M"))
+
+
+
+
+halp4_sample_order <- factor(halp4$rowname,level=c("HTCC7211_Ia.3.I",
+"HTCC7214_Ia.3.I",
+"HTCC7217_Ia.3.I",
+"HIMB1412_Ia.3.II",
+"HIMB1420_Ia.3.II",
+"HIMB1427_Ia.3.II",
+"HIMB1463_Ia.3.II",
+"HIMB1520_Ia.3.II",
+"HIMB1564_Ia.3.II",
+"HIMB5_Ia.3.II",
+"HIMB1321_Ia.3.III",
+"HIMB1505_Ia.3.III",
+"HIMB1527_Ia.3.III",
+"HIMB1549_Ia.3.III",
+"HIMB4_Ia.3.III",
+"HTCC8051_Ia.3.IV",
+"HTCC9022_Ia.3.IV",
+"FZCC0015_Ia.3.V",
+"HIMB083_Ia.3.V",
+"HIMB1409_Ia.3.V",
+"HIMB1413_Ia.3.V",
+"HIMB1444_Ia.3.V",
+"HIMB2201_Ia.3.V",
+"HIMB2250_Ia.3.V",
+"HIMB122_Ia.3.VI",
+"HIMB140_Ia.3.VI",
+"HIMB1430c_Ia.3.VI",
+"HIMB1485_Ia.3.VI",
+"HIMB1488c_Ia.3.VI",
+"HIMB1490c_Ia.3.VI",
+"HIMB1491_Ia.3.VI",
+"HIMB1492_Ia.3.VI",
+"HIMB1493_Ia.3.VI",
+"HIMB1494_Ia.3.VI",
+"HIMB1495_Ia.3.VI",
+"HIMB1506_Ia.3.VI",
+"HIMB1507_Ia.3.VI",
+"HIMB1509_Ia.3.VI",
+"HIMB1513_Ia.3.VI",
+"HIMB1518a_Ia.3.VI",
+"HIMB1521_Ia.3.VI",
+"HIMB1526_Ia.3.VI",
+"HIMB1542_Ia.3.VI",
+"HIMB1552a_Ia.3.VI",
+"HIMB1556_Ia.3.VI",
+"HIMB1559_Ia.3.VI",
+"HIMB1573_Ia.3.VI",
+"HIMB1577_Ia.3.VI",
+"HIMB1597_Ia.3.VI",
+"HIMB1611_Ia.3.VI",
+"HIMB1631_Ia.3.VI",
+"HIMB1636_Ia.3.VI",
+"HIMB1641_Ia.3.VI",
+"HIMB1662_Ia.3.VI",
+"HIMB1685_Ia.3.VI",
+"HIMB1695_Ia.3.VI",
+"HIMB1701_Ia.3.VI",
+"HIMB1702_Ia.3.VI",
+"HIMB1709_Ia.3.VI",
+"HIMB1710_Ia.3.VI",
+"HIMB1723c_Ia.3.VI",
+"HIMB1746_Ia.3.VI",
+"HIMB1758_Ia.3.VI",
+"HIMB1765_Ia.3.VI",
+"HIMB1770_Ia.3.VI",
+"HIMB1782_Ia.3.VI",
+"HIMB2211_Ia.3.VI",
+"HIMB1483_Ia.4.1483",
+"HIMB1437_Ia.4.II",
+"HIMB1863_Ia.4.II",
+"HIMB2200_Ia.4.II",
+"HIMB2204_Ia.4.II",
+"HIMB2215_Ia.4.II",
+"HIMB1436_Ia.4.rs39",
+"HIMB2187_Ia.4.rs39",
+"HIMB2226_Ia.4.rs39",
+"RS39_Ia.4.rs39",
+"HTCC1002_Ia.I",
+"HTCC1013_Ia.I",
+"HTCC1016_Ia.I",
+"HTCC1040_Ia.I",
+"HTCC1062_Ia.I",
+"HTCC9565_Ia.I"))
+
+
+
+
+svg('detection_KByT_Aloha_Oct2022_aboveaquarter.svg', width=8.5, height=11)
+ggplot(halp4, aes(x = halp4_sample_order, y = halp4_level_order)) + 
+      geom_point(aes(size = value, fill = value), alpha = 0.75, shape = 21) + 
+       scale_size_continuous(limits = c(0.25, 10), range = c(1,10), breaks = c(0.25,0.5,0.75,1)) +
+    scale_fill_gradient(low="#FBFEF9",high="#A63446") + scale_x_discrete(name="Genome") + scale_y_discrete(name="Metagenome", position = "right") + labs(fill = "Detection") +  theme(legend.position = "bottom") +# minimal theme
+ theme(axis.text.x = element_text(angle = 90, vjust = 1, 
+hjust = -0.05, size=5)) + coord_flip() +
+  theme(panel.border = element_rect(color = "black",
+                                    fill = NA,
+                                    size = 1))
+
+ggsave('detection_KByT_Aloha_Oct2022_aboveaquarter.pdf', width=7, height=10)
+dev.off()
+
+```
+
+
+Figure S2. Relative read recruitment of each isolate genome across the metagenomic samples. Read recruitment <1% not show.
+
+```{r}
+
+read.recruit=read.csv("q2q3_aloha_kbyt_1022.csv")
+read.recruitv3=read.recruit%>%unite("Merged", bins:Sublineages)
+#write.csv(read.recruitv3, "read.recruitv3_all_genomes.csv")
+
+halp3=as.data.frame(read.recruitv3)
+
+halp3.with.rownames <- data.frame(halp3[,-1], row.names=halp3[,1])
+
+
+
+halpq2q3<- halp3.with.rownames %>%
+  rownames_to_column() %>%
+  gather(colname, value, -rowname)
+head(halpq2q3)
+
+halpq2q3_v2=halpq2q3%>%dplyr::rename("q2q3" = "value")
+
+halpq2q3_v3=cbind(halpq2q3_v2, halp4)
+
+halpq2q3_v3$q2q3_edit=halpq2q3_v3$q2q3
+
+halpq2q3_v3$q2q3_edit[halpq2q3_v3$value < 0.25] <- 0
+halpq2q3_v4=halpq2q3_v3
+colnames(halpq2q3_v4)[2]="Metagenome"
+colnames(halpq2q3_v4)[1]="bin"
+halpq2q3_v4[,1]="bin"
+
+halpq2q3_v5=halpq2q3_v4%>%dplyr::select(rowname, colname, q2q3_edit)
+test=dcast(halpq2q3_v5, rowname ~colname)
+
+
+
+test.rownames <- data.frame(test[,-1], row.names=test[,1])
+
+freqs2 <- apply(test.rownames, 2, function(i) i/sum(i))
+
+freqs3=freqs2*100
+freqs3=as.data.frame(freqs3)
+
+
+
+
+halp4<-freqs3 %>%
+  rownames_to_column() %>%
+  gather(colname, value, -rowname)
+head(halp4)
+
+summary(halp4$value)
+
+
+
+####this one 2 clusters
+halp4_level_order <- factor(halp4$colname, level=c("KSE054HP",
+"KSE055AR",
+"KSE063NB",
+"KMA157AR",
+"KMA159R8",
+"KOC293R8",
+"KOC299NB",
+"KFE387AR",
+"KSE058SB",
+"KMA156HP",
+"KMA158CB",
+"KMA160SB",
+"KOC290HP",
+"KOC291AR",
+"KSE056CB",
+"KSE057R8",
+"KFE386HP",
+"KFE389R8",
+"KFE395NB",
+"KSE062NR",
+"KMA165NB",
+"KMA161R2",
+"KMA164NR",
+"KOC297NT",
+"KOC321ST",
+"KSE059R2",
+"KMA163NT",
+"KMA162ST",
+"KFE393NT",
+"KFE416ST",
+"KSE060ST",
+"KSE061NT",
+"HOT_224_25M",
+"HOT_225_25M",
+"HOT_226_25M",
+"HOT_227_25M",
+"HOT_229_25M",
+"HOT_231_25M",
+"HOT_232_25M",
+"HOT_233_25M",
+"HOT_234_25M",
+"HOT_236_25M",
+"HOT_237_25M",
+"HOT_238_25M"))
+
+
+
+
+halp4_sample_order <- factor(halp4$rowname,level=c("HTCC7211_Ia.3.I",
+"HTCC7214_Ia.3.I",
+"HTCC7217_Ia.3.I",
+"HIMB1412_Ia.3.II",
+"HIMB1420_Ia.3.II",
+"HIMB1427_Ia.3.II",
+"HIMB1463_Ia.3.II",
+"HIMB1520_Ia.3.II",
+"HIMB1564_Ia.3.II",
+"HIMB5_Ia.3.II",
+"HIMB1321_Ia.3.III",
+"HIMB1505_Ia.3.III",
+"HIMB1527_Ia.3.III",
+"HIMB1549_Ia.3.III",
+"HIMB4_Ia.3.III",
+"HTCC8051_Ia.3.IV",
+"HTCC9022_Ia.3.IV",
+"FZCC0015_Ia.3.V",
+"HIMB083_Ia.3.V",
+"HIMB1409_Ia.3.V",
+"HIMB1413_Ia.3.V",
+"HIMB1444_Ia.3.V",
+"HIMB2201_Ia.3.V",
+"HIMB2250_Ia.3.V",
+"HIMB122_Ia.3.VI",
+"HIMB140_Ia.3.VI",
+"HIMB1430c_Ia.3.VI",
+"HIMB1485_Ia.3.VI",
+"HIMB1488c_Ia.3.VI",
+"HIMB1490c_Ia.3.VI",
+"HIMB1491_Ia.3.VI",
+"HIMB1492_Ia.3.VI",
+"HIMB1493_Ia.3.VI",
+"HIMB1494_Ia.3.VI",
+"HIMB1495_Ia.3.VI",
+"HIMB1506_Ia.3.VI",
+"HIMB1507_Ia.3.VI",
+"HIMB1509_Ia.3.VI",
+"HIMB1513_Ia.3.VI",
+"HIMB1518a_Ia.3.VI",
+"HIMB1521_Ia.3.VI",
+"HIMB1526_Ia.3.VI",
+"HIMB1542_Ia.3.VI",
+"HIMB1552a_Ia.3.VI",
+"HIMB1556_Ia.3.VI",
+"HIMB1559_Ia.3.VI",
+"HIMB1573_Ia.3.VI",
+"HIMB1577_Ia.3.VI",
+"HIMB1597_Ia.3.VI",
+"HIMB1611_Ia.3.VI",
+"HIMB1631_Ia.3.VI",
+"HIMB1636_Ia.3.VI",
+"HIMB1641_Ia.3.VI",
+"HIMB1662_Ia.3.VI",
+"HIMB1685_Ia.3.VI",
+"HIMB1695_Ia.3.VI",
+"HIMB1701_Ia.3.VI",
+"HIMB1702_Ia.3.VI",
+"HIMB1709_Ia.3.VI",
+"HIMB1710_Ia.3.VI",
+"HIMB1723c_Ia.3.VI",
+"HIMB1746_Ia.3.VI",
+"HIMB1758_Ia.3.VI",
+"HIMB1765_Ia.3.VI",
+"HIMB1770_Ia.3.VI",
+"HIMB1782_Ia.3.VI",
+"HIMB2211_Ia.3.VI",
+"HIMB1483_Ia.4.1483",
+"HIMB1437_Ia.4.II",
+"HIMB1863_Ia.4.II",
+"HIMB2200_Ia.4.II",
+"HIMB2204_Ia.4.II",
+"HIMB2215_Ia.4.II",
+"HIMB1436_Ia.4.rs39",
+"HIMB2187_Ia.4.rs39",
+"HIMB2226_Ia.4.rs39",
+"RS39_Ia.4.rs39",
+"HTCC1002_Ia.I",
+"HTCC1013_Ia.I",
+"HTCC1016_Ia.I",
+"HTCC1040_Ia.I",
+"HTCC1062_Ia.I",
+"HTCC9565_Ia.I"))
+
+
+
+
+svg('q2q3_KByT_Aloha_Oct2022.svg', width=8.5, height=11)
+ggplot(halp4, aes(x = halp4_sample_order, y = halp4_level_order)) + 
+      geom_point(aes(size = value, fill = value), alpha = 0.75, shape = 21) + 
+       scale_size_continuous(limits = c(1, 20), range = c(1,10), breaks = c(0,5,10,20)) +
+    scale_fill_gradient(low="#FBFEF9",high="#A63446") + scale_x_discrete(name="Genome") + scale_y_discrete(name="Metagenome", position = "right") + labs(fill = "Detection") +  theme(legend.position = "bottom") +# minimal theme
+ theme(axis.text.x = element_text(angle = 90, vjust = 1, 
+hjust = -0.05, size=5)) + coord_flip() +
+  theme(panel.border = element_rect(color = "black",
+                                    fill = NA,
+                                    size = 1))
+
+ggsave('q2q3_KByT_Aloha_Oct2022.pdf', width=7, height=10)
+dev.off()
+
+
+
+
+halp4[halp4 == 0] <- NA
+halp4[halp4<1]<- NA
+
+svg('q2q3_KByT_Aloha_Oct2022.svg', width=8.5, height=11)
+geom.text.size = 2
+recruit=ggplot(halp4, aes(x = halp4_sample_order, y = halp4_level_order, fill = value)) +
+    geom_tile(aes(fill = value)) + geom_text(aes(label = round(value, 0)), size=geom.text.size) +
+  theme(axis.title=element_text(size=6,face="bold"), legend.text=element_text(size=6), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(),panel.border = element_rect(color = "black",fill = NA,size = 1), legend.position="none", axis.text.x=element_blank()) + 
+  scale_fill_gradient2(low = "yellow", high="#8b0000", mid = "red", midpoint = 15,na.value = "white")  + scale_x_discrete(name="Genome") + scale_y_discrete(name="Metagenome", position = "right") + labs(fill = "Summed\npercent\nrecruitment") +  theme(legend.position = "bottom") +# minimal theme
+ theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+hjust = -0.05, size=5)) + theme(legend.title = element_blank()) + theme(axis.text=element_text(size=6),axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), axis.title=element_text(size=6,face="bold"), legend.text=element_text(size=6), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(),panel.border = element_rect(color = "black",fill = NA,size = 1),legend.position="bottom")+ coord_flip()
+
+
+recruit
+ggsave('q2q3_KByT_Aloha_Oct2022.pdf', width=7, height=10)
+dev.off()
+
+```
+
+
+#Figure S3. Intersection plot of multi- genome cluster core gene sharing among SAR11 Ia genomes. Generally, relatively few genes are uniquely core and shared among some but not all genome clusters. 
+
+```{r}
+
+library(ComplexUpset)
+library(patchwork)
+
+Core_Specific_Clusters=read.csv("test_aug_core_sublineage_specific.csv")
+
+Core_Specific_Clusters_reduced=Core_Specific_Clusters%>%distinct(gene_cluster_id, .keep_all=TRUE)
+
+Core_Specific_Clusters_reduced[is.na(Core_Specific_Clusters_reduced)] <- 0
+
+test_Core_Specific_Clusters=Core_Specific_Clusters_reduced
+names(test_Core_Specific_Clusters[,27:35])
+test_Core_Specific_Clusters["total"]=rowSums(test_Core_Specific_Clusters[,27:35])
+test_Core_Specific_Clusters_v2=subset(test_Core_Specific_Clusters, total!="0")
+test_Core_Specific_Clusters_v3=test_Core_Specific_Clusters[,27:35]
+#test_Core_Specific_Clusters_v2=subset(test_Core_Specific_Clusters_v2, total!="9")
+
+genres = colnames(test_Core_Specific_Clusters_v3)
+test_Core_Specific_Clusters_v3[genres] = test_Core_Specific_Clusters_v3[genres] == 1
+
+
+
+svg("upset_min_size5_vAug2023.svg")
+upset(test_Core_Specific_Clusters_v3, genres, name='genre', width_ratio=0.1,set_sizes=FALSE,min_size=5,min_degree=2,max_degree=8)
+dev.off()
+
+
+svg("upset_min_none.svg", width=12)
+upset(test_Core_Specific_Clusters_v3, genres, name='genre', width_ratio=0.1,set_sizes=FALSE,min_degree=2,max_degree=8)
+dev.off()
+
+
+```
+
+
+
+
+#Figure S4. Bootstrap and p-value analyses of the clustering of the acessory pangenome for SAR11 Ia genome clusters. Bootstrap probabilities (bp; green) and p-values (Approximately Unbiased, au; red) support for clustering are shown at each node. AU p-values are computed by the multiscale boostrap and adjust for selection biased caused from comparing many trees at the same time (Shimodaira, 2002).
+###see Figure 2 code for how this was made 
