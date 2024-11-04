@@ -1,0 +1,298 @@
+---
+title: "Adhesion_October2024"
+author: "Sarah Tucker"
+date: "2024-11-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+
+
+##lets export just the functions that have "adhesi" in the name, this will encompass the Autotransporter adhesin AidA (AidA)	which is COG3468, the Large exoprotein involved in heme utilization or adhesion (FhaB) (PDB:4RM6) which is COG3210, and fibronectin-binding autotransporter adhesin which is K19231 
+
+
+```{python}
+anvi-search-functions -c SAR11_Oct2024_bycontig-CONTIGS.db --search-terms adhesi --full-report genome_based_adhesi_information.txt --include-sequences --verbose
+
+```
+
+
+##lets make sure we are just looking at gene calles from KOFam accession K19231 or COG20 accession COG3210 & COG3468; and remove hits from HIMB1623 and HIMB1709 as these genes fall at the very end of contigs, sometimes comprising their own contig, and likely the assmebly of these genes is less trustworthy than the assembly of genes in the middle of contigs
+
+Note to identify that some genomes had these genes at the end of contigs, the position of these adhesion genes were examined in gene_calls.txt files within the genome subfolders of SAR11_Oct2024-by-contig-SUMMARY/bin_by_bin/. For instance within SAR11_Oct2024-by-contig-SUMMARY/bin_by_bin/HIMB1623/HIMB1623-gene_calls.txt you can see the position of these genes within the contigs. Gene calls from Ia.1.I were also removed because they are not frequently found within the tropical Pacific
+
+```{r}
+genome_gene_calls=read.delim("genome_based_adhesi_information.txt")
+genome_gene_calls=genome_gene_calls%>%filter(accession=="K19231" | accession=="COG3210"|accession=="COG3468" | accession=="COG3210!!!COG3468")
+genome_gene_calls=genome_gene_calls%>%arrange(desc(source))
+genome_gene_calls=genome_gene_calls[!grepl("HIMB1623",genome_gene_calls$contig),]
+genome_gene_calls=genome_gene_calls[!grepl("HIMB1709",genome_gene_calls$contig),]
+
+genome_gene_calls=genome_gene_calls[!grepl("HTCC1040",genome_gene_calls$contig),]
+genome_gene_calls=genome_gene_calls[!grepl("NP1",genome_gene_calls$contig),]
+genome_gene_calls=genome_gene_calls[!grepl("HTCC1013",genome_gene_calls$contig),]
+genome_gene_calls=genome_gene_calls[!grepl("HTCC1062",genome_gene_calls$contig),]
+genome_gene_calls=genome_gene_calls[!grepl("HTCC9022",genome_gene_calls$contig),]
+
+dim(genome_gene_calls)
+
+genome_gene_calls=genome_gene_calls%>%dplyr::rename("function"="function.")
+
+##we know that there shouldn't be duplicated gene caller ids, this is because were are using both KOfams and COG20 functional annotation, so lets dereplicate this
+genome_gene_calls=distinct(genome_gene_calls, gene_callers_id, .keep_all = TRUE )
+duplicated(genome_gene_calls$gene_callers_id)
+dim(genome_gene_calls)
+write.csv(genome_gene_calls, "output/genome_gene_calls.csv")
+```
+
+
+
+##Lets export dna sequences from genomes
+
+```{r}
+
+dna_gene_calls=genome_gene_calls%>%dplyr::select("contigs", "dna_sequence","gene_callers_id")
+
+dna_gene_calls$name<- paste0(">", dna_gene_calls$contigs, "_", dna_gene_calls$gene_callers_id)
+dna_gene_calls=dna_gene_calls%>%dplyr::select("name", "dna_sequence")
+
+names(dna_gene_calls)
+
+D <- do.call(rbind, lapply(seq(nrow(dna_gene_calls)), function(i) t(dna_gene_calls[i, ])))
+D
+write.table(D, "genome_based_adhesi_dna_gene_calls.fa",row.names = FALSE, col.names = FALSE, quote = FALSE)
+
+```
+
+
+##Lets export aa sequences from genomes
+
+```{r}
+
+aa_gene_calls=genome_gene_calls%>%dplyr::select("contigs", "aa_sequence","gene_callers_id")
+
+aa_gene_calls$name<- paste0(">", aa_gene_calls$contigs, "_", aa_gene_calls$gene_callers_id)
+aa_gene_calls=aa_gene_calls%>%dplyr::select("name", "aa_sequence")
+
+D <- do.call(rbind, lapply(seq(nrow(aa_gene_calls)), function(i) t(aa_gene_calls[i, ])))
+D
+write.table(D, "genome_based_adhesi_aa_gene_calls.fa",row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+
+##to further support the presence of these adhesion genes in these coastal genomes, lets take a look at long read data collected from the coastal site HP1 and query the long read data using the genes extracted from the SAR11 genome sequences as a data 
+
+##we four long read samples from HP1, I will show the process for one, but this was repeated for the others. 
+
+##first we need to reformat the long read data and the combine the multiple read files to a single file, note that the data submitted to NCBI will have all the read files per long read sample library concatenated already
+```{bash}
+
+seqtk seq -a /fs/dss/groups/agecodatasci/RESOURCES/PRIVATE/METAGENOMES/OCEAN/HAWAII_DIEL/HMW/HADS_20210819_H0300_HMW_xHP1_008_R1_001.fastq.gz > /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/sample_08/HADS_20210819_H0300_HMW_xHP1_008_R1_001.fasta
+
+seqtk seq -a /fs/dss/groups/agecodatasci/RESOURCES/PRIVATE/METAGENOMES/OCEAN/HAWAII_DIEL/HMW/HADS_20210819_H0300_HMW_xHP1_008_R1_002.fastq.gz > /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/sample_08/HADS_20210819_H0300_HMW_xHP1_008_R1_002.fasta
+
+seqtk seq -a /fs/dss/groups/agecodatasci/RESOURCES/PRIVATE/METAGENOMES/OCEAN/HAWAII_DIEL/HMW/HADS_20210819_H0300_HMW_xHP1_008_R1_003.fastq.gz > /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/sample_08/HADS_20210819_H0300_HMW_xHP1_008_R1_003.fasta
+seqtk seq -a /fs/dss/groups/agecodatasci/RESOURCES/PRIVATE/METAGENOMES/OCEAN/HAWAII_DIEL/HMW/HADS_20210819_H0300_HMW_xHP1_008_R1_004.fastq.gz > /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/sample_08/HADS_20210819_H0300_HMW_xHP1_008_R1_004.fasta
+
+
+
+for files in *.fasta 
+do 
+cat ${files} >> HADS_20210819_H0300_HMW_xHP1_008.fasta 
+done
+
+```
+
+
+### next we need to build contig databases for all the long read samples and annotate their functions with COG 
+
+```{bash}
+anvi-script-reformat-fasta /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/sample_14/HADS_20210819_H2100_HMW_xHP1_014.fasta -o /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/02_CONTIGS/HADS_20210819_H2100_HMW_xHP1_014-fixed.fa -l 500 --simplify-names
+
+clusterize "anvi-gen-contigs-database -f /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/02_CONTIGS/HADS_20210819_H2100_HMW_xHP1_014-fixed.fa -o /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/02_CONTIGS/HMW_xHP1_014_contigs.db -n xHP1_014" --job-name my_job --num-nodes 1 --num-tasks-per-node 80
+
+
+clusterize "anvi-run-hmms -c /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/02_CONTIGS/HMW_xHP1_014_contigs.db --num-threads 30" --job-name my_job --num-nodes 1 --num-tasks-per-node 30
+
+
+clusterize "anvi-run-ncbi-cogs -c /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion/02_CONTIGS/HMW_xHP1_014_contigs.db" --job-name my_job --num-nodes 1 --num-tasks-per-node 40
+
+```
+
+
+##lets export just the functions that have "adhesi" in the name, this will encompass both Autotransporter adhesin AidA (AidA)	which is COG3468 and Large exoprotein involved in heme utilization or adhesion (FhaB) (PDB:4RM6) which is COG3210
+
+```{bash}
+#Autotransporter adhesin AidA (AidA)	COG3468
+anvi-search-functions -c HMW_xHP1_014_contigs.db --search-terms adhesi --full-report HMW_xHP1_014_adhesi_information.txt --include-sequences --verbose
+
+anvi-search-functions -c HMW_xHP1_002_contigs.db --search-terms adhesi --full-report HMW_xHP1_002_adhesi_information.txt --include-sequences --verbose
+
+anvi-search-functions -c HMW_xHP1_006_contigs.db --search-terms adhesi --full-report HMW_xHP1_006_adhesi_information.txt --include-sequences --verbose
+
+
+anvi-search-functions -c HMW_xHP1_008_contigs.db --search-terms adhesi --full-report HMW_xHP1_008_adhesi_information.txt --include-sequences --verbose
+```
+
+
+###subset the exported data to get just genes annotated to COG3210 or COG3468, bring them all together into one fasta file
+```{r}
+
+library(tidyverse)
+HMW_gene_calls=read.delim("HMW_xHP1_014_adhesi_information.txt")
+HMW_gene_calls=HMW_gene_calls%>%filter(accession=="COG3210"|accession=="COG3468" | accession=="COG3210!!!COG3468")
+HMW_gene_calls$sample="HMW_xHP1_014"
+HMW_gene_calls_014=HMW_gene_calls
+
+
+HMW_gene_calls=read.delim("HMW_xHP1_002_adhesi_information.txt")
+HMW_gene_calls=HMW_gene_calls%>%filter(accession=="COG3210"|accession=="COG3468" | accession=="COG3210!!!COG3468")
+HMW_gene_calls$sample="HMW_xHP1_002"
+HMW_gene_calls_002=HMW_gene_calls
+
+HMW_gene_calls=read.delim("HMW_xHP1_006_adhesi_information.txt")
+HMW_gene_calls=HMW_gene_calls%>%filter(accession=="COG3210"|accession=="COG3468" | accession=="COG3210!!!COG3468")
+HMW_gene_calls$sample="HMW_xHP1_006"
+HMW_gene_calls_006=HMW_gene_calls
+
+
+HMW_gene_calls=read.delim("HMW_xHP1_008_adhesi_information.txt")
+HMW_gene_calls=HMW_gene_calls%>%filter(accession=="COG3210"|accession=="COG3468" | accession=="COG3210!!!COG3468")
+HMW_gene_calls$sample="HMW_xHP1_008"
+HMW_gene_calls_008=HMW_gene_calls
+
+
+HMW_gene_calls=rbind(HMW_gene_calls_006, HMW_gene_calls_002, HMW_gene_calls_014, HMW_gene_calls_008)
+
+HMW_gene_calls$length_gene=nchar(HMW_gene_calls$dna_sequence)
+write.csv(HMW_gene_calls, "output/HMW_full_info_COG3210_COG3468.csv")
+
+dna_HMW_gene_calls=HMW_gene_calls%>%dplyr::select("sample","contigs", "dna_sequence","gene_callers_id")
+
+dna_HMW_gene_calls$name<- paste0(">", dna_HMW_gene_calls$sample, "-",dna_HMW_gene_calls$contigs, "-", dna_HMW_gene_calls$gene_callers_id)
+dna_HMW_gene_calls=dna_HMW_gene_calls%>%dplyr::select("name", "dna_sequence")
+
+names(dna_HMW_gene_calls)
+
+D <- do.call(rbind, lapply(seq(nrow(dna_HMW_gene_calls)), function(i) t(dna_HMW_gene_calls[i, ])))
+write.table(D, "output/HMW_adhesi_dna_gene_calls_October2024.fa",row.names = FALSE, col.names = FALSE, quote = FALSE)
+
+```
+
+
+
+###using this fasta of adhesion gene sequences from our genomes, lets build a database and then query this database using the gene sequences of adhesion genes found in the long read sequences
+
+```{bash}
+anvi-activate-master
+
+makeblastdb -in /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion_October2024/genome_based_adhesi_dna_gene_calls.fa \
+            -dbtype nucl \
+            -title blast_adhesion_genes/adhesion_genes_SAR11 \
+            -out blast_adhesion_genes/adhesion_genes_SAR11
+cd blast_adhesion_genes/
+
+blastn -db adhesion_genes_SAR11 \
+       -query /fs/dss/groups/agecodatasci/PEOPLE/SarahTucker/SAR11_Adhesion_October2024/HMW_adhesi_dna_gene_calls_October2024.fa \
+       -evalue 1e-10 \
+       -outfmt 6 \
+       -out adhesion_genes_SAR11-HMW_adhesion_COG3210_COG3468_Blast_October2024.txt
+
+
+##Note from adhesion_genes_SAR11-HMW_adhesion_COG3210_COG3468_Blast_October2024.txt, need to add in the headers qseqid	sseqid	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore. You can use text to column to split the qseqid to get the last part, which is the	HMW_gene_callers_id. you can also split the sseqid, to get genome and 	genome_gene_callers_id, this is labelled adhesion_genes_SAR11-HMW_adhesion_COG3210_COG3468_Blast_October2024_edited.txt
+
+
+```
+
+
+```{r}
+
+gene_calls=HMW_gene_calls%>%rename("HMW_gene_callers_id"="gene_callers_id", "HMW_source"="source","HMW_accession"= "accession","HMW_function." ="function.", "HMW_search_term"="search_term", "HMW_contigs"="contigs", "HMW_direction"="direction", "HMW_rev_compd"="rev_compd", "HMW_dna_sequence"="dna_sequence", "HMW_aa_sequence"="aa_sequence", "HMW_sample"="sample", "HMW_length_gene"="length_gene")
+
+names(gene_calls)
+
+ggplot(gene_calls, aes(x=HMW_length_gene))+geom_histogram()
+
+HMW_blast=read.delim("adhesion_genes_SAR11-HMW_adhesion_COG3210_COG3468_Blast_October2024_edited.txt")
+
+gene_calls_blast=left_join(HMW_blast,gene_calls, by="HMW_gene_callers_id")
+names(gene_calls_blast)
+
+genome_search=genome_gene_calls
+genome_search$length_gene_genome=nchar(genome_search$dna_sequence)
+genome_search=genome_search%>%rename("genome_gene_callers_id"="gene_callers_id")
+duplicated(genome_search$genome_gene_callers_id)
+
+
+gene_calls_blast=left_join(gene_calls_blast,genome_search, by="genome_gene_callers_id")
+write.csv(gene_calls_blast, "output/gene_calls_blast.csv")
+
+
+gene_calls_blast$diff_gene_annotation=gene_calls_blast$length_gene_genome - gene_calls_blast$HMW_length_gene
+gene_calls_blast$diff_alignment=gene_calls_blast$HMW_length_gene - gene_calls_blast$length
+
+####
+
+gene_calls_blast_close2=gene_calls_blast%>%filter(pident>90)
+names(gene_calls_blast_close2)
+unique=arrange(gene_calls_blast_close2, desc(length))
+unique=distinct(unique,sseqid, .keep_all=TRUE )
+unique=unique%>%filter(abs(diff_alignment)<100)
+
+##which genomes have near exact matches
+
+length(unique(unique$genome))
+##33 genomes have a near exact match 
+
+##who doesn't have a near exact match? 
+
+test=genome_gene_calls
+names(genome_gene_calls)
+genome_gene_calls$contigs
+
+test=test%>%separate(contigs, c("genome","split_name" ), sep ="-")
+test=distinct(test, genome, .keep_all = TRUE)
+dim(test)
+##there are 43 genomes  with ahdesion genes in this analysis
+
+setdiff(test$genome, unique$genome)
+
+###which sequences from the long read data are near exact matches 
+near_exact_matches=unique%>%filter(abs(diff_alignment)<100)
+near_exact_matches2=distinct(near_exact_matches, HMW_contigs, .keep_all=TRUE)
+listy=near_exact_matches2$HMW_contigs
+
+##lets get those sequences 
+
+
+
+aa_near_exact_matches=near_exact_matches2%>%dplyr::select("HMW_contigs","HMW_aa_sequence")
+
+aa_near_exact_matches$name<- paste0(">", aa_near_exact_matches$HMW_contigs)
+aa_near_exact_matches=aa_near_exact_matches%>%dplyr::select("name", "HMW_aa_sequence")
+
+names(aa_near_exact_matches)
+
+D <- do.call(rbind, lapply(seq(nrow(aa_near_exact_matches)), function(i) t(aa_near_exact_matches[i, ])))
+write.table(D, "output/aa_near_exact_matches_October2024.fa",row.names = FALSE, col.names = FALSE, quote = FALSE)
+
+
+```
+
+
+##after combining the near exact match sequences with the genome_based_adhesi_aa_gene_calls.fa file and two outgroup sequences (NCBI-ProteinIDs: ACH51883, AZY97442) , then can make an alignment using the slow/accurate setting of Clustal W 2.1 (https://www.genome.jp/tools-bin/clustalw)
+
+```{bash}
+
+clusterize "iqtree2 -s October2024_adhesion_clustalw.fasta -m MFP -nt AUTO -ntmax 100 --ufboot 1000" --job-name iqtree_aa_build --num-nodes 1 --num-tasks-per-node 100
+
+```
+
+### Using amino acid sequences for select near exact matches, we estimated 3-D protein structure models using ColabFold11 on the COSMIC2 science gateway. The results were visualized on RCSB (https://www.rcsb.org/3d-view13) using the Mol* viewer. The 3D visualizations were compared against known structures of autotransporters.
+
