@@ -7,5 +7,3 @@ The Order Pelagibacterales (SAR11) is the most abundant group of heterotrophic b
 **analysis folder**
 Includes code and necessary input/output files for code.
 
-**data folder**
-assorted data files that are fundamental to analyses and include both input and output from analyses.
