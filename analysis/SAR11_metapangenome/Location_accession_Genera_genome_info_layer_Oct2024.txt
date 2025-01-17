@@ -1,0 +1,93 @@
+samples	Family	Genus	Species	Historical_subgroup	Study	Source.Location	total_length	num_contigs	N50	GC_content	Completeness	Contamination	Accession IDs/ DOI to data
+HTCC9565	Pelagibacteraceae	Pelagibacter	Type	Ia.1.I	JGI/IMG	"open ocean, NE Pacific"	1279674	3	763172	28.9465863	99.05	0	GCF_012932795.1
+HTCC1002	Pelagibacteraceae	Pelagibacter	No	Ia.1.I	JGI/IMG	"coastal Oregon, USA"	1328618	4	1324008	30.1535817	100	0.47	GCF_000153525.1
+HTCC1013	Pelagibacteraceae	Pelagibacter	No	Ia.1.I	"Rappe et al., 2002; Grote et al., 2012"	"coastal Oregon, USA"	1301122	5	741014	30.0358102	100	0.47	GCF_000472585.1
+HTCC1016	Pelagibacteraceae	Pelagibacter	No	Ia.1.I	"Rappe et al., 2002; Grote et al., 2012"	"coastal Oregon, USA"	1297098	4	794419	29.7249503	100	0.47	GCF_000372905.1
+HTCC1040	Pelagibacteraceae	Pelagibacter	No	Ia.1.I	"Rappe et al., 2002; Grote et al., 2012"	"coastal Oregon, USA"	1274624	1	1274624	29.5759889	100	0.47	GCF_000384455.1
+HTCC1062	Pelagibacteraceae	Pelagibacter	Type	Ia.1.I	"Rappe et al., 2002; Grote et al., 2012"	"coastal Oregon, USA"	1308759	1	1308759	29.6102764	100	0.47	GCF_000012345.1
+NP1	Pelagibacteraceae	Pelagibacter	Type	Ia.1.I	"Morris et al., 2020"	"open ocean, NE Pacific"	1365705	1	1365705	29.5742414	99.05	0.63	GCF_012276695.1
+HTCC7211	Pelagibacteraceae	Atlantikopelagibacter	Type	Ia.3.I	"Stingl et al., 2007"	"Sargasso Sea, BATS"	1456888	1	1456888	29.0142501	100	0.47	GCF_000155895.1
+HTCC7214	Pelagibacteraceae	Atlantikopelagibacter	No	Ia.3.I	"Stingl et al., 2007"	"Sargasso Sea, BATS"	1375060	1	1375060	29.2434096	99.05	0.47	GCF_000701385.1
+HTCC7217	Pelagibacteraceae	Atlantikopelagibacter	No	Ia.3.I	"Stingl et al., 2007"	"Sargasso Sea, BATS"	1433611	1	1433611	28.7856325	100	0.95	GCF_000702645.1
+HIMB1420	Pelagibacteraceae	Coralipelagibacter	No	Ia.3.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1333725	2	707660	28.7993761	100	0	10.6084/m9.figshare.28087454
+HIMB1427	Pelagibacteraceae	Coralipelagibacter	No	Ia.3.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1383662	27	108405	28.3417976	100	4.29	10.6084/m9.figshare.28087454
+HIMB1520	Pelagibacteraceae	Coralipelagibacter	No	Ia.3.II	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1324447	1	1324447	28.6655846	100	0	10.6084/m9.figshare.28087454
+HIMB1564	Pelagibacteraceae	Coralipelagibacter	No	Ia.3.II	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1339865	1	1339865	28.4485004	100	0	10.6084/m9.figshare.28087454
+HIMB5	Pelagibacteraceae	Coralipelagibacter	Type	Ia.3.II	Brandon M.S. Thesis 2006	"coastal, Oahu, Hawaii, USA"	1343202	1	1343202	28.6717723	100	0.48	GCF_000299095.1
+HIMB1412	Pelagibacteraceae	Coralipelagibacter	Type	Ia.3.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1297477	1	1297477	29.2579009	100	0	10.6084/m9.figshare.28087454
+HIMB1321	Pelagibacteraceae	Littoralipelagibacter	No	Ia.3.III	JGI/IMG	"coastal, Oahu, Hawaii, USA"	1320749	1	1320749	29.027404	100	0.95	GCF_900177485.1
+HIMB1505	Pelagibacteraceae	Littoralipelagibacter	No	Ia.3.III	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1360308	2	1182647	28.9301144	100	1.43	10.6084/m9.figshare.28087454
+HIMB1527	Pelagibacteraceae	Littoralipelagibacter	No	Ia.3.III	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1326576	2	736407	28.9159111	99.29	0.95	10.6084/m9.figshare.28087454
+HIMB1549	Pelagibacteraceae	Littoralipelagibacter	No	Ia.3.III	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1335968	1	1335968	28.8424326	99.52	0.71	10.6084/m9.figshare.28087454
+HIMB4	Pelagibacteraceae	Littoralipelagibacter	Type	Ia.3.III	"Grote et al., 2012"	"coastal, Oahu, Hawaii, USA"	1382291	1	1382291	28.9314668	100	2.3	2503754001*
+HTCC8051	Pelagibacteraceae	Proprepelagibacter	Type	Ia.3.IV	"Stingl et al., 2007"	"coastal Oregon, USA"	1395018	1	1395018	29.2229689	99.76	0	GCF_000472605.1
+HTCC9022	Pelagibacteraceae	Proprepelagibacter	No	Ia.3.IV	JGI/IMG	"coastal Oregon, USA"	1360964	10	805404	30.2826961	100	0	GCF_000472565.1
+FZCC0015	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Zhao et al., 2019"	"coastal Pingtang, China"	1364101	1	1364101	29.2019989	100	0	GCF_007833635.1
+HIMB83	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Grote et al., 2012"	"coastal, Oahu, Hawaii, USA"	1395997	1	1395997	29.1055288	99.53	0	2510461079*
+HIMB1409	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1313059	20	178156	28.8974566	100	0	10.6084/m9.figshare.28087454
+HIMB1413	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1348413	1	1348413	29.1786412	100	0	10.6084/m9.figshare.28087454
+HIMB1444	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1305448	8	374569	28.9475059	99.76	0.63	10.6084/m9.figshare.28087454
+HIMB1456	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1353489	17	187405	28.6854628	99.05	0	10.6084/m9.figshare.28087454
+HIMB2201	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1359742	1	1359742	29.0211448	99.76	0	10.6084/m9.figshare.28087454
+HIMB2250	Pelagibacteraceae	Xanthipelagibacter	No	Ia.3.V	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1330391	1	1330391	29.1640445	99.53	0	10.6084/m9.figshare.28087454
+HIMB122	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	Brandon M.S. Thesis 2006	"coastal, Oahu, Hawaii, USA"	1453515	1	1453515	29.2845314	100	0.95	2561511237*
+HIMB140	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	Brandon M.S. Thesis 2006	"coastal, Oahu, Hawaii, USA"	1437930	1	1437930	29.3674153	99.53	0	GCF_025558165.1
+HIMB1430	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1449252	30	88786	29.5983048	97.63	0.47	10.6084/m9.figshare.28087454
+HIMB1485	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1422091	2	961822	29.3326757	100	1.42	10.6084/m9.figshare.28087454
+HIMB1488	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1537287	1	1537287	29.1259832	100	1.9	10.6084/m9.figshare.28087454
+HIMB1490	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1381468	34	84191	29.7323288	96.21	0.24	10.6084/m9.figshare.28087454
+HIMB1491	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1467757	1	1467757	29.6359938	100	0.24	10.6084/m9.figshare.28087454
+HIMB1493	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1434686	1	1434686	29.4893728	100	0	10.6084/m9.figshare.28087454
+HIMB1494	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1448273	2	1017910	29.3702242	100	0.95	10.6084/m9.figshare.28087454
+HIMB1495	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1448109	2	1424936	29.306161	100	0.95	10.6084/m9.figshare.28087454
+HIMB1506	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1538266	1	1538266	29.0303791	99.53	1.42	10.6084/m9.figshare.28087454
+HIMB1507	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1478826	1	1478826	29.3209228	99.53	0.16	10.6084/m9.figshare.28087454
+HIMB1509	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1452866	2	1424097	29.1697716	100	1.42	10.6084/m9.figshare.28087454
+HIMB1513	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1440378	1	1440378	29.3185742	100	0.47	10.6084/m9.figshare.28087454
+HIMB1518	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1453237	1	1453237	29.4031433	100	0	10.6084/m9.figshare.28087454
+HIMB1521	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1489510	41	96283	30.1134159	100	1.42	10.6084/m9.figshare.28087454
+HIMB1526	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1429322	1	1429322	29.1957603	100	0.47	10.6084/m9.figshare.28087454
+HIMB1542	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1430821	2	796544	29.2469426	100	0	10.6084/m9.figshare.28087454
+HIMB1552	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1429048	1	1429048	29.226497	100	0.47	10.6084/m9.figshare.28087454
+HIMB1556	Pelagibacteraceae	Ampluspelagibacter	Type	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1464126	1	1464126	29.3172052	100	0.63	10.6084/m9.figshare.28087454
+HIMB1559	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1489298	1	1489298	29.2829562	99.53	0.95	10.6084/m9.figshare.28087454
+HIMB1573	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1445467	1	1445467	29.0598732	100	0	10.6084/m9.figshare.28087454
+HIMB1577	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1444414	1	1444414	29.395082	99.53	0.47	10.6084/m9.figshare.28087454
+HIMB1587	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1483982	2	815068	29.3339508	99.53	0.95	10.6084/m9.figshare.28087454
+HIMB1593	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1431236	1	1431236	29.3486504	100	0	10.6084/m9.figshare.28087454
+HIMB1597	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1489004	1	1489004	29.2765989	99.53	0.95	10.6084/m9.figshare.28087454
+HIMB1611	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1453538	1	1453538	29.4226804	100	0.47	10.6084/m9.figshare.28087454
+HIMB1623	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1468005	14	278558	29.7749612	99.53	0	10.6084/m9.figshare.28087454
+HIMB1631	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1444470	1	1444470	29.3477971	99.53	0.47	10.6084/m9.figshare.28087454
+HIMB1636	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1436164	1	1436164	29.3072674	100	0.47	10.6084/m9.figshare.28087454
+HIMB1641	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1438405	1	1438405	29.3482834	100	0.47	10.6084/m9.figshare.28087454
+HIMB1662	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1421355	1	1421355	29.3019165	99.53	0	10.6084/m9.figshare.28087454
+HIMB1685	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1455495	1	1455495	28.9094084	100	0	10.6084/m9.figshare.28087454
+HIMB1695	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1421593	2	1185658	29.3768716	100	0.95	10.6084/m9.figshare.28087454
+HIMB1701	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1485366	1	1485366	29.1213029	99.53	0.47	10.6084/m9.figshare.28087454
+HIMB1702	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1444148	1	1444148	29.3052891	100	0.47	10.6084/m9.figshare.28087454
+HIMB1709	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1426001	2	1168350	29.4193864	100	0	10.6084/m9.figshare.28087454
+HIMB1710	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1459696	3	1435827	29.3257855	100	0	10.6084/m9.figshare.28087454
+HIMB1715	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1308457	36	59426	29.296369	98.1	0	10.6084/m9.figshare.28087454
+HIMB1723	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1475205	1	1475205	29.282757	100	0	10.6084/m9.figshare.28087454
+HIMB1746	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1459268	8	271456	29.3148061	100	0.47	10.6084/m9.figshare.28087454
+HIMB1748	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1506003	6	861536	29.2670183	100	1.9	10.6084/m9.figshare.28087454
+HIMB1758	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1458764	1	1458764	29.4315927	100	0.47	10.6084/m9.figshare.28087454
+HIMB1765	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1436910	1	1436910	29.3577239	100	0	10.6084/m9.figshare.28087454
+HIMB1770	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1448694	1	1448694	29.4327664	100	0	10.6084/m9.figshare.28087454
+HIMB1782	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1436179	2	855577	29.3431302	100	0.95	10.6084/m9.figshare.28087454
+HIMB2211	Pelagibacteraceae	Ampluspelagibacter	No	Ia.3.VI	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1477755	2	1460105	29.2018773	100	0	10.6084/m9.figshare.28087454
+HIMB1483	Pelagibacteraceae	Semelpelagibacter	Type	NA	"Freel et al., 2024"	"coastal, Oahu, Hawaii, USA"	1207531	2	1084247	28.5859037	99.53	0.47	10.6084/m9.figshare.28087454
+HIMB1402	Pelagibacteraceae	Lacunapelagibacter	No	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1177245	12	217910	30.132098	99.53	0	10.6084/m9.figshare.28087454
+HIMB1437	Pelagibacteraceae	Lacunapelagibacter	Type	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1221307	1	1221307	29.3884186	99.53	0	10.6084/m9.figshare.28087454
+HIMB1863	Pelagibacteraceae	Lacunapelagibacter	No	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1231137	22	78266	29.4408954	100	3.32	10.6084/m9.figshare.28087454
+HIMB2104	Pelagibacteraceae	Lacunapelagibacter	No	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1205064	7	249324	29.8534182	100	0	10.6084/m9.figshare.28087454
+HIMB2200	Pelagibacteraceae	Lacunapelagibacter	No	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1211436	24	95189	29.1632691	100	0.47	10.6084/m9.figshare.28087454
+HIMB2204	Pelagibacteraceae	Lacunapelagibacter	No	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1249462	2	782013	29.5275053	99.53	0	10.6084/m9.figshare.28087454
+HIMB2215	Pelagibacteraceae	Lacunapelagibacter	No	Ia.4.II	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1224130	10	176987	29.5046333	98.1	0	10.6084/m9.figshare.28087454
+HIMB1436	Pelagibacteraceae	Tantilluspelagibacter	No	Ia.4	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1208525	3	738334	29.2376843	100	0.48	10.6084/m9.figshare.28087454
+HIMB2187	Pelagibacteraceae	Tantilluspelagibacter	No	Ia.4	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1188940	2	898854	29.2143751	100	0	10.6084/m9.figshare.28087454
+HIMB2226	Pelagibacteraceae	Tantilluspelagibacter	No	Ia.4	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1193257	2	659910	29.4091453	100	0	10.6084/m9.figshare.28087454
+RS39	Pelagibacteraceae	Tantilluspelagibacter	Type	Ia.4	"Jimenez-Infante et al., 2017"	central Red Sea	1200090	1	1200090	29.2504035	100	0	GCF_002101315.1
+HIMB2305	Pelagibacteraceae	Superopelagibacter	No	Ib.1.I	"Freel et al., 2024"	"offshore, Oahu, Hawaii, USA"	1366736	29	173722	29.6147092	100	0	10.6084/m9.figshare.28087454
+RS40	Pelagibacteraceae	Superopelagibacter	Type	Ib.1.I	"Jimenez-Infante et al., 2017"	central Red Sea	1378905	1	1378905	29.4224163	100	0	GCF_002101295.1

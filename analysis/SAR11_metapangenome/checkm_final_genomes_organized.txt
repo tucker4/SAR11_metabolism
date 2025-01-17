@@ -1,93 +1,93 @@
-genome	 Marker lineage 	No.genomes 	 No.markers 	No.marker.sets 	0	1	2	3	4	 5+ 	 Completeness 	 Contamination 	 Strain_heterogeneity 				 				 	 			 	 	 			 	 	 	 	 		 	 	 	 		
- HTCC9565 	 o__Rickettsiales (UID3809) 	83	324	211	2	322	0	0	0	0	99.05	0	0																												
- HTCC1002 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC1013 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC1016 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC1040 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC1062 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC7211 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC7214 	 o__Rickettsiales (UID3809) 	83	324	211	2	321	1	0	0	0	99.05	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC7217 	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1420 	 o__Rickettsiales (UID3809) 	83	323	210	0	323	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1427 	 o__Rickettsiales (UID3809) 	83	323	210	0	311	12	0	0	0	100	4.29	91.67				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1520 	 o__Rickettsiales (UID3809) 	83	323	210	0	323	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1564 	 o__Rickettsiales (UID3809) 	83	323	210	0	323	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB5	 o__Rickettsiales (UID3809) 	83	323	210	0	322	1	0	0	0	100	0.48	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1412 	 o__Rickettsiales (UID3809) 	83	323	210	0	323	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1321 	 o__Rickettsiales (UID3809) 	83	323	210	0	320	3	0	0	0	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1505 	 o__Rickettsiales (UID3809) 	83	323	210	0	320	2	1	0	0	100	1.43	20				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1527 	 o__Rickettsiales (UID3809) 	83	323	210	2	318	3	0	0	0	99.29	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1549 	 o__Rickettsiales (UID3809) 	83	323	210	1	319	3	0	0	0	99.52	0.71	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB4	 o__Rickettsiales (UID3809) 	83	323	210	0	317	5	1	0	0	100	2.3	12.5				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC8051 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.76	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HTCC9022 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- FZCC0015 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB83	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1409 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1413 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1444 	 o__Rickettsiales (UID3809) 	83	324	211	1	321	2	0	0	0	99.76	0.63	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1456 	 o__Rickettsiales (UID3809) 	83	324	211	3	321	0	0	0	0	99.05	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB2201 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.76	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB2250 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB122	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB140	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1430 	 o__Rickettsiales (UID3809) 	83	324	211	5	318	1	0	0	0	97.63	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1485 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	0	0	1	0	100	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1488 	 o__Rickettsiales (UID3809) 	83	324	211	0	321	2	1	0	0	100	1.9	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1490 	 o__Rickettsiales (UID3809) 	83	324	211	8	315	1	0	0	0	96.21	0.24	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1491 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.24	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1493 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1494 	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1495 	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1506 	 o__Rickettsiales (UID3809) 	83	324	211	1	320	3	0	0	0	99.53	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1507 	 o__Rickettsiales (UID3809) 	83	324	211	1	322	1	0	0	0	99.53	0.16	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1509 	 o__Rickettsiales (UID3809) 	83	324	211	0	321	3	0	0	0	100	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1513 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1518 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1521 	 o__Rickettsiales (UID3809) 	83	324	211	0	321	3	0	0	0	100	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1526 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1542 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1552 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1556 	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.63	0								 				 	 	 		 	 	 	 	 			 	 	 			
- HIMB1559 	 o__Rickettsiales (UID3809) 	83	324	211	1	321	2	0	0	0	99.53	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1573 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1577 	 o__Rickettsiales (UID3809) 	83	324	211	1	322	1	0	0	0	99.53	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1587 	 o__Rickettsiales (UID3809) 	83	324	211	1	321	2	0	0	0	99.53	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1593 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1597 	 o__Rickettsiales (UID3809) 	83	324	211	1	321	2	0	0	0	99.53	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
- HIMB1611 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1623 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1631 	 o__Rickettsiales (UID3809) 	83	324	211	1	322	1	0	0	0	99.53	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1636 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1641 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1662 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1685 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1695 	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.95	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1701 	 o__Rickettsiales (UID3809) 	83	324	211	1	322	1	0	0	0	99.53	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1702 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1709 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1710 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1715 	 o__Rickettsiales (UID3809) 	83	324	211	5	319	0	0	0	0	98.1	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1723 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1746 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1748 	 o__Rickettsiales (UID3809) 	83	324	211	0	319	5	0	0	0	100	1.9	100				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1758 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1765 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1770 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1782 	 o__Rickettsiales (UID3809) 	83	324	211	0	322	2	0	0	0	100	0.95	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB2211 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1483 	 o__Rickettsiales (UID3809) 	83	324	211	1	322	1	0	0	0	99.53	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1402 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1437 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1863 	 o__Rickettsiales (UID3809) 	83	324	211	0	315	9	0	0	0	100	3.32	100				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB2104 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB2200 	 o__Rickettsiales (UID3809) 	83	324	211	0	323	1	0	0	0	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB2204 	 o__Rickettsiales (UID3809) 	83	324	211	1	323	0	0	0	0	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 		 	 	 
- HIMB2215 	 o__Rickettsiales (UID3809) 	83	324	211	8	316	0	0	0	0	98.1	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
- HIMB1436 	 o__Rickettsiales (UID3809) 	83	323	210	0	322	1	0	0	0	100	0.48	0				 					 			 	 	 		 	 	 	 	 	 			 	 	 		
- HIMB2187 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 		
- HIMB2226 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 		
- RS39 	 o__Rickettsiales (UID3809) 	83	324	211	0	324	0	0	0	0	100	0	0				 								 	 				 	 	 	 	 			 	 	 	 	
- HIMB2305 	 k__Bacteria (UID2495) 	2993	139	83	0	139	0	0	0	0	100	0	0				 								 	 	 			 	 	 	 	 			 	 	 		
- RS40 	 k__Bacteria (UID2495) 	2993	139	83	0	139	0	0	0	0	100	0	0				 								 	 	 			 	 	 	 	 			 	 	 	 	
- NP1	 o__Rickettsiales (UID3809) 	83	324	211	2	320	2	0	0	0	99.05	0.63	0				 								 	 	 			 	 	 	 	 			 	 	 	 	
+genome	 Marker lineage 	No.genomes 	 No.markers 	No.marker.sets 	 Completeness 	 Contamination 	 Strain_heterogeneity 				 				 	 			 	 	 			 	 	 	 	 		 	 	 	 		
+ HTCC9565 	 o__Rickettsiales (UID3809) 	83	324	211	99.05	0	0																												
+ HTCC1002 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC1013 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC1016 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC1040 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC1062 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC7211 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC7214 	 o__Rickettsiales (UID3809) 	83	324	211	99.05	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC7217 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1420 	 o__Rickettsiales (UID3809) 	83	323	210	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1427 	 o__Rickettsiales (UID3809) 	83	323	210	100	4.29	91.67				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1520 	 o__Rickettsiales (UID3809) 	83	323	210	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1564 	 o__Rickettsiales (UID3809) 	83	323	210	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB5	 o__Rickettsiales (UID3809) 	83	323	210	100	0.48	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1412 	 o__Rickettsiales (UID3809) 	83	323	210	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1321 	 o__Rickettsiales (UID3809) 	83	323	210	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1505 	 o__Rickettsiales (UID3809) 	83	323	210	100	1.43	20				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1527 	 o__Rickettsiales (UID3809) 	83	323	210	99.29	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1549 	 o__Rickettsiales (UID3809) 	83	323	210	99.52	0.71	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB4	 o__Rickettsiales (UID3809) 	83	323	210	100	2.3	12.5				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC8051 	 o__Rickettsiales (UID3809) 	83	324	211	99.76	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HTCC9022 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ FZCC0015 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB83	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1409 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1413 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1444 	 o__Rickettsiales (UID3809) 	83	324	211	99.76	0.63	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1456 	 o__Rickettsiales (UID3809) 	83	324	211	99.05	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB2201 	 o__Rickettsiales (UID3809) 	83	324	211	99.76	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB2250 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB122	 o__Rickettsiales (UID3809) 	83	324	211	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB140	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1430 	 o__Rickettsiales (UID3809) 	83	324	211	97.63	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1485 	 o__Rickettsiales (UID3809) 	83	324	211	100	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1488 	 o__Rickettsiales (UID3809) 	83	324	211	100	1.9	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1490 	 o__Rickettsiales (UID3809) 	83	324	211	96.21	0.24	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1491 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.24	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1493 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1494 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1495 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1506 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1507 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.16	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1509 	 o__Rickettsiales (UID3809) 	83	324	211	100	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1513 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1518 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1521 	 o__Rickettsiales (UID3809) 	83	324	211	100	1.42	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1526 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1542 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1552 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1556 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.63	0								 				 	 	 		 	 	 	 	 			 	 	 			
+ HIMB1559 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1573 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1577 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.47	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1587 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1593 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1597 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.95	0				 				 	 			 	 	 		 	 	 	 	 	 		 	 	 	 		
+ HIMB1611 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1623 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1631 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1636 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1641 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1662 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1685 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1695 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.95	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1701 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1702 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1709 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1710 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1715 	 o__Rickettsiales (UID3809) 	83	324	211	98.1	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1723 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1746 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1748 	 o__Rickettsiales (UID3809) 	83	324	211	100	1.9	100				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1758 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1765 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1770 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1782 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.95	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB2211 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1483 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1402 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1437 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1863 	 o__Rickettsiales (UID3809) 	83	324	211	100	3.32	100				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB2104 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB2200 	 o__Rickettsiales (UID3809) 	83	324	211	100	0.47	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB2204 	 o__Rickettsiales (UID3809) 	83	324	211	99.53	0	0				 					 			 	 	 			 	 	 	 	 			 		 	 	 
+ HIMB2215 	 o__Rickettsiales (UID3809) 	83	324	211	98.1	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 	 	
+ HIMB1436 	 o__Rickettsiales (UID3809) 	83	323	210	100	0.48	0				 					 			 	 	 		 	 	 	 	 	 			 	 	 		
+ HIMB2187 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 		
+ HIMB2226 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 					 			 	 	 			 	 	 	 	 			 	 	 		
+ RS39 	 o__Rickettsiales (UID3809) 	83	324	211	100	0	0				 								 	 				 	 	 	 	 			 	 	 	 	
+ HIMB2305 	 k__Bacteria (UID2495) 	2993	139	83	100	0	0				 								 	 	 			 	 	 	 	 			 	 	 		
+ RS40 	 k__Bacteria (UID2495) 	2993	139	83	100	0	0				 								 	 	 			 	 	 	 	 			 	 	 	 	
+ NP1	 o__Rickettsiales (UID3809) 	83	324	211	99.05	0.63	0				 								 	 	 			 	 	 	 	 			 	 	 	 	
