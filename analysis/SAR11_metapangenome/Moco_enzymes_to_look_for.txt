@@ -1,0 +1,73 @@
+Type	Category	Gene name	FUNCTION	Source	Accession	COG	KOfam	EC	Order	Genus_count
+Molybdenum pterin cofactor (Moco) enzymes	Main cofactor biosynthesis	moaA	"GTP 3',8-cyclase (molybdenum cofactor biosynthesis protein MoaA) (MoaA) (PDB:1TV7)"	COG20_FUNCTION	COG2896	COG2896	K03639;K20967	4.1.99.22	1	9.1429
+Molybdenum pterin cofactor (Moco) enzymes	Main cofactor biosynthesis	moaC	Molybdenum cofactor biosynthesis enzyme MoaC (MoaC) (PDB:1EKR) (PUBMED:32239579)	COG20_FUNCTION	COG0315	COG0315	K03637	4.6.1.17	2	9
+Molybdenum pterin cofactor (Moco) enzymes	Main cofactor biosynthesis	moaE	Molybdopterin synthase catalytic subunit MoaE (MoaE) (PDB:1FM0) (PUBMED:32239579)	COG20_FUNCTION	"COG0314
+"	"COG0314
+"	"
+K03635; 
+K21142"	2.8.1.12	3	9
+Molybdenum pterin cofactor (Moco) enzymes	Main cofactor biosynthesis	moaB	Molybdopterin biosynthesis enzyme MoaB/MogA (MoaB) (PDB:1DI6) (PUBMED:32239579)	COG20_FUNCTION	COG0521	COG0521	"
+K03831; 
+K03638"	2.7.7.75	4	9
+Molybdenum pterin cofactor (Moco) enzymes	Main cofactor biosynthesis	moeA	Molybdopterin Mo-transferase (molybdopterin biosynthesis) (MoeA) (PDB:2NQU) (PUBMED:18801996;32239579)	COG20_FUNCTION	COG0303	COG0303	K03750	2.10.1.1	5	9
+Molybdenum pterin cofactor (Moco) enzymes	Cofactor accessory and modification genes	mobA	Molybdopterin-guanine dinucleotide biosynthesis protein A (MobA) (PDB:1E5K) (PUBMED:32239579)	COG20_FUNCTION	COG0746	COG0746	"K03752; 
+K13818"	2.7.7.77	6	8.8889
+Molybdenum pterin cofactor (Moco) enzymes	Cofactor accessory and modification genes	moeA	molybdenum cofactor cytidylyltransferase [EC:2.7.7.76]	KOfam	K07141	COG0303!!!COG2068	K07141	2.7.7.76	7	3.4286
+Molybdenum pterin cofactor (Moco) enzymes	Cofactor accessory and modification genes	MOCOS	Molybdenum cofactor sulfurtransferase	KOfam	K15631	NA	K15631	2.8.1.9	8	0
+Molybdenum pterin cofactor (Moco) enzymes	Cofactor accessory and modification genes	MoeB/MOCS3	molybdopterin-synthase adenylyltransferase [EC:2.7.7.80]	KOfam	K21029	"COG0476
+"	K21029	2.7.7.80	9	11
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	xdhA	"Xanthine dehydrogenase, Fe-S cluster and FAD-binding subunit XdhA (XdhA)"	COG20_FUNCTION	COG4630	COG4630	K13481	1.17.1.4	10	2
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	xdhB	"Xanthine dehydrogenase, molybdopterin-binding subunit XdhB (XdhB)"	COG20_FUNCTION	COG4631	COG4631	K13482	1.17.1.4	11	2
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	unch	Uncharacterized membrane protein	COG20_FUNCTION	COG3748	COG3748	K13481	1.7.3.3	12	11
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	hiuH	"5-hydroxyisourate hydrolase (purine catabolism), transthyretin-related family (HiuH) (PDB:2IGL)"	COG20_FUNCTION	COG2351	COG2351	K07127	3.5.2.17	13	4.5465
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	pucL	2-oxo-4-hydroxy-4-carboxy--5-ureidoimidazoline (OHCU) decarboxylase (uric acid degradation) (PucL) (PDB:2O70)	COG20_FUNCTION	COG3195	COG3195	K13485	4.1.1.97	14	2
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	hpxB	allantoinase [EC:3.5.2.5]	KOfam	K16842	COG0726	K16842	3.5.2.5	15	3.1667
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	alc	Allantoicase (Alc) (PDB:1O59)	COG20_FUNCTION	COG4266	COG4266	K01477	3.5.3.4	16	3.1667
+Molybdenum pterin cofactor (Moco) enzymes	Xanthine Metabolism	allA	Ureidoglycolate hydrolase (allantoin degradation) (AllA) (PDB:1XSQ)	COG20_FUNCTION	COG3194	COG3194	K01483	4.3.2.3	17	3.1667
+Molybdenum pterin cofactor (Moco) enzymes	DMSO metabolism	msrP	Molybdopterin-dependent catalytic subunit of periplasmic DMSO/TMAO and protein-methionine-sulfoxide reductases (MsrP) (PDB:1OGP) (PUBMED:26641313;32750406)	COG20_FUNCTION	COG2041	COG2041			18	9
+Molybdenum pterin cofactor (Moco) enzymes	DMSO metabolism	msrQ	Heme-binding membrane subunit of periplasmic DMSO/TMAO and protein-methionine-sulfoxide reductases (MsrQ) (PUBMED:26641313)	COG20_FUNCTION	COG2717	COG2717			19	9
+Molybdenum pterin cofactor (Moco) enzymes	CO Metabolism	coxL	"Aldehyde, CO or xanthine dehydrogenase, Mo-binding subunit (CoxL) (PDB:1DGJ) (PUBMED:10095793)"	COG20_FUNCTION	COG1529	COG1529	K03520		20	3.4286
+Molybdenum pterin cofactor (Moco) enzymes	CO Metabolism	coxG	Carbon monoxide dehydrogenase subunit CoxG (CoxG) (PDB:2NS9)	COG20_FUNCTION	COG3427	COG3427	K09386		21	3.4286
+Molybdenum pterin cofactor (Moco) enzymes	CO Metabolism	coxS	"Aldehyde, CO, or xanthine dehydrogenase, Fe-S subunit, CoxS/CutS family (CutS) (PDB:1FFU) (PUBMED:21175741)"	COG20_FUNCTION	COG2080	COG2080	K03518		22	3.4286
+Molybdenum pterin cofactor (Moco) enzymes	CO Metabolism	coxM	"Aldehyde, CO, or xanthine dehydrogenase, FAD-binding subunit (CutB) (PDB:5Y6Q)"	COG20_FUNCTION	COG1319	COG1319	K03519		23	3.4286
+Molybdenum pterin cofactor (Moco) enzymes	Molybdenum containing formate dehydrogenase	fdhF	formate dehydrogenase major subunit [EC:1.17.1.9]	KOfam	K00123	COG3383	K00123		24	8.8571
+Molybdenum pterin cofactor (Moco) enzymes	Molybdenum containing formate dehydrogenase	fdhD	"Formate dehydrogenase assembly factor FdhD, a sulfurtransferase (FdhD) (PDB:2PW9)"	COG20_FUNCTION	COG1526	COG1526	K02379		25	8.8571
+Molybdenum pterin cofactor (Moco) enzymes	Sulfite oxidase family	ycbX	"N-hydroxylaminopurine reductase subunit YcbX, contains MOSC domain (YcbX) (PUBMED:18312271;20118259)"	COG20_FUNCTION	COG3217	COG3217			26	5.1429
+Molybdenum pterin cofactor (Moco) enzymes	Sulfite oxidase family	yiiM	"N-hydroxylaminopurine reductase YiiM, contains MOSC domain (YiiM) (PDB:1O65) (PUBMED:18312271;29459651)"	COG20_FUNCTION	COG2258	COG2258			27	4.3333
+Iron molybdenum cofactor (FeMo-co)	Molecular scaffold for assembly of Fe-S clusters (NifU)	nifU	nitrogen fixation protein NifU and related proteins	KOfam	K04488	COG0822	K04488		28	11
+Iron molybdenum cofactor (FeMo-co)	Molecular scaffold for assembly of Fe-S clusters (NifU)	nifU	"Fe-S cluster assembly scaffold protein IscU, NifU family (IscU) (PDB:1Q48)"	COG20_FUNCTION	COG0822	COG0822	-		29	11
+Iron molybdenum cofactor (FeMo-co)	Molecular scaffold for assembly of Fe-S clusters (NifU)	nifU	"Fe-S cluster biogenesis protein NfuA, 4Fe-4S-binding domain (NifU) (PDB:2Z51)"	COG20_FUNCTION	COG0694	COG0694	K22074		30	11
+Iron molybdenum cofactor (FeMo-co)	NifB/SkfB	nifB	"Radical SAM superfamily maturase, SkfB/NifB/PqqE family (SkfB) (PDB:6Q2P) (PUBMED:23282011)"	COG20_FUNCTION	COG0535	COG0535	-		31	4.6233
+Iron molybdenum cofactor (FeMo-co)	Cysteine desulfurase (Fe-S clusters) (NifS)	nifS	"Cysteine desulfurase/Cysteine sulfinate desulfinase IscS or related enzyme, NifS family (NifS) (PDB:4IXO) (PUBMED:22773787;25825430)"	COG20_FUNCTION	COG1104	COG1104	K04487		32	0.5436
+Iron molybdenum cofactor (FeMo-co)	Homocitrate synthase (called NifV)	nifV	Isopropylmalate/homocitrate/citramalate synthases (LeuA) (PDB:4JN6)	COG20_FUNCTION	COG0119	COG0119	"K01666, K01649"		33	11
+Iron molybdenum cofactor (FeMo-co)	Transient reservoir of FeMo-co (nifX)	nifX	nitrogen fixation protein NifX	KOfam	K02596	-	K02596		34	0
+Iron molybdenum cofactor (FeMo-co)	FixA	fixA	"Electron transfer flavoprotein, alpha and beta subunits (FixA) (PDB:5OL2)"	COG20_FUNCTION	COG2086	COG2086	K03522		35	11
+Iron molybdenum cofactor (FeMo-co)	FixB	fixB	electron transfer flavoprotein alpha subunit	KOfam	K03522	COG2025	K03522		36	11
+Iron molybdenum cofactor (FeMo-co)	FixC	fixC	Dehydrogenase (flavoprotein) (FixC) (PDB:4OPU)!!!Ferredoxin-like protein FixX (FixX)	COG20_FUNCTION	COG0644!!!COG2440	COG0644!!!COG2440	K06443/K00311		37	11
+Iron molybdenum cofactor (FeMo-co)	Putative role in maturation of 4Fe-4S clusters (IscA)	iscA	Fe-S cluster assembly iron-binding protein IscA (IscA) (PDB:1R94)	COG20_FUNCTION	COG2025	COG2025	K13628		38	11
+Iron molybdenum cofactor (FeMo-co)	"Predicted Fe-S protein YdhL, DUF1289 family (YdhL)"	ydhL	"Predicted Fe-S protein YdhL, DUF1289 family (YdhL)"	COG20_FUNCTION	COG3313	COG3313	K06938		39	10
+Iron molybdenum cofactor (FeMo-co)	MoFe protein interaction; may contribute to homocitrate processing (NifW)	nifW	nitrogenase-stabilizing/protective protein NifW	KOfam	K02595	-	K02595		40	0
+Iron molybdenum cofactor (FeMo-co)	Molybdenum donor to FeMo-co (NifQ)	nifQ	nitrogen fixation protein NifQ	KOfam	K15790	-	K15790		41	0
+Iron molybdenum cofactor (FeMo-co)	Facilitates P cluster assembly (NifZ)	nifZ	nitrogen fixation protein NifZ	KOfam	K02597	-	K02597		42	0
+Iron molybdenum cofactor (FeMo-co)	Positive regulator of nitrogen fixation (NifA)	nifA	Nif-specific regulatory protein	KOfam	K02584	COG3604	K02584		43	0
+Iron molybdenum cofactor (FeMo-co)	Electron transport to FeMo-co (NifJ)	nifJ	pyruvate-ferredoxin/flavodoxin oxidoreductase [EC:1.2.7.1 1.2.7.-]	KOfam	K03737	"COG0674, COG1013, COG1014"	K03737		44	0
+Iron molybdenum cofactor (FeMo-co)	Stabilizes NifH (NifM)	nifM	"Peptidyl-prolyl isomerase, parvulin family (SurA) (PDB:2ZR5)"	COG20_FUNCTION	COG0760	"COG0760
+"	K03769		45	11
+Iron molybdenum cofactor (FeMo-co)	Oxygen sensor and negative regulator of nitrogen fixation (NifL)	nifL	nitrogen fixation regulatory protein	KOfam	K23916	-	K23916		46	0
+Iron molybdenum cofactor (FeMo-co)	nitrogenase molybdenum-cofactor synthesis protein NifE	mifE	nitrogenase molybdenum-cofactor synthesis protein NifE	COG20_FUNCTION	COG2710	COG2710	K02587		47	0
+Iron molybdenum cofactor (FeMo-co)	nitrogenase molybdenum-iron protein NifN	mifN	nitrogenase molybdenum-iron protein NifN	COG20_FUNCTION	"COG2710
+"	"COG2710
+"	K02592		48	0
+Iron molybdenum cofactor (FeMo-co)	high affinity ABC transporter (modA)	modA	molybdate transport system substrate-binding protein	COG20_FUNCTION	"COG0725
+"	"COG0725
+"	K02020		49	0
+Iron molybdenum cofactor (FeMo-co)	high affinity ABC transporter (modB)	modB	molybdate transport system permease protein	COG20_FUNCTION	COG4149	COG4149	K02018		50	0
+Iron molybdenum cofactor (FeMo-co)	high affinity ABC transporter (modC)	modC	molybdate-transporting ATPase	COG20_FUNCTION	"COG4148
+
+"	"COG4148
+
+"	"K02017/
+K15497"		51	0
+Iron molybdenum cofactor (FeMo-co)	NifH	nifH	nitrogenase iron protein NifH	COG20_FUNCTION	COG1348	COG1348	K02588		52	0
+Iron molybdenum cofactor (FeMo-co)	NifD	nifD	nitrogenase molybdenum-iron protein alpha chain [EC:1.18.6.1]	KOfam	K02586	COG2710	K02586		53	0
+Iron molybdenum cofactor (FeMo-co)	NifK	nifK	nitrogenase molybdenum-iron protein beta chain [EC:1.18.6.1]	KOfam	K02591	COG2710	K02591		54	0

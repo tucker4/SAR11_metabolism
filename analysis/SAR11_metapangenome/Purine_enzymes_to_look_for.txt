@@ -1,0 +1,38 @@
+Category	FUNCTION	Source	Accession	Order	Genus.count
+"nucleobase symporter,NCS1"	"nucleobase:cation symporter-1, NCS1 family"	KOfam	K03457	1	11
+"adenine/hypoxanthine permease,NCS2"	adenine/guanine/hypoxanthine permease	KOfam	K06901	2	10
+"guanosine uptake,NupNOPQ"	"ABC-type guanosine uptake system NupNOPQ, permease component NupP (NupP) (PUBMED:21926227)"	COG20_FUNCTION	COG4603	3	1
+"guanosine uptake,NupNOPQ"	"ABC-type guanosine uptake system NupNOPQ, permease subunit NupQ (NupQ) (PUBMED:21926227)"	COG20_FUNCTION	COG1079	4	1
+"guanosine uptake,NupNOPQ"	"ABC-type guanosine uptake system NupNOPQ, ATPase component NupO (NupO) (PUBMED:21926227)"	COG20_FUNCTION	COG3845	5	1
+"guanosine uptake,NupNOPQ"	basic membrane protein A and related proteins	KOfam	K07335	6	1
+"xanthine/uracil permease,UraA"	Xanthine/uracil permease (UraA) (PDB:3QE7)	COG20_FUNCTION	COG2233	7	1.5714
+"purine nucleoside phosphorylase,XapA"	Purine nucleoside phosphorylase (XapA) (PDB:1YQQ)	COG20_FUNCTION	COG0005	8	8.8096
+"tRNA adenosine deaminase,TadA"	tRNA(Arg) A34 adenosine deaminase TadA (TadA) (PDB:2A8N)	COG20_FUNCTION	COG0590	9	2
+adenosine deaminase	purine-nucleoside/S-methyl-5'-thioadenosine phosphorylase / adenosine deaminase [EC:2.4.2.1 2.4.2.28 3.5.4.4]	KOfam	K05810	10	11
+adenine deaminase	adenine deaminase [EC:3.5.4.2]	KOfam	K21053	11	1
+xanthine metabolism	"Xanthine dehydrogenase, Fe-S cluster and FAD-binding subunit XdhA (XdhA)"	COG20_FUNCTION	COG4630	12	2
+xanthine metabolism	"Xanthine dehydrogenase, molybdopterin-binding subunit XdhB (XdhB)"	COG20_FUNCTION	COG4631	13	2
+xanthine metabolism	"Molybdoenzyme maturation factor PaoD (Mo cofactor insertion), XdhC/CoxF family (XdhC) (PDB:2WE7) (PUBMED:24498065)"	COG20_FUNCTION	COG1975	14	4
+urate => allantoin metabolism	Uncharacterized membrane protein	COG20_FUNCTION	COG3748	15	11
+urate => allantoin metabolism	"5-hydroxyisourate hydrolase (purine catabolism), transthyretin-related family (HiuH) (PDB:2IGL)"	COG20_FUNCTION	COG2351	16	4.5465
+urate => allantoin metabolism	2-oxo-4-hydroxy-4-carboxy--5-ureidoimidazoline (OHCU) decarboxylase (uric acid degradation) (PucL) (PDB:2O70)	COG20_FUNCTION	COG3195	17	2
+allantoin => allantoate	allantoinase [EC:3.5.2.5]	KOfam	K16842	18	3.0714
+allantoin => allantoate	Dihydroorotase or related cyclic amidohydrolase (AllB) (PDB:1J79)	COG20_FUNCTION	COG0044	19	11
+allantonate metabolism- Coastal	allantoate deiminase [EC:3.5.3.9]	KOfam	K02083	20	0.7837
+allantonate metabolism- Coastal	"Uncharacterized conserved protein, Ntn-hydrolase superfamily (PDB:2IMH)"	COG20_FUNCTION	COG3342	21	1.517
+allantonate metabolism- Offshore	Ureidoglycolate hydrolase (allantoin degradation) (AllA) (PDB:1XSQ)	COG20_FUNCTION	COG3194	22	3.0714
+allantonate metabolism- Offshore	Allantoicase (Alc) (PDB:1O59)	COG20_FUNCTION	COG4266	23	3.0714
+"ureases,UreABCDEFG"	Urease accessory protein UreF (UreF) (PDB:3SF5)	COG20_FUNCTION	COG0830	24	0.6667
+"ureases,UreABCDEFG"	Urease accessory protein UreH (UreH) (PDB:3SF5)	COG20_FUNCTION	COG0829	25	0.6667
+"ureases,UreABCDEFG"	Urease alpha subunit (UreC) (PDB:5A6T)	COG20_FUNCTION	COG0804	26	0.6667
+"ureases,UreABCDEFG"	Urease accessory protein UreE (UreE) (PDB:1EAR)	COG20_FUNCTION	COG2371	27	0.6667
+"ureases,UreABCDEFG"	Urease beta subunit (UreB)	COG20_FUNCTION	COG0832	28	0.6667
+"ureases,UreABCDEFG"	Urease gamma subunit (UreA) (PDB:1A5K)	COG20_FUNCTION	COG0831	29	0.6667
+"ureases,UreABCDEFG"	"Hydrogenase/urease maturation factor HypB, Ni2+-binding GTPase (HypB) (PDB:2HF8) (PUBMED:24338018;23899293)"	COG20_FUNCTION	COG0378	30	0.6667
+Ureidoglycine metabolism	"Archaeal aspartate aminotransferase or a related aminotransferase, includes purine catabolism protein PucG (PucG) (PDB:3NNK)"	COG20_FUNCTION	COG0075	31	3
+"nucleoside 2-deoxyribosyltransferase,RCL"	Nucleoside 2-deoxyribosyltransferase (RCL) (PDB:1F8X)	COG20_FUNCTION	COG3613	32	6
+deoxyribose metabolism	deoxyribose-phosphate aldolase	KOfam	K01619	33	0
+D-ribose-1P metabolism	phosphomannomutase / phosphoglucomutase [EC:5.4.2.8 5.4.2.2]	KOfam	K15778	34	11
+D-ribose-1P metabolism	ribose 5-phosphate isomerase B [EC:5.3.1.6]	KOfam	K01808	35	11
+D-ribose-1P metabolism	ribulose-phosphate 3-epimerase [EC:5.1.3.1]	KOfam	K01783	36	11
+D-ribose-1P metabolism	transketolase [EC:2.2.1.1]	KOfam	K00615	37	11
