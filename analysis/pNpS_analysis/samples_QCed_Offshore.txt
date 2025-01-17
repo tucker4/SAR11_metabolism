@@ -1,0 +1,3 @@
+sample	r1	r2
+KDe743ST	 /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/01_QC/KDe743ST-QUALITY_PASSED_R1.fastq	 /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/01_QC/KDe743ST-QUALITY_PASSED_R2.fastq
+KMy813ST	 /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/01_QC/KMy813ST-QUALITY_PASSED_R1.fastq	 /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/01_QC/KMy813ST-QUALITY_PASSED_R2.fastq
