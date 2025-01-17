@@ -1,0 +1,145 @@
+---
+title: "pnps_SAR11_October2024"
+author: "Sarah Tucker"
+date: "2024-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+QC samples
+
+```{r}
+iu-gen-configs sample_additional.txt -o QC
+
+clusterize "iu-filter-quality-minoche QC/KDe743ST.ini" --job-name my_job --num-nodes 1 --num-tasks-per-node 10
+
+clusterize "iu-filter-quality-minoche QC/KDe747HP.ini" --job-name my_job --num-nodes 1 --num-tasks-per-node 10
+
+clusterize "iu-filter-quality-minoche QC/KMy813ST.ini" --job-name my_job --num-nodes 1 --num-tasks-per-node 10
+
+clusterize "iu-filter-quality-minoche QC/KMy817HP.ini" --job-name my_job --num-nodes 1 --num-tasks-per-node 10
+```
+
+Build contig db
+
+```{r}
+clusterize -n 120 "anvi-gen-contigs-database -f /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556.fa -o /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-CONTIGS.db -n "HIMB1556"" --job-name my_job
+
+clusterize -n 20 "anvi-run-hmms -c /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-CONTIGS.db"
+
+clusterize -n 120 "anvi-run-ncbi-cogs -c /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-CONTIGS.db"
+
+clusterize -n 120 "anvi-run-kegg-kofams -c /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-CONTIGS.db"
+```
+
+Map reads and get SNVs
+
+```{r}
+clusterize "bowtie2-build HIMB1556.fa HIMB1556" --job-name my_job --num-nodes 1 --num-tasks-per-node 10
+
+for sample in `awk '{print $1}' /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/samples_QCed_Coastal2.txt`
+do
+ if [ "$sample" == "sample" ]; then continue; fi
+    # do the bowtie mapping to get the SAM file:
+    bowtie2 --threads 105 \
+            -x HIMB1556\
+            -1  /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/01_QC/$sample-QUALITY_PASSED_R1.fastq \
+            -2 /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/01_QC/$sample-QUALITY_PASSED_R2.fastq \
+            --no-unal \
+            -S $sample.sam
+    # covert the resulting SAM file to a BAM file:
+    samtools view -F 4 -bS $sample.sam > $sample-RAW.bam
+
+    # sort and index the BAM file:
+    samtools sort $sample-RAW.bam -o $sample.bam
+    samtools index $sample.bam
+
+    # remove temporary files:
+    rm $sample.sam $sample-RAW.bam
+done
+
+chmod u+x bowtie.sh
+
+
+clusterize "./bowtie.sh" -n 105 -o bowtie.txt -j bowtie
+
+
+for sample in `awk '{print $1}' /fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/samples_QCed_Coastal2.txt`
+do
+    if [ "$sample" == "sample" ]; then continue; fi
+
+    anvi-profile -c HIMB1556-CONTIGS.db \
+                 -i $sample.bam \
+                 -M 100 \
+                 --profile-SCVs \
+                 --num-threads 104 \
+                 -o $sample
+done
+chmod u+x profile.sh
+ls -l profile.sh
+
+clusterize "./profile.sh" -n 104 -o profile.txt -j profile
+
+
+
+clusterize "anvi-merge */PROFILE.db -o HIMB1556-MERGED -c HIMB1556-CONTIGS.db" -n 104 -o profile.txt -j profile
+
+
+for split_name in `sqlite3 HIMB1556-CONTIGS.db 'select split from splits_basic_info;'`
+do
+    # in this loop $split_name looks like this AS9601-00000001_split_00001, form which
+    # we can extract the genome name the split belongs to:
+    GENOME=`echo $split_name | awk 'BEGIN{FS="-"}{print $1}'`
+
+    # print it out with a TAB character
+    echo -e "$split_name\t$GENOME"
+done > HIMB1556-GENOME-COLLECTION.txt
+
+
+anvi-import-collection HIMB1556-GENOME-COLLECTION.txt -c HIMB1556-CONTIGS.db -p HIMB1556-MERGED/PROFILE.db -C Genomes
+
+
+
+anvi-script-add-default-collection -c HIMB1556-CONTIGS.db -p HIMB1556-MERGED/PROFILE.db -C Default -b HIMB1556
+
+clusterize "anvi-gen-variability-profile -c HIMB1556-CONTIGS.db -p HIMB1556-MERGED/PROFILE.db -C Default -b HIMB1556 --engine CDN --include-site-pnps --kiefl-mode -o HIMB1556_SCVs_KByT.txt " --job-name bowtie --num-nodes 1 --num-tasks-per-node 100
+
+clusterize "anvi-get-pn-ps-ratio -V HIMB1556_SCVs_KByT.txt -c HIMB1556-CONTIGS.db -m 20 -o PNPSratio_HIMB1556_KByT" --job-name bowtie --num-nodes 1 --num-tasks-per-node 100
+
+anvi-export-functions -c HIMB1556-CONTIGS.db -o HIMB1556-functions.txt
+
+scp rosa:/fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-functions.txt /Users/sarahtucker/Documents/Metagenome_manuscript/SAR11_2024/PN_PS/HIMB1556_PNPS/
+
+scp rosa:/fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556_SCVs_KByT.txt /Users/sarahtucker/Documents/Metagenome_manuscript/SAR11_2024/PN_PS/HIMB1556_PNPS/
+
+scp rosa:/fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/PNPSratio_HIMB1556_KByT/pNpS.txt /Users/sarahtucker/Documents/Metagenome_manuscript/SAR11_2024/PN_PS/HIMB1556_PNPS/
+
+clusterize "anvi-summarize -c HIMB1556-CONTIGS.db -p HIMB1556-MERGED/PROFILE.db -C Default --init-gene-coverages -o HIMB1556-KByT-SUMMARY" --job-name bowtie --num-nodes 1 --num-tasks-per-node 10
+
+
+scp rosa:/fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-KByT-SUMMARY/bin_by_bin/HIMB1556/HIMB1556-gene_calls.txt /Users/sarahtucker/Documents/Metagenome_manuscript/SAR11_2024/PN_PS/HIMB1556_PNPS/
+
+scp rosa:/fs/dss/groups/agecodatasci/PROJECTS/SAR11_PNPS/HIMB1556_PNPS/HIMB1556-KByT-SUMMARY/bin_by_bin/HIMB1556/HIMB1556-gene_non_outlier_coverages.txt  /Users/sarahtucker/Documents/Metagenome_manuscript/SAR11_2024/PN_PS/HIMB1556_PNPS/
+```
+
+
+#Note repeat for all genomes analyzed, using the samples_QCed_Offshore.txt for offshore genera and the samples_QCed_Coastal.txt for coastal genomes:
+RS40 (offshore),
+RS39 (offshore),
+HIMB83 (offshore),
+HIMB1437 (offshore),
+HIMB1483 (offshore),
+HIMB1556 (coastal),
+HIMB5 (coastal),
+HIMB4 (coastal),
+HIMB1412 (coastal),
+HIMB1420 (coastal),
+HIMB1427 (coastal),
+HIMB1520 (coastal),
+HIMB1564 (coastal)
+
