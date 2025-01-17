@@ -1,0 +1,630 @@
+Category	Specific.function	FUNCTION	source	accession_check	Notes	Order
+Central_Carbon	Glyoxylate Bypass	Citrate synthase (GltA) (PDB:3TQG) (PUBMED:25211225)	COG20_FUNCTION	COG0372	prpC/GltA	1
+Central_Carbon	Glyoxylate Bypass	Aconitase A (AcnA) (PDB:1ACO)	COG20_FUNCTION	COG1048	acnA	2
+Central_Carbon	Glyoxylate Bypass	Isocitrate lyase (AceA) (PDB:1DQU)	COG20_FUNCTION	COG2224	aceA	3
+Central_Carbon	Glyoxylate Bypass	Malate synthase (AceB) (PDB:1D8C)	COG20_FUNCTION	COG2225	glcB/aceB	4
+Central_Carbon	Glyoxylate Bypass	Malate/lactate dehydrogenase (Mdh) (PDB:4WLO)	COG20_FUNCTION	COG0039	mdh	5
+Central_Carbon	Citrate Cycle	Citrate synthase (GltA) (PDB:3TQG) (PUBMED:25211225)	COG20_FUNCTION	COG0372	prpC/GltA	6
+Central_Carbon	Citrate Cycle	Aconitase A (AcnA) (PDB:1ACO)	COG20_FUNCTION	COG1048	acnA	7
+Central_Carbon	Citrate Cycle	Isocitrate dehydrogenase (Icd) (PDB:1IDD)	COG20_FUNCTION	COG0538	icdA	8
+Central_Carbon	Citrate Cycle	"2-oxoglutarate dehydrogenase complex, dehydrogenase (E1) component, and related enzymes (SucA) (PDB:2JGD)"	COG20_FUNCTION	COG0567	sucA	9
+Central_Carbon	Citrate Cycle	"Pyruvate/2-oxoglutarate dehydrogenase complex, dihydrolipoamide acyltransferase (E2) component (AceF) (PDB:1B5S)!!!Pyruvate dehydrogenase complex, dehydrogenase (E1) component (AceE) (PDB:1L8A)"	COG20_FUNCTION	COG0508!!!COG2609	sucB/aceE	10
+Central_Carbon	Citrate Cycle	"Pyruvate/2-oxoglutarate dehydrogenase complex, dihydrolipoamide acyltransferase (E2) component (AceF) (PDB:1B5S)"	COG20_FUNCTION	COG0508	pdhD/aceF	11
+Central_Carbon	Citrate Cycle	"Succinyl-CoA synthetase, alpha subunit (SucD) (PDB:1CQI)"	COG20_FUNCTION	COG0074	sucD	12
+Central_Carbon	Citrate Cycle	"Succinyl-CoA synthetase, beta subunit (SucC) (PDB:1SCU)"	COG20_FUNCTION	COG0045	sucC	13
+Central_Carbon	Citrate Cycle	"Succinate dehydrogenase/fumarate reductase, flavoprotein subunit (SdhA) (PDB:1KF6)"	COG20_FUNCTION	COG1053	sdhA	14
+Central_Carbon	Citrate Cycle	"Succinate dehydrogenase/fumarate reductase, Fe-S protein subunit (SdhB/FrdB) (PDB:6LUM)"	COG20_FUNCTION	COG0479	sdhB	15
+Central_Carbon	Citrate Cycle	Fumarate hydratase class II (FumC) (PDB:1KQ7)	COG20_FUNCTION	COG0114	fumC	16
+Central_Carbon	Citrate Cycle	Malate/lactate dehydrogenase (Mdh) (PDB:4WLO)	COG20_FUNCTION	COG0039	mdh	17
+Central_Carbon	Gluconeogensis	"Phosphotransacetylase (includes Pta, EutD and phosphobutyryltransferase) (Pta) (PDB:1QZT) (PUBMED:28754323)!!!Malic enzyme (SfcA) (PDB:1DO8)"	COG20_FUNCTION	COG0280!!!COG0281	maeB/SfcA	18
+Central_Carbon	Gluconeogensis	Phosphoenolpyruvate synthase/pyruvate phosphate dikinase (PpsA) (PDB:5HV6)	COG20_FUNCTION	COG0574	ppdk/PpsA	19
+Central_Carbon	Gluconeogensis	Phosphoenolpyruvate carboxylase (Ppc) (PDB:1FIY)	COG20_FUNCTION	COG2352	ppc	20
+Central_Carbon	Gluconeogensis	Enolase (Eno) (PDB:1E9I)	COG20_FUNCTION	COG0148	eno	21
+Central_Carbon	Gluconeogensis	Phosphoglycerate mutase (BPG-dependent) (GpmA) (PDB:1E58)	COG20_FUNCTION	COG0588	gpmA	22
+Central_Carbon	Gluconeogensis	3-phosphoglycerate kinase (Pgk) (PDB:13PK)	COG20_FUNCTION	COG0126	pgk	23
+Central_Carbon	Gluconeogensis	Glyceraldehyde-3-phosphate dehydrogenase/erythrose-4-phosphate dehydrogenase (GapA) (PDB:3ZDF)	COG20_FUNCTION	COG0057	gap	24
+Central_Carbon	Gluconeogensis	Triosephosphate isomerase (TpiA) (PDB:1HG3)	COG20_FUNCTION	COG0149	tpiA	25
+Central_Carbon	Gluconeogensis	3-oxoacyl-(acyl-carrier-protein) synthase (FabB) (PDB:2UV8) (PUBMED:21652641)	COG20_FUNCTION	COG0304	fabB	26
+Central_Carbon	Gluconeogensis	"Fructose-1,6-bisphosphatase/sedoheptulose 1,7-bisphosphatase or related protein (GlpX) (PDB:1NI9)"	COG20_FUNCTION	COG1494	glpX	27
+Central_Carbon	Gluconeogensis	Glucose-6-phosphate isomerase (Pgi) (PDB:1B0Z)	COG20_FUNCTION	COG0166	pgi	28
+Central_Carbon	Pentose Phosphate Shunt (oxidative portion)	Glucose-6-phosphate isomerase (Pgi) (PDB:1B0Z)	COG20_FUNCTION	COG0166	pgi	29
+Central_Carbon	Pentose Phosphate Shunt (oxidative portion)	glucose-6-phosphate dehydrogenase (NADPH)	COG20_FUNCTION	NA	zwf	30
+Central_Carbon	Pentose Phosphate Shunt (oxidative portion)	"WD40 repeat (WD40) (PDB:3UVN)!!!6-phosphogluconolactonase, cycloisomerase 2 family (Pgl) (PDB:1JOF)!!!DNA-binding beta-propeller fold protein YncE (YncE) (PDB:3VGZ) (PUBMED:22120742;28628661)"	COG20_FUNCTION	COG2319!!!COG2706!!!COG3391	pgl	31
+Central_Carbon	Pentose Phosphate Shunt (oxidative portion)	6-phosphogluconate dehydrogenase [EC:1.1.1.44 1.1.1.343]	KOfam	K00033	gnd	32
+Central_Carbon	Pentose Phosphate Shunt (oxidative portion)	gluconokinase [EC:2.7.1.12]	KOfam	K00851		33
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	Ribose 5-phosphate isomerase RpiB (RpiB) (PDB:1NN4)	COG20_FUNCTION	COG0698		34
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	Phosphoribosylpyrophosphate synthetase (PrsA) (PDB:1DKR)	COG20_FUNCTION	COG0462		35
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	Pentose-5-phosphate-3-epimerase (Rpe) (PDB:1H1Y)	COG20_FUNCTION	COG0036		36
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	"Transketolase, C-terminal subunit (TktA2)"	COG20_FUNCTION	COG3958		37
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	"Transketolase, N-terminal subunit (TktA1)"	COG20_FUNCTION	COG3959		38
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	Transketolase (TktA) (PDB:1AY0)	COG20_FUNCTION	COG0021		39
+Central_Carbon	Pentose Phosphate Shunt (non-oxidative portion)	Transaldolase/fructose-6-phosphate aldolase (TalA) (PDB:1F05)	COG20_FUNCTION	COG0176		40
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	Glucose-6-phosphate isomerase (Pgi) (PDB:1B0Z)	COG20_FUNCTION	COG0166	pgi	41
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	6-phosphofructokinase (PfkA) (PDB:1KZH)	COG20_FUNCTION	COG0205	pfk	42
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	"Fructose-1,6-bisphosphatase/sedoheptulose 1,7-bisphosphatase or related protein (GlpX) (PDB:1NI9)"	COG20_FUNCTION	COG1494	glpX	43
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	3-oxoacyl-(acyl-carrier-protein) synthase (FabB) (PDB:2UV8) (PUBMED:21652641)	COG20_FUNCTION	COG0304	fabB	44
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	Triosephosphate isomerase (TpiA) (PDB:1HG3)	COG20_FUNCTION	COG0149	tpiA	45
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	Glyceraldehyde-3-phosphate dehydrogenase/erythrose-4-phosphate dehydrogenase (GapA) (PDB:3ZDF)	COG20_FUNCTION	COG0057	gap	46
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	3-phosphoglycerate kinase (Pgk) (PDB:13PK)	COG20_FUNCTION	COG0126	pgk	47
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	Phosphoglycerate mutase (BPG-dependent) (GpmA) (PDB:1E58)	COG20_FUNCTION	COG0588	gpmA	48
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	Enolase (Eno) (PDB:1E9I)	COG20_FUNCTION	COG0148	eno	49
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	Phosphoenolpyruvate carboxylase (Ppc) (PDB:1FIY)	COG20_FUNCTION	COG2352	ppc	50
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	pyruvate kinase [EC:2.7.1.40]	KOfam	K00873	pyk	51
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	pyruvate dehydrogenase E1 component [EC:1.2.4.1]	KOfam	K00163	aceE	52
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	"Pyruvate/2-oxoglutarate dehydrogenase complex, dihydrolipoamide acyltransferase (E2) component (AceF) (PDB:1B5S)!!!Pyruvate dehydrogenase complex, dehydrogenase (E1) component (AceE) (PDB:1L8A)"	COG20_FUNCTION	COG0508!!!COG2609	aceF	53
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	dihydrolipoyl dehydrogenase [EC:1.8.1.4]	KOfam	K00382	pdhD	54
+Central_Carbon	Glycolysis (Embden-Meyerhoff-Parnas)	"pyruvate, orthophosphate dikinase [EC:2.7.9.1]"	KOfam	K01006	ppdK	55
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	D-xylose 1-dehydrogenase [EC:1.1.1.175]	KOfam	K22185	"gdh-like, following Schwalbach et al., 2010, glycolic operon in SAR11"	56
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	gluconolactonase [EC:3.1.1.17]	KOfam	K01053	"gnl, following Schwalbach et al., 2010, glycolic operon in SAR11"	57
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	"Sugar kinase of the NBD/HSP70 family, may contain an N-terminal HTH domain (NagC) (PDB:1WOQ)"	COG20_FUNCTION	COG1940	"ROK, following Schwalbach et al., 2010, glycolic operon in SAR11"	58
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	xylonate dehydratase [EC:4.2.1.82]	KOfam	K22186	"edd, following Schwalbach et al., 2010, glycolic operon in SAR11"	59
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	"NAD(P)-dependent dehydrogenase, short-chain alcohol dehydrogenase family (FabG) (PDB:6L1H)"	COG20_FUNCTION	COG1028	"gdh-like, following Schwalbach et al., 2010, glycolic operon in SAR11"	60
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	2-dehydro-3-deoxy-L-rhamnonate dehydrogenase (NAD+) [EC:1.1.1.401]	KOfam	K21883	"gdh-like, following Schwalbach et al., 2010, glycolic operon in SAR11"	61
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	"2,4-didehydro-3-deoxy-L-rhamnonate hydrolase [EC:3.7.1.26]"	KOfam	K18336	"FAA, following Schwalbach et al., 2010, glycolic operon in SAR11"	62
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	3-hydroxyisobutyrate dehydrogenase [EC:1.1.1.31]	KOfam	K00020	"gnd, following Schwalbach et al., 2010, glycolic operon in SAR11"	63
+Central_Carbon	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	L-alanine-DL-glutamate epimerase or related enzyme of enolase superfamily (RspA) (PDB:1BKH)	COG20_FUNCTION	COG4948	rspA	64
+Bacteriorhodopsin	Bacteriorhodopsin	Bacteriorhodopsin	COG20_FUNCTION	COG5524		65
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	formate dehydrogenase major subunit [EC:1.17.1.9]	KOfam	K00123		66
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	"NADH:ubiquinone oxidoreductase, NADH-binding 51 kD subunit (chain F) (NuoF) (PDB:2FUG)"	COG20_FUNCTION	COG1894		67
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	"Formate dehydrogenase assembly factor FdhD, a sulfurtransferase (FdhD) (PDB:2PW9)"	COG20_FUNCTION	COG1526		68
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	Molybdopterin-guanine dinucleotide biosynthesis protein A (MobA) (PDB:1E5K) (PUBMED:32239579)	COG20_FUNCTION	COG0746		69
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	Molybdopterin Mo-transferase (molybdopterin biosynthesis) (MoeA) (PDB:2NQU) (PUBMED:18801996;32239579)	COG20_FUNCTION	COG0303		70
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	Formyltetrahydrofolate synthetase (MIS1) (PDB:1EG7)	COG20_FUNCTION	COG2759		71
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	"5,10-methylenetetrahydrofolate reductase (MetF) (PDB:1B5T)"	COG20_FUNCTION	COG0685		72
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	"5,10-methylene-tetrahydrofolate dehydrogenase/Methenyl tetrahydrofolate cyclohydrolase (FolD) (PDB:1A4I)"	COG20_FUNCTION	COG0190		73
+Additional Carbons (Core)	THF Linked oxidation (formate metabolism)	formate dehydrogenase [EC:1.17.1.9]	KOfam	K00122		74
+Additional Carbons (Core)	Methanol or acetaldehyde oxidation	NAD+-dependent secondary alcohol dehydrogenase Adh1 [EC:1.1.1.-]	KOfam	K18382	"iron-containing alcohol dehydrogenase Sun et al., 2011"	75
+Additional Carbons (Core)	Methanol or acetaldehyde oxidation	"Alcohol dehydrogenase, class IV (EutG) (PDB:6AHC)"	COG20_FUNCTION	COG1454	"iron-containing alcohol dehydrogenase Sun et al., 2011"	76
+Additional Carbons (Core)	Malate dehydrogenase (oxidizes to oxaloacetate)	malate dehydrogenase (oxaloacetate-decarboxylating)(NADP+) [EC:1.1.1.40]	KOfam	K00029		77
+Additional Carbons (Core)	L-lactate dehydrogenase	"FMN-dependent dehydrogenase, includes L-lactate dehydrogenase and type II isopentenyl diphosphate isomerase (LldD) (PDB:6AI7)"	COG20_FUNCTION	COG1304		78
+Additional Carbons (Core)	L-lactate dehydrogenase	Lactate dehydrogenase or related 2-hydroxyacid dehydrogenase (LdhA) (PDB:1DXY)	COG20_FUNCTION	COG1052		79
+Additional Carbons (Core)	Glycolate metabolism	FAD/FMN-containing lactate dehydrogenase/glycolate oxidase (GlcD) (PDB:1AHU)	COG20_FUNCTION	COG0277		80
+Additional Carbons (Core)	Glycolate metabolism	"Fe-S cluster-containing oxidoreductase, includes glycolate oxidase subunit GlcF (GlpC)"	COG20_FUNCTION	COG0247		81
+Additional Carbons (Core)	Pyruvate dehydrogenase	"Pyruvate/2-oxoglutarate dehydrogenase complex, dihydrolipoamide acyltransferase (E2) component (AceF) (PDB:1B5S)"	COG20_FUNCTION	COG0508		82
+Additional Carbons (Core)	Pyruvate dehydrogenase	pyruvate dehydrogenase E1 component [EC:1.2.4.1]	KOfam	K00163		83
+Additional Carbons (Variable)	Trigonnelline metabolism	(Z)-2-((N-methylformamido)methylene)-5-hydroxybutyrolactone dehydrogenase [EC:1.2.1.-]	KOfam	K23463		84
+Additional Carbons (Variable)	Trigonnelline metabolism	(E)-2-((N-methylformamido)methylene)succinate hydrolase [EC:3.5.1.-]	KOfam	K23465		85
+Additional Carbons (Variable)	TMAO catabolism	trimethylamine monooxygenase [EC:1.14.13.148]	KOfam	K18277		86
+Additional Carbons (Variable)	TMAO catabolism	Glycine cleavage system protein T (aminomethyltransferase) (GcvT) (PDB:2GAH) (PUBMED:25433025;25505271)	COG20_FUNCTION	COG0404		87
+Additional Carbons (Variable)	Carbon Monoxide Oxidation	aerobic carbon-monoxide dehydrogenase large subunit [EC:1.2.5.3]	KOfam	K03520		88
+Additional Carbons (Variable)	Carbon Monoxide Oxidation	Carbon monoxide dehydrogenase subunit CoxG (CoxG) (PDB:2NS9)	COG20_FUNCTION	COG3427		89
+Additional Carbons (Variable)	Carbon Monoxide Oxidation	"Aldehyde, CO, or xanthine dehydrogenase, FAD-binding subunit (CutB) (PDB:5Y6Q)"	COG20_FUNCTION	COG1319		90
+Additional Carbons (Variable)	Carbon Monoxide Oxidation	aerobic carbon-monoxide dehydrogenase small subunit [EC:1.2.5.3]	KOfam	K03518		91
+Additional Carbons (Variable)	Glyoxylate metabolism	glyoxylate/hydroxypyruvate reductase [EC:1.1.1.79 1.1.1.81]	KOfam	K12972		92
+Additional Carbons (Variable)	Tartrate/malate dehydrogenase	tartrate dehydrogenase/decarboxylase / D-malate dehydrogenase [EC:1.1.1.93 4.1.1.73 1.1.1.83]	KOfam	K07246		93
+Additional Carbons (Variable)	Formaldehyde metabolism	S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:1.1.1.284 1.1.1.1]	KOfam	K00121		94
+Additional Carbons (Variable)	Formaldehyde metabolism	S-formylglutathione hydrolase [EC:3.1.2.12]	KOfam	K01070		95
+Additional Carbons (Variable)	Acetone metabolism	cyclohexanone monooxygenase [EC:1.14.13.22]	KOfam	K03379		96
+Additional Carbons (Variable)	Glycerophospholipid metabolism	glycerol-3-phosphate dehydrogenase [EC:1.1.5.3]	KOfam	K00111		97
+Additional Carbons (Variable)	Glycerophospholipid metabolism	sn-glycerol 3-phosphate transport system substrate-binding protein	KOfam	K05813		98
+Additional Carbons (Variable)	Glycerophospholipid metabolism	sn-glycerol 3-phosphate transport system permease protein	KOfam	K05815		99
+Additional Carbons (Variable)	Glycerophospholipid metabolism	glycerophosphoryl diester phosphodiesterase [EC:3.1.4.46]	KOfam	K01126		100
+Additional Carbons (Variable)	Glyceraldehyde 3-phosphate metabolism	L-glyceraldehyde 3-phosphate reductase [EC:1.1.1.-]	KOfam	K19265		101
+Additional Carbons (Variable)	Glycerolipid metabolism	phosphoenolpyruvate---glycerone phosphotransferase subunit DhaK [EC:2.7.1.121]	KOfam	K05878		102
+Additional Carbons (Variable)	Glycerolipid metabolism	phosphoenolpyruvate---glycerone phosphotransferase subunit DhaL [EC:2.7.1.121]	KOfam	K05879		103
+Additional Carbons (Variable)	Aldehyde metabolism	aldehyde dehydrogenase [EC:1.2.1.-]	KOfam	K00138		104
+Additional Carbons (Variable)	Malate/oxoacetate metabolism	malyl-CoA/(S)-citramalyl-CoA lyase [EC:4.1.3.24 4.1.3.25]	KOfam	K08691		105
+Additional Carbons (Variable)	Malate/oxoacetate metabolism	malate-CoA ligase subunit beta [EC:6.2.1.9]	KOfam	K14067		106
+Additional Carbons (Variable)	Glycosidase	Glycosidase/amylase (phosphorylase) (AmyA) (PDB:2P67) (PUBMED:29684280)	COG20_FUNCTION	COG0366		107
+Additional Carbons (Variable)	D-lactate dehydrogenase	D-lactate dehydrogenase (cytochrome) [EC:1.1.2.4]	KOfam	K00102		108
+Additional Carbons (Variable)	Formate/oxalate metabolism	Crotonobetainyl-CoA:carnitine CoA-transferase CaiB and related acyl-CoA transferases (CaiB) (PDB:1P5H)	COG20_FUNCTION	COG1804		109
+Additional Carbons (Variable)	Formate/oxalate metabolism	malonyl-CoA decarboxylase [EC:4.1.1.9]	KOfam	K01578	Note: two GCs (GC_00002013 and GC_00001508) hit to 4.1.1.9 however GC_00001508 had near equal hit to K01578 and to K11690 and in many tables appears only as K11690.  	110
+Additional Carbons (Variable)	Haloacetate dehalogenase	haloacetate dehalogenase [EC:3.8.1.3]	KOfam	K01561		111
+Additional Carbons (Variable)	Malonate transporter	malonate transporter and related proteins	KOfam	K13936		112
+Additional Carbons (Variable)	D-tartrate dehydratase	D(-)-tartrate dehydratase [EC:4.2.1.81]	KOfam	K22209		113
+Additional Carbons (Variable)	Partial metabolism: raffinose/stachoyse/melibiose	raffinose/stachyose/melibiose transport system substrate-binding protein	KOfam	K10117		114
+Additional Carbons (Variable)	Partial metabolism: raffinose/stachoyse/melibiose	alpha-galactosidase [EC:3.2.1.22]	KOfam	K07406		115
+Additional Carbons (Variable)	Partial metabolism: raffinose/stachoyse/melibiose	beta-glucosidase [EC:3.2.1.21]	KOfam	K05350		116
+Additional Carbons (Variable)	Ribose metabolism	ribose transport system permease protein	KOfam	K10440		117
+Additional Carbons (Variable)	Ribose metabolism	ribose transport system substrate-binding protein	KOfam	K10439		118
+Additional Carbons (Variable)	Ribose metabolism	ribokinase [EC:2.7.1.15]	KOfam	K00852		119
+Additional Carbons (Variable)	Fucose epimerase	L-fucose mutarotase [EC:5.1.3.29]	KOfam	K02431		120
+Additional Carbons (Variable)	Aldose epimerase	aldose 1-epimerase [EC:5.1.3.3]	KOfam	K01785		121
+Additional Carbons (Variable)	Fructose transport	fructose transport system ATP-binding protein	KOfam	K10554		122
+Additional Carbons (Variable)	Fructose transport	fructose transport system substrate-binding protein	KOfam	K10552		123
+Additional Carbons (Variable)	Fructose transport	fructose transport system permease protein	KOfam	K10553		124
+Additional Carbons (Variable)	D-Xylulose metabolism	xylulokinase [EC:2.7.1.17]	KOfam	K00854		125
+Additional Carbons (Variable)	D-Arabinitol metabolism	D-arabinitol 4-dehydrogenase [EC:1.1.1.11]	KOfam	K00007		126
+Additional Carbons (Variable)	D-Xylulose metabolism	D-xylose transport system ATP-binding protein [EC:7.5.2.10]	KOfam	K10545		127
+Additional Carbons (Variable)	"L-fucose, L-xylose, D-arabinose metabolism"	D-threo-aldose 1-dehydrogenase [EC:1.1.1.122]	KOfam	K00064		128
+Additional Carbons (Variable)	"L-fucose, L-xylose, D-arabinose metabolism"	"L-fucono-1,5-lactonase [EC:3.1.1.120]"	KOfam	K07046		129
+Additional Carbons (Variable)	D-Arabinonate metabolism	arabinonate dehydratase [EC:4.2.1.5]	KOfam	K26399		130
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	D-xylose 1-dehydrogenase [EC:1.1.1.175]	KOfam	K22185		131
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	"NAD(P)-dependent dehydrogenase, short-chain alcohol dehydrogenase family (FabG) (PDB:6L1H)"	COG20_FUNCTION	COG1028		132
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	2-dehydro-3-deoxy-L-rhamnonate dehydrogenase (NAD+) [EC:1.1.1.401]	KOfam	K21883		133
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	gluconolactonase [EC:3.1.1.17]	KOfam	K01053		134
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	"Sugar kinase of the NBD/HSP70 family, may contain an N-terminal HTH domain (NagC) (PDB:1WOQ)"	COG20_FUNCTION	COG1940		135
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	L-alanine-DL-glutamate epimerase or related enzyme of enolase superfamily (RspA) (PDB:1BKH)	COG20_FUNCTION	COG4948		136
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	3-hydroxyisobutyrate dehydrogenase [EC:1.1.1.31]	KOfam	K00020		137
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase [EC:1.2.1.16 1.2.1.79 1.2.1.20]	KOfam	K00135		138
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	"2,4-didehydro-3-deoxy-L-rhamnonate hydrolase [EC:3.7.1.26]"	KOfam	K18336		139
+Additional Carbons (Variable)	"Glycolysis (Enter-Doudoroff, non-phosphorylated)"	xylonate dehydratase [EC:4.2.1.82]	KOfam	K22186		140
+Additional Carbons (Variable)	Gluconeogenesis	Phosphoenolpyruvate carboxylase (Ppc) (PDB:1FIY)	COG20_FUNCTION	COG2352		141
+amino acids	arginine via ornithine	argininosuccinate synthase [EC:6.3.4.5]	KOfam	K01940		142
+amino acids	arginine via ornithine	ornithine carbamoyltransferase [EC:2.1.3.3]	KOfam	K00611		143
+amino acids	arginine via ornithine	argininosuccinate lyase [EC:4.3.2.1]	KOfam	K01755		144
+amino acids	histidine	ATP phosphoribosyltransferase [EC:2.4.2.17]	KOfam	K00765		145
+amino acids	histidine	ATP phosphoribosyltransferase regulatory subunit HisZ (HisZ) (PDB:3OD1) (PUBMED:9767141)	COG20_FUNCTION	COG3705	K02502	146
+amino acids	histidine	Phosphoribosyl-ATP pyrophosphohydrolase (HisI2) (PDB:6J22)	COG20_FUNCTION	COG0140	K01523; EC 3.6.1.31	147
+amino acids	histidine	Phosphoribosyl-AMP cyclohydrolase (HisI1) (PDB:1ZPS)	COG20_FUNCTION	COG0139	K01496	148
+amino acids	histidine	phosphoribosyl-AMP cyclohydrolase / phosphoribosyl-ATP pyrophosphohydrolase [EC:3.5.4.19 3.6.1.31	KOfam	NA	K11755	149
+amino acids	histidine	phosphoribosyl-ATP pyrophosphohydrolase / phosphoribosyl-AMP cyclohydrolase / histidinol dehydrogenase [EC:3.6.1.31 3.5.4.19 1.1.1.23]	KOfam	NA	K14152	150
+amino acids	histidine	phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase [EC:5.3.1.16]	KOfam	K01814		151
+amino acids	histidine	imidazole glycerol-phosphate synthase subunit HisH [EC:4.3.2.10]	KOfam	K02501		152
+amino acids	histidine	imidazole glycerol-phosphate synthase subunit HisF [EC:4.3.2.10]	KOfam	K02500		153
+amino acids	histidine	imidazoleglycerol-phosphate dehydratase [EC:4.2.1.19]	KOfam	K01693		154
+amino acids	histidine	histidinol-phosphate aminotransferase [EC:2.6.1.9]	KOfam	K00817		155
+amino acids	histidine	histidinol-phosphatase [EC:3.1.3.15]	KOfam	NA	"K01089, K04486, K18649, K05602"	156
+amino acids	histidine	inositol-phosphate phosphatase / L-galactose 1-phosphate phosphatase / histidinol-phosphatase [EC:3.1.3.25 3.1.3.93 3.1.3.15]	KOfam	K18649		157
+amino acids	histidine	histidinol dehydrogenase [EC:1.1.1.23]	KOfam	K00013		158
+amino acids	lysine	4-hydroxy-tetrahydrodipicolinate synthase [EC:4.3.3.7]	KOfam	K01714		159
+amino acids	lysine	aspartate kinase [EC:2.7.2.4]	KOfam	K00928		160
+amino acids	lysine	succinyl-diaminopimelate desuccinylase [EC:3.5.1.18]	KOfam	K01439		161
+amino acids	lysine	aspartate-semialdehyde dehydrogenase [EC:1.2.1.11]	KOfam	K00133		162
+amino acids	lysine	4-hydroxy-tetrahydrodipicolinate reductase [EC:1.17.1.8]	KOfam	K00215		163
+amino acids	lysine	acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]	KOfam	K00821		164
+amino acids	lysine	diaminopimelate decarboxylase [EC:4.1.1.20]	KOfam	K01586		165
+amino acids	lysine	diaminopimelate epimerase [EC:5.1.1.7]	KOfam	K01778		166
+amino acids	lysine	"2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase [EC:2.3.1.117]"	KOfam	K00674		167
+amino acids	glutamate	glutamate synthase (NADPH) large chain [EC:1.4.1.13]	KOfam	K00265		168
+amino acids	glutamate	glutamate synthase (NADPH) small chain [EC:1.4.1.13]	KOfam	K00266		169
+amino acids	aspartate	aspartate aminotransferase [EC:2.6.1.1]	KOfam	K00812		170
+amino acids	serine (M00020 incomplete)	Phosphoglycerate dehydrogenase or related dehydrogenase (SerA) (PDB:3OET)	COG20_FUNCTION	COG0111	K00058; EC 1.1.1.95 	171
+amino acids	serine (M00020 incomplete)	phosphoserine phosphatase RsbU/P [EC:3.1.3.3]	KOfam	K07315	serB	172
+amino acids	serine (M00020 incomplete)	phosphoserine aminotransferase [EC:2.6.1.52]	KOfam	NA	serC	173
+amino acids	serine (introconversion with glycine)	glycine hydroxymethyltransferase [EC:2.1.2.1]	KOfam	K00600		174
+amino acids	serine (with agxt)	alanine-glyoxylate transaminase / serine-glyoxylate transaminase / serine-pyruvate transaminase [EC:2.6.1.44 2.6.1.45 2.6.1.51]	KOfam	K00830		175
+amino acids	threonine	homoserine kinase type II [EC:2.7.1.39]	KOfam	K02204		176
+amino acids	threonine	homoserine dehydrogenase [EC:1.1.1.3]	KOfam	K00003		177
+amino acids	threonine	threonine synthase [EC:4.2.3.1]	KOfam	K01733		178
+amino acids	threonine	aspartate kinase [EC:2.7.2.4]	KOfam	K00928		179
+amino acids	threonine	aspartate-semialdehyde dehydrogenase [EC:1.2.1.11]	KOfam	K00133		180
+amino acids	asparagine (via a tRNA dependent transamidation mechanism)	asparagine synthase (glutamine-hydrolysing) [EC:6.3.5.4]	KOfam	K01953		181
+amino acids	asparagine (via a tRNA dependent transamidation mechanism)	aspartate--ammonia ligase [EC:6.3.1.1]	KOfam	NA		182
+amino acids	asparagine (via a tRNA dependent transamidation mechanism)	aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit B [EC:6.3.5.6 6.3.5.7]	KOfam	K02434		183
+amino acids	asparagine (via a tRNA dependent transamidation mechanism)	aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C [EC:6.3.5.6 6.3.5.7]	KOfam	K02435		184
+amino acids	asparagine (via a tRNA dependent transamidation mechanism)	aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]	KOfam	K02433		185
+amino acids	asparagine (via a tRNA dependent transamidation mechanism)	Aspartyl/asparaginyl-tRNA synthetase	COG20_FUNCTION	NA		186
+amino acids	glutamine	glutamine synthetase [EC:6.3.1.2]	KOfam	K01915		187
+amino acids	glycine (introconversion with serine)	glycine hydroxymethyltransferase [EC:2.1.2.1]	KOfam	K00600		188
+amino acids	glycine (with agxt)	alanine-glyoxylate transaminase / serine-glyoxylate transaminase / serine-pyruvate transaminase [EC:2.6.1.44 2.6.1.45 2.6.1.51]	KOfam	K00830		189
+amino acids	"glycine (from threonine, see note from Tripp et al., 2009)"	threonine aldolase [EC:4.1.2.48]	KOfam	K01620	"Note in Tripp et al., 2009, growth experiments show that threonine aldolase did not satisfy cellular glycine and serine demands"	190
+amino acids	proline	glutamate 5-kinase [EC:2.7.2.11]	KOfam	K00931		191
+amino acids	proline	Pyrroline-5-carboxylate reductase (ProC) (PDB:3GT0) (PUBMED:22125496;26507882)	COG20_FUNCTION	COG0345	K00286; EC:1.5.1.2	192
+amino acids	proline	Gamma-glutamyl phosphate reductase (ProA) (PDB:4GHK)	COG20_FUNCTION	COG0014	K00147; EC:1.2.1.41	193
+amino acids	selenocysteine	L-seryl-tRNA(Ser) seleniumtransferase [EC:2.9.1.1]	KOfam	NA	K01042; EC 2.9.1.1	194
+amino acids	"cysteine (Cysteine biosynthesis, serine => cysteine)"	serine O-acetyltransferase [EC:2.3.1.30]	KOfam	K00640		195
+amino acids	"cysteine (Cysteine biosynthesis, serine => cysteine)"	Cysteine synthase (CysK) (PDB:1FCJ)	COG20_FUNCTION	COG0031	K01738	196
+amino acids	"cysteine (Cysteine biosynthesis, serine => cysteine)"	cysteine synthase / O-phosphoserine sulfhydrylase / cystathionine beta-synthase	KOfam	NA	K01738	197
+amino acids	"cysteine (Cysteine biosynthesis, serine => cysteine)"	L-3-cyanoalanine synthase/ cysteine synthase	KOfam	NA	K13034	198
+amino acids	"cysteine (Cysteine biosynthesis, serine => cysteine)"	O-acetylhomoserine/O-acetylserine sulfhydrylase [EC:2.5.1.49 2.5.1.47]	KOfam	NA	K17069	199
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	S-adenosylmethionine synthetase [EC:2.5.1.6]	KOfam	K00789	K00789	200
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	putative AdoMet-dependent methyltransferase	KOfam	NA	K17462 	201
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	adenosylhomocysteine nucleosidase [EC:3.2.2.9]	KOfam	K01243	K01243 	202
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	S-ribosylhomocysteine lyase [EC:4.4.1.21]	KOfam	NA	K07173	203
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	cystathionine beta-synthase (O-acetyl-L-serine)	KOfam	NA	K17216	204
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	cystathionine gamma-lyase / homocysteine desulfhydrase	KOfam	NA	K17217	205
+amino acids	"cysteine (Cysteine biosynthesis, methionine => cysteine)"	Cystathionine beta-lyase/cystathionine gamma-synthase (MetC) (PDB:1CL1)	COG20_FUNCTION	COG0626		206
+amino acids	alanine	aspartate 4-decarboxylase	KOfam	NA	K09758	207
+amino acids	alanine	valine--pyruvate aminotransferase	KOfam	NA	K00835	208
+amino acids	alanine	alanine-synthesizing transaminase [EC:2.6.1.66 2.6.1.2]	KOfam	NA	"K14260/	COG0436"	209
+amino acids	alanine	Aspartate/methionine/tyrosine aminotransferase (AspB) (PDB:2O0R)	COG20_FUNCTION	COG0436	K00814	210
+amino acids	alanine	cysteine desulfurase [EC:2.8.1.7]	KOfam	K04487		211
+amino acids	alanine	cysteine desulfurase / selenocysteine lyase [EC:2.8.1.7 4.4.1.16]	KOfam	K11717		212
+amino acids	alanine	alanine dehydrogenase [EC:1.4.1.1]	KOfam	K00259		213
+amino acids	isoleucine	dihydroxy-acid dehydratase [EC:4.2.1.9]	KOfam	K01687		214
+amino acids	isoleucine	acetolactate synthase I/II/III large subunit [EC:2.2.1.6]	KOfam	K01652		215
+amino acids	isoleucine	branched-chain amino acid aminotransferase [EC:2.6.1.42]	KOfam	K00826		216
+amino acids	isoleucine	ketol-acid reductoisomerase [EC:1.1.1.86]	KOfam	K00053		217
+amino acids	isoleucine	acetolactate synthase I/III small subunit [EC:2.2.1.6]	KOfam	K01653		218
+amino acids	isoleucine	Threonine deaminase (IlvA) (PDB:3IAU)	COG20_FUNCTION	COG1171	K17989; EC:4.3.1.17 4.3.1.19	219
+amino acids	leucine	3-isopropylmalate dehydrogenase [EC:1.1.1.85]	KOfam	K00052		220
+amino acids	leucine	3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]	KOfam	K01704		221
+amino acids	leucine	3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]	KOfam	K01703		222
+amino acids	leucine	2-isopropylmalate synthase [EC:2.3.3.13]	KOfam	K01649		223
+amino acids	leucine	branched-chain amino acid aminotransferase [EC:2.6.1.42]	KOfam	K00826		224
+amino acids	methionine	aspartate kinase [EC:2.7.2.4]	KOfam	K00928		225
+amino acids	methionine	aspartate-semialdehyde dehydrogenase [EC:1.2.1.11]	KOfam	K00133		226
+amino acids	methionine	homoserine dehydrogenase [EC:1.1.1.3]	KOfam	K00003		227
+amino acids	methionine	homoserine O-acetyltransferase/O-succinyltransferase [EC:2.3.1.31 2.3.1.46]	KOfam	K00641		228
+amino acids	methionine	Cystathionine beta-lyase/cystathionine gamma-synthase (MetC) (PDB:1CL1)	COG20_FUNCTION	COG0626	K01739/ K01760	229
+amino acids	methionine	Methionine synthase II (cobalamin-independent) (MetE) (PDB:1T7L)	COG20_FUNCTION	COG0620	K00549	230
+amino acids	methionine	"Methionine synthase I (cobalamin-dependent), methyltransferase domain (MetH1) (PDB:1LT7)"	COG20_FUNCTION	COG0646	K00548	231
+amino acids	methionine	betaine-homocysteine S-methyltransferase [EC:2.1.1.5]	KOfam	K00544		232
+amino acids	methionine	Homocysteine/selenocysteine methylase (S-methylmethionine-dependent) (MHT1) (PDB:5DML)	COG20_FUNCTION	COG2040	K00547	233
+amino acids	methionine	O-acetylhomoserine (thiol)-lyase [EC:2.5.1.49]	KOfam	K01740		234
+amino acids	methionine	homoserine dehydrogenase [EC:1.1.1.3]	KOfam	K00003		235
+amino acids	methionine	aspartate kinase [EC:2.7.2.4]	KOfam	K00928		236
+amino acids	methionine	homoserine O-acetyltransferase/O-succinyltransferase [EC:2.3.1.31 2.3.1.46]	KOfam	K00641		237
+amino acids	methionine	aspartate-semialdehyde dehydrogenase [EC:1.2.1.11]	KOfam	K00133		238
+amino acids	phenylalanine	Chorismate mutase (PheA) (PDB:1ECM)	COG20_FUNCTION	COG1605	K14170	239
+amino acids	phenylalanine	Prephenate dehydratase (PheA2) (PDB:1PHZ)	COG20_FUNCTION	COG0077	K14170/K01713	240
+amino acids	phenylalanine	prephenate dehydratase [EC:4.2.1.51]	KOfam	K04518		241
+amino acids	phenylalanine	aspartate aminotransferase [EC:2.6.1.1]	KOfam	K00812	note: could fill step for EC:2.6.1.57	242
+amino acids	phenylalanine	histidinol-phosphate aminotransferase [EC:2.6.1.9]	KOfam	K00817	note: could fill step for EC:2.6.1.57	243
+amino acids	phenylalanine	aromatic amino acid aminotransferase II [EC:2.6.1.58 2.6.1.28]	KOfam	NA	K05821/COG1167	244
+amino acids	phenylalanine	phenylalanine dehydrogenase [EC:1.4.1.20]	KOfam	NA	K00270	245
+amino acids	phenylalanine	aromatic-amino-acid transaminase [EC:2.6.1.57]	KOfam	NA	COG1448/K00832	246
+amino acids	phenylalanine	aromatic amino acid aminotransferase I / 2-aminoadipate transaminase [EC:2.6.1.57 2.6.1.39 2.6.1.27 2.6.1.5]	KOfam	NA	K00838/COG1167	247
+amino acids	tyrosine	Chorismate mutase (PheA) (PDB:1ECM)	COG20_FUNCTION	COG1605	K14170	248
+amino acids	tyrosine	Prephenate dehydrogenase (TyrA) (PDB:2F1K)	COG20_FUNCTION	COG0287	K14187	249
+amino acids	tyrosine	prephenate dehydrogenase [EC:1.3.1.12]	KOfam	K04517		250
+amino acids	tyrosine	aspartate aminotransferase [EC:2.6.1.1]	KOfam	K00812	Note: on Kegg map 00400 this could fill the last step EC:2.6.1.1	251
+amino acids	tryptophan	anthranilate synthase component II [EC:4.1.3.27]	KOfam	K01658		252
+amino acids	tryptophan	anthranilate synthase component I [EC:4.1.3.27]	KOfam	K01657		253
+amino acids	tryptophan	anthranilate phosphoribosyltransferase [EC:2.4.2.18]	KOfam	K00766		254
+amino acids	tryptophan	Indole-3-glycerol phosphate synthase (TrpC) (PDB:6BMA)	COG20_FUNCTION	COG0134	K01609	255
+amino acids	tryptophan	Phosphoribosylanthranilate isomerase (TrpF) (PDB:1DL3)	COG20_FUNCTION	COG0135	K01817	256
+amino acids	tryptophan	tryptophan synthase alpha chain [EC:4.2.1.20]	KOfam	K01695		257
+amino acids	tryptophan	Tryptophan synthase beta chain (TrpB) (PDB:2DH5)	COG20_FUNCTION	COG0133	K01696	258
+amino acids	valine	dihydroxy-acid dehydratase [EC:4.2.1.9]	KOfam	K01687		259
+amino acids	valine	acetolactate synthase I/II/III large subunit [EC:2.2.1.6]	KOfam	K01652		260
+amino acids	valine	branched-chain amino acid aminotransferase [EC:2.6.1.42]	KOfam	K00826		261
+amino acids	valine	ketol-acid reductoisomerase [EC:1.1.1.86]	KOfam	K00053		262
+amino acids	valine	acetolactate synthase I/III small subunit [EC:2.2.1.6]	KOfam	K01653		263
+Vitamins and co-factors	Thiamine	phosphomethylpyrimidine synthase [EC:4.1.99.17]	KOfam	NA	K03147_COG0422_missing thiC_Carinin_et_al_2014	264
+Vitamins and co-factors	Thiamine	hydroxymethylpyrimidine/phosphomethylpyrimidine kinase [EC:2.7.1.49 2.7.4.7]	KOfam	K00941		265
+Vitamins and co-factors	Thiamine	thiamine-phosphate pyrophosphorylase [EC:2.5.1.3]	KOfam	K00788		266
+Vitamins and co-factors	Thiamine	thiamine-monophosphate kinase [EC:2.7.4.16]	KOfam	K00946		267
+Vitamins and co-factors	Thiamine	tRNA uracil 4-sulfurtransferase [EC:2.8.1.4]	KOfam	NA	K03151	268
+Vitamins and co-factors	Thiamine	2-iminoacetate synthase	COG20_FUNCTION	NA	COG1060/ K03150	269
+Vitamins and co-factors	Thiamine	Thiamine monophosphate synthase (ThiE) (PDB:1G4T) (PUBMED:19060138)	COG20_FUNCTION	COG0352	K10810	270
+Vitamins and co-factors	Thiamine	Glycine/D-amino acid oxidase (deaminating) (DadA) (PDB:3AWI)	COG20_FUNCTION	COG0665	K03153	271
+Vitamins and co-factors	Thiamine	thiazole synthase [EC:2.8.1.10]	KOfam	K03149		272
+Vitamins and co-factors	Thiamine	alkaline phosphatase [EC:3.1.3.1]	KOfam	NA	"K01077, cannot turn thiamine phosphate to thiamine"	273
+Vitamins and co-factors	Thiamine	acid phosphatase	KOfam	NA	"K01078, cannot turn thiamine phosphate to thiamine"	274
+Vitamins and co-factors	Thiamine	Molybdopterin or thiamine biosynthesis adenylyltransferase (ThiF) (PDB:1ZUD) (PUBMED:32239579)	COG20_FUNCTION	COG0476	K03148	275
+Vitamins and co-factors	Thiamine	thiaminase (transcriptional activator TenA) [EC:3.5.99.2]	KOfam	K03707		276
+Vitamins and co-factors	Thiamine	thiamine-phosphate pyrophosphorylase [EC:2.5.1.3]	KOfam	K00788		277
+Vitamins and co-factors	Thiamine	ribosome biogenesis GTPase / thiamine phosphate phosphatase [EC:3.6.1.- 3.1.3.100]	KOfam	NA	"K06949, cannot turn thiamine phosphate to thiamine"	278
+Vitamins and co-factors	Thiamine	sulfur carrier protein	KOfam	K03154		279
+Vitamins and co-factors	Thiamine	cysteine desulfurase [EC:2.8.1.7]	KOfam	K04487		280
+Vitamins and co-factors	Thiamine	cysteine desulfurase / selenocysteine lyase [EC:2.8.1.7 4.4.1.16]	KOfam	K11717		281
+Vitamins and co-factors	Thiamine	thiamine transport system substrate-binding protein	KOfam	NA		282
+Vitamins and co-factors	pantothenate (vitamin B5)	pantoate--beta-alanine ligase [EC:6.3.2.1]	KOfam	K01918		283
+Vitamins and co-factors	pantothenate (vitamin B5)	3-methyl-2-oxobutanoate hydroxymethyltransferase [EC:2.1.2.11]	KOfam	K00606		284
+Vitamins and co-factors	pantothenate (vitamin B5)	branched-chain amino acid aminotransferase [EC:2.6.1.42]	KOfam	K00826		285
+Vitamins and co-factors	pantothenate (vitamin B5)	2-dehydropantoate 2-reductase [EC:1.1.1.169]	KOfam	K00077	"panE, missing from most groups "	286
+Vitamins and co-factors	pantothenate (vitamin B5)	Ketol-acid reductoisomerase (IlvC) (PDB:1NP3)	COG20_FUNCTION	COG0059	K00053	287
+Vitamins and co-factors	pantothenate (vitamin B5)	aspartate 1-decarboxylase [EC:4.1.1.11]	KOfam	NA	K01579; EC:4.1.1.11; missing from all groups	288
+Vitamins and co-factors	pantothenate (vitamin B5)	sulfinoalanine decarboxylase / aspartate 1-decarboxylase [EC:4.1.1.29 4.1.1.11]	KOfam	NA	K18966	289
+Vitamins and co-factors	pantothenate (vitamin B5)	aspartate 1-decarboxylase [EC:4.1.1.11]	KOfam	NA	K24264	290
+Vitamins and co-factors	pantothenate (vitamin B5)	Panthothenate synthetase (PanC) (PDB:1DIN) (PUBMED:17968677)	COG20_FUNCTION	COG0414	K13799	291
+Vitamins and co-factors	pantothenate (vitamin B5)	Cytidylate kinase (Cmk) (PDB:3R20) (PUBMED:19111750;25691594;28928205)	COG20_FUNCTION	COG0283	K13799	292
+Vitamins and co-factors	pantothenate (vitamin B5)	tyrosine decarboxylase / aspartate 1-decarboxylase [EC:4.1.1.25 4.1.1.11]	KOfam	NA	COG0076	293
+Vitamins and co-factors	pantothenate (vitamin B5)	polyamine oxidase [EC:1.5.3.17 1.5.3.-]	KOfam	NA	K17839; EC 1.5.3.17 missing from all groups 	294
+Vitamins and co-factors	pantothenate (vitamin B5)	polyamine oxidase [EC:1.5.3.17]	KOfam	NA	K13367; EC 1.5.3.17 missing from all groups	295
+Vitamins and co-factors	pantothenate (vitamin B5)	Acyl-CoA reductase or other NAD-dependent aldehyde dehydrogenase (AdhE) (PDB:1A4S)	COG20_FUNCTION	COG1012	K00128	296
+Vitamins and co-factors	pyridoxine (Vitamin B6)	pyridoxine 5-phosphate synthase [EC:2.6.99.2]	KOfam	K03474		297
+Vitamins and co-factors	pyridoxine (Vitamin B6)	pyridoxamine 5'-phosphate oxidase [EC:1.4.3.5]	KOfam	K00275		298
+Vitamins and co-factors	pyridoxine (Vitamin B6)	pyridoxal 5'-phosphate synthase pdxS subunit [EC:4.3.3.6]	KOfam	NA	K06215/COG0214	299
+Vitamins and co-factors	pyridoxine (Vitamin B6)	pyridoxine kinase [EC:2.7.1.35]	KOfam	NA	K00868/COG2240	300
+Vitamins and co-factors	pyridoxine (Vitamin B6)	pyridoxal phosphatase [EC:3.1.3.74]	KOfam	NA	K07758/ K13248	301
+Vitamins and co-factors	pyridoxine (Vitamin B6)	4-hydroxy-L-threonine phosphate dehydrogenase PdxA (PdxA) (PDB:1PS6)	COG20_FUNCTION	COG1995	K00097; EC:1.1.1.262	302
+Vitamins and co-factors	pyridoxine (Vitamin B6)	phosphoserine aminotransferase [EC:2.6.1.52]	KOfam	NA	K00831; missing serC	303
+Vitamins and co-factors	pyridoxine (Vitamin B6)	Phosphoglycerate dehydrogenase or related dehydrogenase (SerA) (PDB:3OET)	COG20_FUNCTION	COG0111	K03473; EC:1.1.1.290	304
+Vitamins and co-factors	pyridoxine (Vitamin B6)	Glyceraldehyde-3-phosphate dehydrogenase/erythrose-4-phosphate dehydrogenase (GapA) (PDB:3ZDF)	COG20_FUNCTION	COG0057	K03472; EC:1.2.1.72	305
+Vitamins and co-factors	biotin	biotin synthase [EC:2.8.1.6]	KOfam	NA	COG0502; missing [EC:2.8.1.6]	306
+Vitamins and co-factors	biotin	dethiobiotin synthetase [EC:6.3.3.3]	KOfam	NA	K01935/K19562/COG0132; missing [EC:6.3.3.3]	307
+Vitamins and co-factors	biotin	Adenosylmethionine-8-amino-7-oxononanoate aminotransferase (BioA) (PDB:1MLY)	COG20_FUNCTION	COG0161	K19563	308
+Vitamins and co-factors	biotin	7-keto-8-aminopelargonate synthetase or related enzyme (BioF) (PDB:1BS0)	COG20_FUNCTION	NA	K00652; missing bioF EC:2.3.1.47	309
+Vitamins and co-factors	cobalamin	cobaltochelatase CobS [EC:6.6.1.2]	KOfam	K09882		310
+Vitamins and co-factors	cobalamin	cobaltochelatase CobT [EC:6.6.1.2]	KOfam	K09883		311
+Vitamins and co-factors	cobalamin	cobaltochelatase CobN [EC:6.6.1.2]	KOfam	NA	K02230	312
+Vitamins and co-factors	cobalamin	"cobyrinic acid a,c-diamide synthase [EC:6.3.5.9 6.3.5.11]"	KOfam	NA	K02224	313
+Vitamins and co-factors	cobalamin	precorrin-8X/cobalt-precorrin-8 methylmutase [EC:5.4.99.61 5.4.99.60]	KOfam	NA	K06042	314
+Vitamins and co-factors	cobalamin	"precorrin-6B C5,15-methyltransferase / cobalt-precorrin-6B C5,C15-methyltransferase [EC:2.1.1.132 2.1.1.289 2.1.1.196]"	KOfam	NA	K00595	315
+Vitamins and co-factors	cobalamin	precorrin-6A synthase [EC:2.1.1.152]	KOfam	NA	K02228	316
+Vitamins and co-factors	cobalamin	precorrin-4/cobalt-precorrin-4 C11-methyltransferase [EC:2.1.1.133 2.1.1.271]	KOfam	NA	K05936	317
+Vitamins and co-factors	cobalamin	cobalt-precorrin 5A hydrolase / cobalt-factor III methyltransferase / precorrin-3B C17-methyltransferase [EC:3.7.1.12 2.1.1.272 2.1.1.131]	KOfam	NA	K13541	318
+Vitamins and co-factors	cobalamin	precorrin-2 C20-methyltransferase / precorrin-3B C17-methyltransferase [EC:2.1.1.130 2.1.1.131]	KOfam	NA	K13540	319
+Vitamins and co-factors	cobalamin	precorrin-3B C17-methyltransferase / cobalt-factor III methyltransferase [EC:2.1.1.131 2.1.1.272]	KOfam	NA	K05934	320
+Vitamins and co-factors	cobalamin	precorrin-3B synthase [EC:1.14.13.83]	KOfam	NA	K02229	321
+Vitamins and co-factors	cobalamin	precorrin-2/cobalt-factor-2 C20-methyltransferase [EC:2.1.1.130 2.1.1.151]	KOfam	NA	K03394	322
+Vitamins and co-factors	cobalamin	uroporphyrinogen III methyltransferase / synthase [EC:2.1.1.107 4.2.1.75]	KOfam	NA	K13542	323
+Vitamins and co-factors	cobalamin	uroporphyrin-III C-methyltransferase [EC:2.1.1.107]	KOfam	NA	K02303	324
+Vitamins and co-factors	"NAD biosynthesis, tryptophan => quinolinate => NAD"	arylformamidase [EC:3.5.1.9]	KOfam	NA	K01432	325
+Vitamins and co-factors	"NAD biosynthesis, tryptophan => quinolinate => NAD"	kynurenine formamidase [EC:3.5.1.9]	KOfam	NA	K14263/COG0657	326
+Vitamins and co-factors	"NAD biosynthesis, tryptophan => quinolinate => NAD"	arylformamidase [EC:3.5.1.9]	KOfam	NA	K07130/COG1878	327
+Vitamins and co-factors	"NAD biosynthesis, tryptophan => quinolinate => NAD"	kynurenine 3-monooxygenase [EC:1.14.13.9]	KOfam	NA	K00486	328
+Vitamins and co-factors	"NAD biosynthesis, tryptophan => quinolinate => NAD"	kynureninase [EC:3.7.1.3]	KOfam	NA	K01556/COG3844	329
+Vitamins and co-factors	"NAD biosynthesis, tryptophan => quinolinate => NAD"	"3-hydroxyanthranilate 3,4-dioxygenase [EC:1.13.11.6]"	KOfam	NA	K00452	330
+Vitamins and co-factors	"NAD biosynthesis, aspartate => quinolinate => NAD"	L-aspartate oxidase [EC:1.4.3.16]	KOfam	NA	K00278/COG0029	331
+Vitamins and co-factors	"NAD biosynthesis, aspartate => quinolinate => NAD"	aspartate dehydrogenase [EC:1.4.1.21]	KOfam	NA	K06989/COG1712	332
+Vitamins and co-factors	"NAD biosynthesis, aspartate => quinolinate => NAD"	quinolinate synthase [EC:2.5.1.72]	KOfam	K03517		333
+Vitamins and co-factors	NAD synthesis	nicotinate-nucleotide pyrophosphorylase (carboxylating) [EC:2.4.2.19]	KOfam	K00767		334
+Vitamins and co-factors	NAD synthesis	nicotinate-nucleotide adenylyltransferase [EC:2.7.7.18]	KOfam	K00969		335
+Vitamins and co-factors	NAD synthesis	NH3-dependent NAD+ synthetase (NadE) (PDB:3HMQ)	COG20_FUNCTION	COG0171	"K01916/	K01950"	336
+Vitamins and co-factors	NAD synthesis	nicotinamide mononucleotide adenylyltransferase [EC:2.7.7.1 2.7.7.18]	KOfam	NA	K06210	337
+Vitamins and co-factors	NAD synthesis	NAD+ kinase [EC:2.7.1.23]	KOfam	K00858		338
+Vitamins and co-factors	Niacin synthesis	nicotinate-nucleotide adenylyltransferase [EC:2.7.7.18]	KOfam	K00969		339
+Vitamins and co-factors	Niacin synthesis	bifunctional NMN adenylyltransferase/nudix hydrolase [EC:2.7.7.1 3.6.1.-]	KOfam	NA		340
+Vitamins and co-factors	Niacin synthesis	Purine nucleoside phosphorylase (XapA) (PDB:1YQQ)	COG20_FUNCTION	COG0005	K03783; [EC:2.4.2.1]	341
+Vitamins and co-factors	Niacin synthesis	nicotinate phosphoribosyltransferase [EC:6.3.4.21]	KOfam	NA	"K00763/	COG1488"	342
+Vitamins and co-factors	Niacin synthesis	IMP and pyridine-specific 5'-nucleotidase [EC:3.1.3.99 3.1.3.-]	KOfam	NA	K18550; missing a 5'-nucleotidase [EC:3.1.3.5]	343
+Vitamins and co-factors	myo-insitol	myo-inositol-1(or 4)-monophosphatase [EC:3.1.3.25]	KOfam	K01092		344
+Vitamins and co-factors	myo-insitol	myo-inositol-1-phosphate synthase	KOfam	NA	K01858	345
+Vitamins and co-factors	myo-insitol	inositol polyphosphate-4-phosphatase [EC:3.1.3.66]	KOfam	NA	K01109	346
+Vitamins and co-factors	myo-insitol	inositol polyphosphate 1-phosphatase	KOfam	NA	K01107	347
+Vitamins and co-factors	myo-insitol	"3'(2'), 5'-bisphosphate nucleotidase / inositol polyphosphate 1-phosphatase"	KOfam	NA	K15422	348
+Vitamins and co-factors	myo-insitol	inositol polyphosphate 5-phosphatase INPP5A	KOfam	NA	K01106	349
+Vitamins and co-factors	myo-insitol	type I inositol polyphosphate 5-phosphatase IP5P1/2	KOfam	NA	K24221	350
+Vitamins and co-factors	myo-insitol	inositol polyphosphate 5-phosphatase INPP5J/K	KOfam	NA	K24222	351
+Vitamins and co-factors	PABA	Anthranilate/para-aminobenzoate synthases component I (TrpE) (PDB:1I1Q)	COG20_FUNCTION	COG0147	K01665; EC:2.6.1.85	352
+Vitamins and co-factors	PABA	Anthranilate/para-aminobenzoate synthase component II (glutamine amidotransferase) (PabA) (PDB:1I1Q)	COG20_FUNCTION	COG0512	K01664; EC:2.6.1.85	353
+Vitamins and co-factors	PABA	Branched-chain amino acid aminotransferase/4-amino-4-deoxychorismate lyase (IlvE) (PDB:1A3G)	COG20_FUNCTION	COG0115	K02619; EC:4.1.3.38	354
+Vitamins and co-factors	Riboflavin	"6,7-dimethyl-8-ribityllumazine synthase [EC:2.5.1.78]"	KOfam	K00794		355
+Vitamins and co-factors	Riboflavin	riboflavin synthase [EC:2.5.1.9]	KOfam	K00793		356
+Vitamins and co-factors	Riboflavin	riboflavin kinase / FMN adenylyltransferase [EC:2.7.1.26 2.7.7.2]	KOfam	K11753		357
+Vitamins and co-factors	Riboflavin	"3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]"	KOfam	K14652		358
+Vitamins and co-factors	Riboflavin	diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:3.5.4.26 1.1.1.193]	KOfam	K11752		359
+Vitamins and co-factors	Riboflavin	"FMN and 5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase YigB, HAD superfamily (riboflavin biosynthesis) (YigB) (PDB:4JB3) (PUBMED:24123841)"	COG20_FUNCTION	COG1011	K20862; EC:3.1.3.102 3.1.3.104	360
+Vitamins and co-factors	Folate	GTP cyclohydrolase IA [EC:3.5.4.16]	KOfam	K01495		361
+Vitamins and co-factors	Folate	Dihydroneopterin aldolase (FolB) (PDB:1B9L)	COG20_FUNCTION	COG1539		362
+Vitamins and co-factors	Folate	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase [EC:2.7.6.3]	KOfam	K00950		363
+Vitamins and co-factors	Folate	dihydropteroate synthase [EC:2.5.1.15]	KOfam	K00796		364
+Vitamins and co-factors	Folate	Folylpolyglutamate synthase/Dihydropteroate synthase (FolC) (PDB:1W78)	COG20_FUNCTION	COG0285	K11754; EC 6.3.2.12	365
+Vitamins and co-factors	Folate	dihydrofolate reductase	KOfam	NA	K00287; missing 1.5.1.3  	366
+Vitamins and co-factors	Folate	thymidylate synthase (FAD) [EC:2.1.1.148]	KOfam	K03465		367
+Vitamins and co-factors	Folate	dihydroneopterin triphosphate aldolase (PTPS-III) / 6-pyruvoyltetrahydropterin synthase [EC:4.1.2.60 4.2.3.12]	KOfam	NA	K22101	368
+amino acid conversions	amino acid conversions	"Archaeal aspartate aminotransferase or a related aminotransferase, includes purine catabolism protein PucG (PucG) (PDB:3NNK)"	COG20_FUNCTION	COG0075		369
+amino acid conversions	amino acid conversions	Glycine/serine hydroxymethyltransferase (GlyA) (PDB:1BJ4)	COG20_FUNCTION	COG0112		370
+amino acid conversions	amino acid conversions	Glutamate synthase domain 1 (GltB1) (PDB:1EA0)	COG20_FUNCTION	COG0067		371
+amino acid conversions	amino acid conversions	glutamine synthetase [EC:6.3.1.2]	KOfam	K01915		372
+amino acid conversions	amino acid conversions	Carbamoylphosphate synthase large subunit (CarB) (PDB:1C30)	COG20_FUNCTION	COG0458		373
+amino acid conversions	amino acid conversions	Carbamoylphosphate synthase small subunit (CarA) (PDB:1C30)	COG20_FUNCTION	COG0505		374
+amino acid conversions	amino acid conversions	D-alanine transaminase [EC:2.6.1.21]	KOfam	NA		375
+amino acid conversions	amino acid conversions	alanine racemase [EC:5.1.1.1]	KOfam	NA		376
+amino acid conversions	amino acid conversions	Amino acid racemase YgeA (RacX) (PDB:5ELL)	COG20_FUNCTION	COG1794		377
+amino acid conversions	amino acid conversions	"RHH-type transcriptional regulator, proline utilization regulon repressor / proline dehydrogenase / delta 1-pyrroline-5-carboxylate dehydrogenase [EC:1.5.5.2 1.2.1.88]"	KOfam	K13821		378
+amino acid conversions	amino acid conversions	alanine dehydrogenase [EC:1.4.1.1]	KOfam	K00259		379
+amino acid conversions	amino acid conversions	threonine dehydratase [EC:4.3.1.19]	KOfam	K01754		380
+amino acid conversions	amino acid conversions	"L-2,4-diaminobutyrate transaminase [EC:2.6.1.76]"	KOfam	K15785		381
+amino acid conversions	amino acid conversions	cis-L-3-hydroxyproline dehydratase [EC:4.2.1.171]	KOfam	K21624		382
+amino acid conversions	amino acid conversions	2-iminobutanoate/2-iminopropanoate deaminase [EC:3.5.99.10]	KOfam	K09022		383
+amino acid conversions	amino acid conversions	"Ornithine cyclodeaminase/archaeal alanine dehydrogenase, mu-crystallin family (OCDMu) (PDB:2I99)"	COG20_FUNCTION	COG2423		384
+Glycine production	Glycine betaine catabolism	betaine-homocysteine S-methyltransferase [EC:2.1.1.5]	KOfam	K00544		385
+Glycine production	Glycine betaine catabolism	dimethylglycine dehydrogenase [EC:1.5.8.4]	KOfam	K00315		386
+Glycine production	Glycine betaine demethylation	"sarcosine oxidase, subunit alpha [EC:1.5.3.24 1.5.3.1]"	KOfam	K00302		387
+Glycine production	Glycine betaine demethylation	"sarcosine oxidase, subunit delta [EC:1.5.3.24 1.5.3.1]"	KOfam	K00304		388
+Glycine production	Glycine betaine demethylation	"sarcosine oxidase, subunit gamma [EC:1.5.3.24 1.5.3.1]"	KOfam	K00305		389
+Glycine production	Glycine betaine demethylation	Glycine/D-amino acid oxidase (deaminating) (DadA) (PDB:3AWI)	COG20_FUNCTION	COG0665		390
+Yangs salvage	Yangs salvage	S-adenosylmethionine synthetase [EC:2.5.1.6]	KOfam	K00789		391
+Yangs salvage	Yangs salvage	Spermidine synthase (polyamine aminopropyltransferase) (SpeE) (PDB:6BQ2)!!!S-adenosylmethionine decarboxylase (SpeD) (PDB:1TLU)	COG20_FUNCTION	COG0421!!!COG1586		392
+Yangs salvage	Yangs salvage	spermidine synthase [EC:2.5.1.16]	KOfam	K00797		393
+Yangs salvage	Yangs salvage	5'-methylthioadenosine phosphorylase [EC:2.4.2.28]	KOfam	K00772		394
+Yangs salvage	Yangs salvage	methylthioribose-1-phosphate isomerase [EC:5.3.1.23]	KOfam	K08963		395
+Yangs salvage	Yangs salvage	methylthioribulose 1-phosphate dehydratase	KOfam	NA		396
+Yangs salvage	Yangs salvage	enolase-phosphatase E1	KOfam	NA		397
+Yangs salvage	Yangs salvage	"2,3-diketo-5-methylthiopentyl-1-phosphate enolase [EC:5.3.2.5]"	KOfam	NA		398
+Yangs salvage	Yangs salvage	2-hydroxy-3-keto-5-methylthiopentenyl-1-phosphate phosphatase [EC:3.1.3.87]	COG20_FUNCTION	NA		399
+Yangs salvage	Yangs salvage	"1,2-dihydroxy-3-keto-5-methylthiopentene dioxygenase [EC:1.13.11.53 1.13.11.54]"	COG20_FUNCTION	NA		400
+Yangs salvage	Yangs salvage	L-glutamine---4-(methylsulfanyl)-2-oxobutanoate aminotransferase; mtnE (gene name)	KOfam	NA		401
+Yangs salvage	Yangs salvage	bisanhydrobacterioruberin hydratase [EC:4.2.1.161]	KOfam	NA		402
+Yangs salvage	Yangs salvage	tyrosine aminotransferase	KOfam	NA		403
+Yangs salvage	Yangs salvage	aromatic-amino-acid transaminase [EC:2.6.1.57]	KOfam	NA		404
+Yangs salvage	Yangs salvage	aromatic amino acid aminotransferase I / 2-aminoadipate transaminase [EC:2.6.1.57 2.6.1.39 2.6.1.27 2.6.1.5]	KOfam	NA		405
+DHAP salvage	DHAP salvage	S-adenosylmethionine synthetase [EC:2.5.1.6]	KOfam	K00789		406
+DHAP salvage	DHAP salvage	Spermidine synthase (polyamine aminopropyltransferase) (SpeE) (PDB:6BQ2)!!!S-adenosylmethionine decarboxylase (SpeD) (PDB:1TLU)	COG20_FUNCTION	COG0421!!!COG1586		407
+DHAP salvage	DHAP salvage	spermidine synthase [EC:2.5.1.16]	KOfam	K00797		408
+DHAP salvage/5-deoxyribose salvage	DHAP salvage/5-deoxyribose salvage	5'-methylthioadenosine phosphorylase [EC:2.4.2.28]	KOfam	K00772		409
+DHAP salvage/5-deoxyribose salvage	DHAP salvage/5-deoxyribose salvage	methylthioribose-1-phosphate isomerase [EC:5.3.1.23]	KOfam	K08963		410
+DHAP salvage	DHAP salvage	"5-methylthioribulose/5-deoxyribulose/Fuculose 1-phosphate aldolase (methionine salvage, sugar degradation) (AraD) (PDB:1FUA) (PUBMED:31950558)"	COG20_FUNCTION	COG0235		411
+DHAP salvage	DHAP salvage	O-acetylhomoserine (thiol)-lyase [EC:2.5.1.49]	KOfam	K01740		412
+S-adenosyl-L-methionine salvage II	S-adenosyl-L-methionine salvage II	adenosylhomocysteinase [EC:3.13.2.1]	KOfam	K01251		413
+S-adenosyl-L-methionine salvage II	S-adenosyl-L-methionine salvage II	S-adenosylmethionine synthetase [EC:2.5.1.6]	KOfam	K00789		414
+S-adenosyl-L-methionine salvage II	S-adenosyl-L-methionine salvage II	DNA (cytosine-5)-methyltransferase 1 [EC:2.1.1.37]	KOfam	K00558		415
+S-adenosyl-L-methionine salvage II	S-adenosyl-L-methionine salvage II	Methionine synthase II (cobalamin-independent) (MetE) (PDB:1T7L)	COG20_FUNCTION	COG0620		416
+S-adenosyl-L-methionine salvage II	S-adenosyl-L-methionine salvage II	"Methionine synthase I (cobalamin-dependent), methyltransferase domain (MetH1) (PDB:1LT7)"	COG20_FUNCTION	COG0646		417
+S-adenosyl-L-methionine salvage II	S-adenosyl-L-methionine salvage II	S-adenosylmethionine synthetase [EC:2.5.1.6]	KOfam	K00789		418
+Sulfur	Dissimilatory Sulfate Reduction	ATP sulfurylase (sulfate adenylyltransferase) (MET3) (PDB:1G8F)	COG20_FUNCTION	COG2046	K00958/ sulfate adenylyltransferase [EC:2.7.7.4]	419
+Sulfur	Dissimilatory Sulfate Reduction	sulfate adenylyltransferase [EC:2.7.7.4]	KOfam	K00958	met/sat	420
+Sulfur	Dissimilatory Sulfate Reduction	Adenylylsulfate kinase or related kinase (CysC) (PDB:2GKS)!!!Nicotinamide mononucleotide adenylyltransferase (NadR) (PDB:1LW7)	COG20_FUNCTION	COG0529!!!COG1056	K00955/bifunctional enzyme CysN/CysC [EC:2.7.7.4 2.7.1.25]/cysNC	421
+Sulfur	Dissimilatory Sulfate Reduction	"adenylylsulfate reductase, subunit A [EC:1.8.99.2]"	KOfam	K00394		422
+Sulfur	Dissimilatory Sulfate Reduction	"adenylylsulfate reductase, subunit B [EC:1.8.99.2]"	KOfam	K00395		423
+Sulfur	Dissimilatory Sulfate Reduction	dissimilatory sulfite reductase alpha subunit [EC:1.8.1.22]	KOfam	NA	K11180	424
+Sulfur	Dissimilatory Sulfate Reduction	dissimilatory sulfite reductase beta subunit [EC:1.8.1.22]	KOfam	NA	K11181	425
+Sulfur	Dissimilatory Sulfate Reduction	dissimilatory sulfite reductase flavoprotein subunit	KOfam	NA	K27196	426
+Sulfur	Dissimilatory Sulfate Reduction	[DsrC]-trisulfide reductase subunit M [EC:1.8.5.10]	KOfam	NA	K27187	427
+Sulfur	Dissimilatory Sulfate Reduction	[DsrC]-trisulfide reductase subunit K [EC:1.8.5.10]	KOfam	NA	K27188	428
+Sulfur	Dissimilatory Sulfate Reduction	[DsrC]-trisulfide reductase subunit J	KOfam	NA	K27189	429
+Sulfur	Dissimilatory Sulfate Reduction	[DsrC]-trisulfide reductase subunit O	KOfam	NA	K27190	430
+Sulfur	Dissimilatory Sulfate Reduction	[DsrC]-trisulfide reductase subunit P	KOfam	NA	K27191	431
+Sulfur	Assimilatory Sulfate Reduction	sulfate adenylyltransferase [EC:2.7.7.4]	KOfam	K00958	met/sat	432
+Sulfur	Assimilatory Sulfate Reduction	Adenylylsulfate kinase or related kinase (CysC) (PDB:2GKS)!!!Nicotinamide mononucleotide adenylyltransferase (NadR) (PDB:1LW7)	COG20_FUNCTION	COG0529!!!COG1056	K00955/bifunctional enzyme CysN/CysC [EC:2.7.7.4 2.7.1.25]/cysNC	433
+Sulfur	Assimilatory Sulfate Reduction	Adenylylsulfate kinase or related kinase (CysC) (PDB:2GKS)	COG20_FUNCTION	COG0529	K00860/adenylylsulfate kinase [EC:2.7.1.25]/cysC	434
+Sulfur	Assimilatory Sulfate Reduction	3'-phosphoadenosine 5'-phosphosulfate sulfotransferase (PAPS reductase)/FAD synthetase or related enzyme (CysD) (PDB:1ZUN)	COG20_FUNCTION	COG0175	K00390/phosphoadenosine phosphosulfate reductase [EC:1.8.4.8 1.8.4.10]/cysH	435
+Sulfur	Assimilatory Sulfate Reduction	3'-Phosphoadenosine 5'-phosphosulfate (PAPS) 3'-phosphatase (CysQ)	COG20_FUNCTION	COG1218	"K01082/3'(2'), 5'-bisphosphate nucleotidase [EC:3.1.3.7]/cysQ"	436
+Sulfur	Assimilatory Sulfate Reduction	ATP sulfurylase (sulfate adenylyltransferase) (MET3) (PDB:1G8F)	COG20_FUNCTION	COG2046	K00958/ sulfate adenylyltransferase [EC:2.7.7.4]	437
+Sulfur	Assimilatory Sulfate Reduction	sulfite reductase (NADPH) flavoprotein alpha-component [EC:1.8.1.2]	KOfam	NA	COG0369/ cysJ/K00380	438
+Sulfur	Assimilatory Sulfate Reduction	sulfite reductase (NADPH) hemoprotein beta-component [EC:1.8.1.2]	KOfam	NA	COG0155/csJ/K00381	439
+Sulfur	Assimilatory Sulfate Reduction	sulfite reductase (ferredoxin) [EC:1.8.7.1]	KOfam	NA	sir/K00392	440
+Sulfur	Thioredoxin	Thiol-disulfide isomerase or thioredoxin (TrxA) (PDB:1XFL)	COG20_FUNCTION	COG0526		441
+Sulfur	Sulfur oxidation	sulfur dioxygenase [EC:1.13.11.18]	KOfam	K17725		442
+Sulfur	Sulfur Transport	S-adenosylmethionine uptake transporter	KOfam	K15270		443
+Sulfur	Sulfur Transport	cysteine/O-acetylserine efflux protein	KOfam	K11249		444
+Sulfur	Sulfur Transport	O-acetylserine/cysteine efflux transporter	KOfam	K15268		445
+Sulfur	Sulfur Transport	"sulfate permease, SulP family"	KOfam	K03321		446
+Sulfur	Sulfur Transport	"Uncharacterized membrane protein YedE/YeeE, contains two sulfur transport domains (YedE)"	COG20_FUNCTION	COG2391		447
+Sulfur	Sulfur Transport	"Sulfite exporter TauE/SafE/YfcA and related permeases, UPF0721 family (TauE) (PUBMED:21183667;22797525)"	COG20_FUNCTION	COG0730		448
+Sulfur	Sulfur Transport	"ABC-type taurine transport system, periplasmic component (TauA) (PDB:6SSY)"	COG20_FUNCTION	COG4521		449
+Sulfur	Sulfur Transport	taurine transport system ATP-binding protein [EC:7.6.2.7]	KOfam	K10831		450
+Sulfur	Sulfur Transport	"ABC-type nitrate/sulfonate/bicarbonate transport system, permease component (TauC)"	COG20_FUNCTION	COG0600		451
+Sulfur	Alkanesulfonate Metabolism	"Flavin-dependent oxidoreductase, luciferase family (includes alkanesulfonate monooxygenase SsuD and methylene tetrahydromethanopterin reductase) (SsuD) (PDB:1BRL)"	COG20_FUNCTION	COG2141		452
+Sulfur	Taurine Metabolism	"Taurine dioxygenase, alpha-ketoglutarate-dependent (TauD) (PDB:1DRT)"	COG20_FUNCTION	COG2175		453
+Sulfur	Methanethiol Metabolism	methanethiol oxidase [EC:1.8.3.4]	KOfam	K17285		454
+Sulfur	Thiosulfate Metabolism	thiosulfate/3-mercaptopyruvate sulfurtransferase [EC:2.8.1.1 2.8.1.2]	KOfam	K01011		455
+Sulfur	Sulfoacetaldehyde Metabolism	sulfoacetaldehyde dehydrogenase [EC:1.2.1.81]	KOfam	K15515		456
+Sulfur	Sulfoacetate Metabolism	sulfoacetate-CoA ligase [EC:6.2.1.-]	KOfam	K26005		457
+Sulfur	Sulfoacetaldehyde Metabolism	sulfoacetaldehyde acetyltransferase [EC:2.3.3.15]	KOfam	K03852		458
+Sulfur	Sulfolactate Metabolism	(2R)-sulfolactate sulfo-lyase subunit beta [EC:4.4.1.24]	KOfam	K16846		459
+Sulfur	Sulfolactate Metabolism	(2R)-sulfolactate sulfo-lyase subunit alpha [EC:4.4.1.24]	KOfam	K16845		460
+Sulfur	DHPS Metabolism	sulfopropanediol 3-dehydrogenase [EC:1.1.1.308]	KOfam	K15509		461
+Sulfur	DMSP Metabolism	dimethylsulfoniopropionate demethylase [EC:2.1.1.269]	KOfam	K17486	(dmdA)	462
+Sulfur	DMSP Metabolism	3-(methylthio)propionyl---CoA ligase [EC:6.2.1.44]	KOfam	K20034	(dmdB)	463
+Sulfur	DMSP Metabolism	3-(methylsulfanyl)propanoyl-CoA dehydrogenase [EC:1.3.99.41]	KOfam	K20035	(dmdC)	464
+Sulfur	GHS Pathway	S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:1.1.1.284 1.1.1.1]	KOfam	K00121		465
+Sulfur	GHS Pathway	Zn-dependent alcohol/formaldehyde dehydrogenase (FrmA) (PDB:1A71)	COG20_FUNCTION	COG1062		466
+Sulfur	GHS Pathway	S-formylglutathione hydrolase [EC:3.1.2.12]	KOfam	K01070		467
+Phosphorus	Phosphorous Regulation/Transport	protein PsiE	KOfam	K13256		468
+Phosphorus	Phosphorous Regulation/Transport	phosphate starvation-inducible protein PhoH and related proteins	KOfam	K06217		469
+Phosphorus	Phosphorous Regulation/Transport	"DNA-binding response regulator, OmpR family, contains REC and winged-helix (wHTH) domain (OmpR) (PDB:1XHF)"	COG20_FUNCTION	COG0745		470
+Phosphorus	Phosphorous Regulation/Transport	phosphate transport system protein	KOfam	K02039		471
+Phosphorus	Phosphorous Regulation/Transport	"ABC-type phosphate transport system, permease component (PstA)"	COG20_FUNCTION	COG0581		472
+Phosphorus	Phosphorous Regulation/Transport	"ABC-type phosphate transport system, ATPase component (PstB)"	COG20_FUNCTION	COG1117		473
+Phosphorus	Phosphorous Regulation/Transport	"ABC-type phosphate transport system, periplasmic component (PstS) (PDB:2Q9T)"	COG20_FUNCTION	COG0226		474
+Phosphorus	Phosphorous Regulation/Transport	"ABC-type phosphate transport system, permease component (PstC)"	COG20_FUNCTION	COG0573		475
+Phosphorus	Phosphorous Regulation/Transport	Phosphate/sulfate permease (PitA) (PUBMED:31358606)	COG20_FUNCTION	COG0306		476
+Phosphorus	Phosphonate Regulation/Transport	phosphonate transport system ATP-binding protein [EC:7.3.2.2]	KOfam	K02041	phnC	477
+Phosphorus	Phosphonate Regulation/Transport	phosphonate transport system substrate-binding protein	KOfam	K02044	phnD	478
+Phosphorus	Phosphonate Regulation/Transport	phosphonate transport system permease protein	KOfam	K02042	phnE	479
+Phosphorus	Phosphonate Regulation/Transport	putative phosphonate transport system ATP-binding protein	KOfam	K05781	phnK	480
+Phosphorus	Phosphonate Regulation/Transport	"Phosphoribosyl 1,2-cyclic phosphate phosphodiesterase (PhnP) (PDB:6B9V)"	COG20_FUNCTION	COG1235	phnP	481
+Phosphorus	Phosphonate Regulation/Transport	Alpha-D-ribose 1-methylphosphonate 5-phosphate C-P lyase PhnJ (PhnJ) (PDB:4XB6)	COG20_FUNCTION	COG3627	phnJ	482
+Phosphorus	Phosphonate Regulation/Transport	Alpha-D-ribose 1-methylphosphonate 5-triphosphate synthase subunit PhnI (PhnI)	COG20_FUNCTION	COG3626	phnI	483
+Phosphorus	Phosphonate Regulation/Transport	"ABC-type phosphonate transport system, ATPase component PhnK (PhnK) (PUBMED:19516334)"	COG20_FUNCTION	COG4107	phnK	484
+Phosphorus	Phosphonate Regulation/Transport	Alpha-D-ribose 1-methylphosphonate 5-triphosphate diphosphatase PhnM (PhnM)	COG20_FUNCTION	COG3454	phnM	485
+Phosphorus	Phosphonate Regulation/Transport	Alpha-D-ribose 1-methylphosphonate 5-triphosphate synthase subunit PhnL (PhnL)	COG20_FUNCTION	COG4778	phnL	486
+Phosphorus	Phosphonate Regulation/Transport	Alpha-D-ribose 1-methylphosphonate 5-triphosphate synthase subunit PhnH (PhnH) (PDB:2FSU)	COG20_FUNCTION	COG3625	phnH	487
+Phosphorus	Phosphonate Regulation/Transport	Alpha-D-ribose 1-methylphosphonate 5-triphosphate synthase subunit PhnG (PhnG) (PDB:4XB6)	COG20_FUNCTION	COG3624	phnG	488
+Phosphorus	Phosphonate Regulation/Transport	"Thymidine phosphorylase (DeoA) (PDB:1AZY)!!!Ribose 1,5-bisphosphate kinase PhnN (PhnN)"	COG20_FUNCTION	COG0213!!!COG3709	phnN	489
+Phosphorus	Phosphonate Regulation/Transport	phosphonoacetaldehyde hydrolase [EC:3.11.1.1]	KOfam	K05306	phnX	490
+Phosphorus	Phosphonate Regulation/Transport	"Secreted phosphatase, PhoX family (PhoX) (PDB:3ZWU)"	COG20_FUNCTION	COG3211		491
+Nitrogen	Polyamine metabolism	putative spermidine/putrescine transport system ATP-binding protein	KOfam	K02052		492
+Nitrogen	Polyamine metabolism	"ABC-type spermidine/putrescine transport system, permease component I (PotB)"	COG20_FUNCTION	COG1176		493
+Nitrogen	Polyamine metabolism	"ABC-type spermidine/putrescine transport system, permease component II (PotC)"	COG20_FUNCTION	COG1177		494
+Nitrogen	Polyamine metabolism	Spermidine/putrescine-binding periplasmic protein (PotD) (PDB:1POT)	COG20_FUNCTION	COG0687		495
+Nitrogen	Polyamine metabolism	agmatinase [EC:3.5.3.11]	KOfam	K01480		496
+Nitrogen	Polyamine metabolism	ornithine decarboxylase [EC:4.1.1.17]	KOfam	K01581		497
+Nitrogen	Polyamine metabolism	spermidine synthase [EC:2.5.1.16]	KOfam	K00797		498
+Nitrogen	Polyamine metabolism	Acyl-CoA reductase or other NAD-dependent aldehyde dehydrogenase (AdhE) (PDB:1A4S)	COG20_FUNCTION	COG1012		499
+Nitrogen	Polyamine metabolism	glutarate dioxygenase [EC:1.14.11.64]	KOfam	K15737		500
+Nitrogen	Polyamine metabolism	L-2-hydroxyglutarate oxidase LhgO (LhgO) (PDB:3DME)	COG20_FUNCTION	COG0579		501
+Nitrogen	Polyamine metabolism	beta-alanine--pyruvate transaminase [EC:2.6.1.18]	KOfam	K00822		502
+Nitrogen	Polyamine metabolism	malonate-semialdehyde dehydrogenase (acetylating) / methylmalonate-semialdehyde dehydrogenase [EC:1.2.1.18 1.2.1.27]	KOfam	K00140		503
+Nitrogen	Polyamine metabolism	beta-alanine--pyruvate transaminase [EC:2.6.1.18]	KOfam	K00822		504
+Nitrogen	Polyamine metabolism	Acyl-CoA reductase or other NAD-dependent aldehyde dehydrogenase (AdhE) (PDB:1A4S)	COG20_FUNCTION	COG1012		505
+Nitrogen	Polyamine metabolism	acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]	KOfam	K00821		506
+Nitrogen	Polyamine metabolism	succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase [EC:1.2.1.16 1.2.1.79 1.2.1.20]	KOfam	K00135		507
+Nitrogen	Polyamine metabolism	glutamate---methylamine ligase [EC:6.3.4.12]	KOfam	K01949		508
+Nitrogen	Polyamine metabolism	gamma-glutamylputrescine oxidase [EC:1.4.3.-]	KOfam	K09471		509
+Nitrogen	Polyamine metabolism	4-(gamma-glutamylamino)butanal dehydrogenase [EC:1.2.1.99]	KOfam	K09472		510
+Nitrogen	Polyamine metabolism	"Gamma-glutamyl-gamma-aminobutyrate hydrolase PuuD (putrescine degradation), contains GATase1-like domain (PuuD) (PDB:1L9X)"	COG20_FUNCTION	COG2071		511
+Nitrogen	Purine metabolism	"nucleobase:cation symporter-1, NCS1 family"	KOfam	K03457		512
+Nitrogen	Purine metabolism	Nucleoside 2-deoxyribosyltransferase (RCL) (PDB:1F8X)	COG20_FUNCTION	COG3613		513
+Nitrogen	Purine metabolism	adenine/guanine/hypoxanthine permease	KOfam	K06901		514
+Nitrogen	Purine metabolism	Purine nucleoside phosphorylase (XapA) (PDB:1YQQ)	COG20_FUNCTION	COG0005		515
+Nitrogen	Purine metabolism	GMP reductase [EC:1.7.1.7]	KOfam	K00364		516
+Nitrogen	Purine metabolism	allantoate deiminase [EC:3.5.3.9]	KOfam	K02083		517
+Nitrogen	Purine metabolism	"Uncharacterized conserved protein, Ntn-hydrolase superfamily (PDB:2IMH)"	COG20_FUNCTION	COG3342		518
+Nitrogen	Purine metabolism	adenine deaminase [EC:3.5.4.2]	KOfam	K21053		519
+Nitrogen	Purine metabolism	Xanthine/uracil permease (UraA) (PDB:3QE7)	COG20_FUNCTION	COG2233		520
+Nitrogen	Purine metabolism	"ABC-type guanosine uptake system NupNOPQ, permease component NupP (NupP) (PUBMED:21926227)"	COG20_FUNCTION	COG4603		521
+Nitrogen	Purine metabolism	"ABC-type guanosine uptake system NupNOPQ, permease subunit NupQ (NupQ) (PUBMED:21926227)"	COG20_FUNCTION	COG1079		522
+Nitrogen	Purine metabolism	"ABC-type guanosine uptake system NupNOPQ, ATPase component NupO (NupO) (PUBMED:21926227)"	COG20_FUNCTION	COG3845		523
+Nitrogen	Purine metabolism	basic membrane protein A and related proteins	KOfam	K07335		524
+Nitrogen	Purine metabolism	tRNA(Arg) A34 adenosine deaminase TadA (TadA) (PDB:2A8N)	COG20_FUNCTION	COG0590		525
+Nitrogen	Purine metabolism	"Xanthine dehydrogenase, Fe-S cluster and FAD-binding subunit XdhA (XdhA)"	COG20_FUNCTION	COG4630		526
+Nitrogen	Purine metabolism	"Xanthine dehydrogenase, molybdopterin-binding subunit XdhB (XdhB)"	COG20_FUNCTION	COG4631		527
+Nitrogen	Purine metabolism	allantoinase [EC:3.5.2.5]	KOfam	K16842		528
+Nitrogen	Purine metabolism	"5-hydroxyisourate hydrolase (purine catabolism), transthyretin-related family (HiuH) (PDB:2IGL)"	COG20_FUNCTION	COG2351		529
+Nitrogen	Purine metabolism	Uncharacterized membrane protein	COG20_FUNCTION	COG3748		530
+Nitrogen	Purine metabolism	2-oxo-4-hydroxy-4-carboxy--5-ureidoimidazoline (OHCU) decarboxylase (uric acid degradation) (PucL) (PDB:2O70)	COG20_FUNCTION	COG3195		531
+Nitrogen	Purine metabolism	Allantoicase (Alc) (PDB:1O59)	COG20_FUNCTION	COG4266		532
+Nitrogen	Purine metabolism	"Molybdoenzyme maturation factor PaoD (Mo cofactor insertion), XdhC/CoxF family (XdhC) (PDB:2WE7) (PUBMED:24498065)"	COG20_FUNCTION	COG1975		533
+Nitrogen	Purine metabolism	Urease accessory protein UreF (UreF) (PDB:3SF5)	COG20_FUNCTION	COG0830		534
+Nitrogen	Purine metabolism	Urease accessory protein UreH (UreH) (PDB:3SF5)	COG20_FUNCTION	COG0829		535
+Nitrogen	Purine metabolism	Urease alpha subunit (UreC) (PDB:5A6T)	COG20_FUNCTION	COG0804		536
+Nitrogen	Purine metabolism	Urease accessory protein UreE (UreE) (PDB:1EAR)	COG20_FUNCTION	COG2371		537
+Nitrogen	Purine metabolism	Urease beta subunit (UreB)	COG20_FUNCTION	COG0832		538
+Nitrogen	Purine metabolism	Urease gamma subunit (UreA) (PDB:1A5K)	COG20_FUNCTION	COG0831		539
+Nitrogen	Purine metabolism	urease accessory protein	KOfam	K03189		540
+Nitrogen	Osmolyte	mannosyl-3-phosphoglycerate phosphatase [EC:3.1.3.70]	KOfam	K07026		541
+Nitrogen	Osmolyte	glucosyl-3-phosphoglycerate synthase [EC:2.4.1.266]	KOfam	K13693		542
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	methylamine---glutamate N-methyltransferase subunit C [EC:2.1.1.21]	KOfam	K22083		543
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	methylamine---glutamate N-methyltransferase subunit B [EC:2.1.1.21]	KOfam	K22082		544
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	methylamine---glutamate N-methyltransferase subunit A [EC:2.1.1.21]	KOfam	K22081		545
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	trimethylamine monooxygenase [EC:1.14.13.148]	KOfam	K18277		546
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	glycine cleavage system T protein (aminomethyltransferase) [EC:2.1.2.10]	KOfam	K00605		547
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	alanine-glyoxylate transaminase / serine-glyoxylate transaminase / serine-pyruvate transaminase [EC:2.6.1.44 2.6.1.45 2.6.1.51]	KOfam	K00830		548
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	nitrilase [EC:3.5.5.1]	KOfam	K01501		549
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"Omega-amidase YafV/Nit2, hydrolyzes alpha-ketoglutaramate (Nit2) (PUBMED:28373563)"	COG20_FUNCTION	COG0388		550
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"Ornithine cyclodeaminase/archaeal alanine dehydrogenase, mu-crystallin family (OCDMu) (PDB:2I99)"	COG20_FUNCTION	COG2423		551
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	threonine dehydratase [EC:4.3.1.19]	KOfam	K01754		552
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	L-asparaginase II (AnsA2)	COG20_FUNCTION	COG4448		553
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	asparagine synthase (glutamine-hydrolysing) [EC:6.3.5.4]	KOfam	K01953		554
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	Glycine/D-amino acid oxidase (deaminating) (DadA) (PDB:3AWI)	COG20_FUNCTION	COG0665		555
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"ammonium transporter, Amt family"	KOfam	K03320		556
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	Signal transduction histidine kinase NtrY involved in nitrogen fixation and metabolism regulation (NtrY)	COG20_FUNCTION	COG5000		557
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"DNA-binding transcriptional response regulator, NtrC family, contains REC, AAA-type ATPase, and a Fis-type DNA-binding domains (AtoC) (PDB:1ZY2)"	COG20_FUNCTION	COG2204		558
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"RHH-type transcriptional regulator, proline utilization regulon repressor / proline dehydrogenase / delta 1-pyrroline-5-carboxylate dehydrogenase [EC:1.5.5.2 1.2.1.88]"	KOfam	K13821		559
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	cis-L-3-hydroxyproline dehydratase [EC:4.2.1.171]	KOfam	K21624		560
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	branched chain amino acid efflux pump	KOfam	K26606		561
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"Branched-chain amino acid ABC-type transport system, permease component (LivH)"	COG20_FUNCTION	COG0559		562
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"ABC-type branched-chain amino acid transport system, periplasmic component (LivK) (PDB:1USG)"	COG20_FUNCTION	COG0683		563
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"ABC-type branched-chain amino acid transport system, ATPase component LivG (LivG) (PDB:1G9X) (PUBMED:29514851)"	COG20_FUNCTION	COG0411		564
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"ABC-type branched-chain amino acid transport system, permease component (LivM)"	COG20_FUNCTION	COG4177		565
+Nitrogen	Transferases/Transport/Amino Acids Metabolism/Amidases	"ABC-type branched-chain amino acid transport system, ATPase component LivF (LivF) (PDB:1JI0) (PUBMED:26527648;32250026)"	COG20_FUNCTION	COG0410		566
+Nitrogen	glutathione hydrolase	gamma-glutamyltranspeptidase / glutathione hydrolase [EC:2.3.2.2 3.4.19.13]	KOfam	K00681		567
+Nitrogen	glutamate dehydrogenase	glutamate dehydrogenase (NAD(P)+) [EC:1.4.1.3]	KOfam	K00261		568
+Nitrogen	2-aminoethylphosphonic acid degradation	2-amino-1-hydroxyethylphosphonate dioxygenase (glycine-forming) [EC:1.13.11.78]	KOfam	K21196		569
+Nitrogen	L-carnitine degradation	3-keto-5-aminohexanoate cleavage enzyme [EC:2.3.1.247]	KOfam	K18013		570
+Nitrogen	L-carnitine degradation	carnitine 3-dehydrogenase [EC:1.1.1.108]	KOfam	K17735		571
+Nitrogen	Methylamine catabolism	glutamine synthetase [EC:6.3.1.2]	KOfam	K01915		572
+Nitrogen	Glutamate synthesis	glutamate synthase (NADPH) large chain [EC:1.4.1.13]	KOfam	K00265		573
+Nitrogen	Glutamate synthesis	glutamate synthase (NADPH) small chain [EC:1.4.1.13]	KOfam	K00266		574
+Nitrogen	Glycine betaine synthesis	choline dehydrogenase [EC:1.1.99.1]	KOfam	K00108		575
+Nitrogen	Glycine betaine synthesis	choline monooxygenase [EC:1.14.15.7]	KOfam	K00499		576
+Nitrogen	Glycine betaine synthesis	Acyl-CoA reductase or other NAD-dependent aldehyde dehydrogenase (AdhE) (PDB:1A4S)	COG20_FUNCTION	COG1012		577
+Nitrogen	Glycine betaine synthesis	betaine-homocysteine S-methyltransferase [EC:2.1.1.5]	KOfam	K00544		578
+Nitrogen	Glycine betaine transport	glycine betaine/proline transport system ATP-binding protein [EC:7.6.2.9]	KOfam	K02000		579
+Nitrogen	Glycine betaine transport	glycine betaine/proline transport system permease protein	KOfam	K02001		580
+Nitrogen	Glycine betaine transport	glycine betaine/proline transport system substrate-binding protein	KOfam	K02002		581
+Nitrogen	Proline synthesis	Gamma-glutamyl phosphate reductase (ProA) (PDB:4GHK)	COG20_FUNCTION	COG0014		582
+Nitrogen	Proline synthesis	Pyrroline-5-carboxylate reductase (ProC) (PDB:3GT0) (PUBMED:22125496;26507882)	COG20_FUNCTION	COG0345		583
+Nitrogen	Proline synthesis	glutamate 5-kinase [EC:2.7.2.11]	KOfam	K00931		584
+Nitrogen	Proline symporter	Na+/proline symporter (PutP) (PDB:5NVA)	COG20_FUNCTION	COG0591		585
+Nitrogen	Sarcosine synthesis	creatinase [EC:3.5.3.3]	KOfam	K08688		586
+Nitrogen	Glycine catabolism	glycine cleavage system H protein	KOfam	K02437		587
+Nitrogen	Glycine catabolism	glycine cleavage system P protein (glycine dehydrogenase) [EC:1.4.4.2]	KOfam	K00281		588
+Nitrogen	Glycine catabolism	"LysR family transcriptional regulator, glycine cleavage system transcriptional activator"	KOfam	K03566		589
+Nitrogen	Nitrogen reduction	Nitroreductase (NfnB) (PDB:1F5V)	COG20_FUNCTION	COG0778		590
+Oxidative	Peroxides	Peroxiredoxin (Bcp) (PDB:5IPH)	COG20_FUNCTION	COG1225		591
+Oxidative	Peroxides	Peroxiredoxin (AHP1) (PDB:1H4O)	COG20_FUNCTION	COG0678		592
+Oxidative	Peroxides	glutathione peroxidase [EC:1.11.1.9]	KOfam	K00432		593
+Oxidative	Peroxides	superoxide oxidase [EC:1.10.3.17]	KOfam	K12262		594
+Oxidative	Peroxides	Rubrerythrin (YotD) (PDB:1B71)	COG20_FUNCTION	COG1592		595
+Oxidative	Peroxides	cytochrome c peroxidase [EC:1.11.1.5]	KOfam	K00428		596
+Oxidative	Peroxides	catalase-peroxidase [EC:1.11.1.21]	KOfam	K03782		597
+Oxidative	Peroxides	"superoxide dismutase, Fe-Mn family [EC:1.15.1.1]"	KOfam	K04564		598
+Oxidative	Peroxides	Alkyl hydroperoxide reductase subunit AhpC (peroxiredoxin) (AhpC) (PDB:2RII)	COG20_FUNCTION	COG0450		599
+Oxidative	DNA Sulfur Modifications	DNA sulfur modification protein DndD	KOfam	K19171		600
+Oxidative	DNA Sulfur Modifications	DNA sulfur modification protein DndE	KOfam	K19172		601
+Oxidative	DNA Sulfur Modifications	DNA sulfur modification protein DndC	KOfam	K19170		602
+Oxidative	DNA Sulfur Modifications	DNA sulfur modification protein DndB	KOfam	K19169		603
+Osmotic	Pump/Channels/Antiporters	"Na+:H+ antiporter, NhaA family"	KOfam	K03313		604
+Osmotic	Pump/Channels/Antiporters	cation:H+ antiporter	KOfam	K07301		605
+Osmotic	Pump/Channels/Antiporters	hyperosmotically inducible periplasmic protein	KOfam	K04065		606
+Osmotic	Pump/Channels/Antiporters	K(+)-stimulated pyrophosphate-energized sodium pump [EC:7.2.3.1]	KOfam	K15987		607
+Osmotic	Pump/Channels/Antiporters	voltage-gated sodium channel	KOfam	K08714		608
+Metals	Iron Transporters	high-affinity iron transporter	KOfam	K07243		609
+Metals	Iron Transporters	iron(III) transport system permease protein	KOfam	K02011		610
+Metals	Iron Transporters	iron(III) transport system substrate-binding protein	KOfam	K02012		611
+Metals	Zinc	zinc transport system permease protein	KOfam	K09816		612
+Metals	Zinc	zinc transport system ATP-binding protein [EC:7.2.2.20]	KOfam	K09817		613
+Metals	Zinc	zinc transport system substrate-binding protein	KOfam	K09815		614
+Metals	Potassium	putative flavoprotein involved in K+ transport	KOfam	K07222		615
+Metals	Potassium	trk/ktr system potassium uptake protein	KOfam	K03498		616
+Metals	Potassium	"Trk/Ktr K+ transport system regulatory component TrkA/KtrA/KtrC, RCK domain (TrkA) (PDB:4XTT) (PUBMED:23815639;25957408;31868587;32095817)"	COG20_FUNCTION	COG0569		617
+Metals	Magnesium	magnesium transporter	KOfam	K06213		618
+Metals	Manganese	manganese efflux pump family protein	KOfam	K23242		619
+Metals	Mercury	mercuric ion transport protein	KOfam	K08363		620
+Metals	Nickle	Hydrogenase/urease accessory protein HupE (HupE)	COG20_FUNCTION	COG2370		621
+Metals	Nickle	nickel transport protein	KOfam	K10094		622
+Metals	Copper	multicopper oxidase [EC:1.16.3.1]	KOfam	K22552		623
+Metals	Copper	plastocyanin	KOfam	K02638		624
+Metals	Copper	"Uncharacterized copper-binding protein, cupredoxin-like subfamily"	COG20_FUNCTION	COG4454		625
+Metals	Copper	Copper chaperone CopZ (CopZ) (PDB:1AFI)	COG20_FUNCTION	COG2608		626
+Metals	Iron	heme oxygenase (staphylobilin-producing) [EC:1.14.99.48]	KOfam	K07145		627
+Type V- Autotransporter	Type V- Autotransporter	fibronectin-binding autotransporter adhesin	KOfam	K19231	"Note: because HIMB83 shares a gene cluster with other genes that are annotated to fibronectin autotransporter adhesion genes, even though it does not get annotated to the fibronectin autotransporter adhesion genes, the functional enrichment did report it. This updated here to reflect that is is indeed not in HIMB83"	628
+Type V- Autotransporter	Type V- Autotransporter	Autotransporter adhesin AidA (AidA)	COG20_FUNCTION	COG3468		629
