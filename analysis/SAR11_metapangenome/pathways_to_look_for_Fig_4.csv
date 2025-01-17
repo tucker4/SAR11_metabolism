@@ -1,0 +1,53 @@
+Specific.function2,Metabolism,Ecological_pattern,Substrate,Gene.description,accession,source_figure4,Specific.function,Order
+"xanthine metabolism, xdhAB, pucL",Nitrogen,Offshore,Purines,"Xanthine dehydrogenase, Fe-S cluster and FAD-binding subunit XdhA (XdhA)",COG4630,COG20_FUNCTION,xdhA,1
+"tRNA adenosine deaminase, tadA",Nitrogen,Offshore,Purines,tRNA(Arg) A34 adenosine deaminase TadA (TadA) (PDB:2A8N),COG0590,COG20_FUNCTION,tadA,2
+"xanthine permease, uraA",Nitrogen,Offshore,Purines,Xanthine/uracil permease (UraA) (PDB:3QE7),COG2233,COG20_FUNCTION,uraA,3
+"uric acid degradation, pucL",Nitrogen,Offshore,Purines,2-oxo-4-hydroxy-4-carboxy--5-ureidoimidazoline (OHCU) decarboxylase (uric acid degradation) (PucL) (PDB:2O70),COG3195,COG20_FUNCTION,pucL,4
+"adenine deaminase, ade",Nitrogen,Offshore,Purines,adenine deaminase [EC:3.5.4.2],K21053,KOfam,ade,5
+"guanosine uptake, nupNOPQ",Nitrogen,Offshore,Purines,basic membrane protein A and related proteins,K07335,KOfam,nupN,6
+"ureases, ureABCDEFG",Nitrogen,Offshore,Purines,Urease accessory protein UreF (UreF) (PDB:3SF5),COG0830,COG20_FUNCTION,ureF,7
+"transaminase, agxt",Nitrogen,Offshore,None,alanine-glyoxylate transaminase / serine-glyoxylate transaminase / serine-pyruvate transaminase [EC:2.6.1.44 2.6.1.45 2.6.1.51],K00830,KOfam,AGXT,8
+"glucosylglycerate synthesis, gpgS, yedP",Nitrogen,Offshore,None,glucosyl-3-phosphoglycerate synthase [EC:2.4.1.266],K13693,KOfam,gpgS,9
+"glutathione hydrolase, ggt",Nitrogen,Offshore,None,gamma-glutamyltranspeptidase / glutathione hydrolase [EC:2.3.2.2 3.4.19.13],K00681,KOfam,ggt,10
+"glutamate dehydrogenase, gdhA",Nitrogen,Offshore,None,glutamate dehydrogenase (NAD(P)+) [EC:1.4.1.3],K00261,KOfam,gdhA,11
+"L-carnitine degradation, kce, lcdH",Nitrogen,Offshore,None,3-keto-5-aminohexanoate cleavage enzyme [EC:2.3.1.247],K18013,KOfam,kce,12
+"nucleoside 2-deoxyribosyltransferase, rcl",Nitrogen,Coastal,Purine Nucleotides,Nucleoside 2-deoxyribosyltransferase (RCL) (PDB:1F8X),COG3613,COG20_FUNCTION,RCL,13
+"allantoate deiminase, allC",Nitrogen,Coastal,Allantoate,allantoate deiminase [EC:3.5.3.9],K02083,KOfam,allC,14
+n terminal nucleophile,Nitrogen,Coastal,Allantoate,"Uncharacterized conserved protein, Ntn-hydrolase superfamily (PDB:2IMH)",COG3342,COG20_FUNCTION,unch,15
+"putrescine glutamylation, puuBCD",Nitrogen,Coastal,None,"Gamma-glutamyl-gamma-aminobutyrate hydrolase PuuD (putrescine degradation), contains GATase1-like domain (PuuD) (PDB:1L9X)",COG2071,COG20_FUNCTION,puuD,16
+"omega-amidase, nit2",Nitrogen,Coastal,None,"Omega-amidase YafV/Nit2, hydrolyzes alpha-ketoglutaramate (Nit2) (PUBMED:28373563)",COG0388,COG20_FUNCTION,nit2,17
+"cis-L-3-hydroxyproline dehydratase, c3lhypd",Nitrogen,Coastal,Amino acids,cis-L-3-hydroxyproline dehydratase [EC:4.2.1.171],K21624,KOfam,c3lhypd,18
+"proline dehydrogenase, putA",Nitrogen,Coastal,Amino acids,"RHH-type transcriptional regulator, proline utilization regulon repressor / proline dehydrogenase / delta 1-pyrroline-5-carboxylate dehydrogenase [EC:1.5.5.2 1.2.1.88]",K13821,KOfam,putA,19
+"ornithine cyclodeaminase, ocd",Nitrogen,Coastal,Amino acids,"Ornithine cyclodeaminase/archaeal alanine dehydrogenase, mu-crystallin family (OCDMu) (PDB:2I99)",COG2423,COG20_FUNCTION,ocd,20
+"threonine dehydratase, tdcB",Nitrogen,Coastal,Amino acids,threonine dehydratase [EC:4.3.1.19],K01754,KOfam,tdcB,21
+"phosphate/sulfate permease, pitA",Phosphorus,Offshore,None,Phosphate/sulfate permease (PitA) (PUBMED:31358606),COG0306,COG20_FUNCTION,pitA,22
+"2-aminoethylphosphonic acid degradation, phnZ",Phosphorus,Offshore,None,2-amino-1-hydroxyethylphosphonate dioxygenase (glycine-forming) [EC:1.13.11.78],K21196,KOfam,phnZ,23
+"heme oxygenase, isdG",Metals,Offshore,None,heme oxygenase (staphylobilin-producing) [EC:1.14.99.48],K07145,KOfam,isdG,24
+"high-affinity iron transporter, ftr1",Metals,Offshore,None,high-affinity iron transporter,K07243,KOfam,FTR1,25
+"nickel transport, hupE",Metals,Coastal,None,Hydrogenase/urease accessory protein HupE (HupE),COG2370,COG20_FUNCTION,hupE,26
+"K+ transport, flavoprotein, czcO",Metals,Coastal,None,putative flavoprotein involved in K+ transport,K07222,KOfam,czcO,27
+"copper tolerance, mmcO",Metals,Coastal,None,multicopper oxidase [EC:1.16.3.1],K22552,KOfam,mmcO,28
+"copper tolerance, cutA",Metals,Coastal,None,periplasmic divalent cation tolerance protein,K03926,KOfam,cutA,29
+"plastocyanin, petE",Metals,Coastal,None,plastocyanin,K02638,KOfam,petE,30
+"catalase-peroxidase, katG",Oxidative,Offshore,None,catalase-peroxidase [EC:1.11.1.21],K03782,KOfam,katG,31
+"voltage-gated sodium channel, vgsc",Osmotic,Coastal,None,voltage-gated sodium channel,K08714,KOfam,VGSC,32
+"cation:H+ antiporter, yrbG",Osmotic,Coastal,None,cation:H+ antiporter,K07301,KOfam,yrbG,33
+"D-lactate dehydrogenase, ldhD",Carbon,Offshore,C1-C3,D-lactate dehydrogenase (cytochrome) [EC:1.1.2.4],K00102,KOfam,ldhD,34
+"formate dehydrogenase, fdh",Carbon,Offshore,C1-C3,formate dehydrogenase [EC:1.17.1.9],K00122,KOfam,FDH,35
+"malonyl-CoA decarboxylase, mlycd",Carbon,Offshore,C1-C3,malonyl-CoA decarboxylase [EC:4.1.1.9],K01578,KOfam,MLYCD,36
+"CoA:oxalate CoA-transferase, yfdE",Carbon,Offshore,C1-C3,Crotonobetainyl-CoA:carnitine CoA-transferase CaiB and related acyl-CoA transferases (CaiB) (PDB:1P5H),COG1804,COG20_FUNCTION,yfdE,37
+"aldehyde dehydrogenase, aldB",Carbon,Offshore,C1-C3,aldehyde dehydrogenase [EC:1.2.1.-],K00138,KOfam,aldB,38
+"haloacetate dehalogenase, dehH",Carbon,Offshore,C1-C3,haloacetate dehalogenase [EC:3.8.1.3],K01561,KOfam,dehH,39
+"malonate transporter, mdcF",Carbon,Offshore,C1-C3,malonate transporter and related proteins,K13936,KOfam,mdcF,40
+"phosphoenolpyruvate:glycerone phosphotransferase, dhaKL",Carbon,Offshore,C1-C3,phosphoenolpyruvate---glycerone phosphotransferase subunit DhaK [EC:2.7.1.121],K05878,KOfam,dhaK,41
+"S-malate metabolism, mtkA, mcl",Carbon,Offshore,None,malyl-CoA/(S)-citramalyl-CoA lyase [EC:4.1.3.24 4.1.3.25],K08691,KOfam,mcl,42
+"glycosidase/amylase, amyA",Carbon,Offshore,None,Glycosidase/amylase (phosphorylase) (AmyA) (PDB:2P67) (PUBMED:29684280),COG0366,COG20_FUNCTION,amyA,43
+"xylulokinase, xylB",Carbon,Coastal,>C4,Sugar (pentulose or hexulose) kinase (XylB) (PDB:4C23),COG1070,COG20_FUNCTION,xylB,44
+"D-tartrate dehydratase, tarD",Carbon,Coastal,>C4,D(-)-tartrate dehydratase [EC:4.2.1.81],K22209,KOfam,tarD,45
+"D-arabinitol dehydrogenase, altD",Carbon,Coastal,>C4,D-arabinitol 4-dehydrogenase [EC:1.1.1.11],K00007,KOfam,atlD,46
+"L-fuconolactonase, fucB",Carbon,Coastal,>C4,"L-fucono-1,5-lactonase [EC:3.1.1.120]",K07046,KOfam,fucB,47
+"fructose transport system, frcABC",Carbon,Coastal,>C4,fructose transport system ATP-binding protein,K10554,KOfam,frcA,48
+"glycerophospholipid metabolism and transport, ugpEBQ",Carbon,Coastal,Glycerophospholipids,sn-glycerol 3-phosphate transport system permease protein,K05815,KOfam,ugpE,49
+"L-glyceraldehyde 3-phosphate reductase, gpr",Carbon,Coastal,Glycerophospholipids,L-glyceraldehyde 3-phosphate reductase [EC:1.1.1.-],K19265,KOfam,gpr,50
+"glycerol-3-phosphate dehydrogenase, glpA",Carbon,Coastal,Glycerophospholipids,glycerol-3-phosphate dehydrogenase [EC:1.1.5.3],K00111,KOfam,glpA,51
+"autotransporter adhesin, aidA",Adhesion,Coastal,None,fibronectin-binding autotransporter adhesin,K19231,KOfam,aidA,52
